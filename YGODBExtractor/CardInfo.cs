@@ -25,21 +25,82 @@ namespace YGODBExtractor
             int setsAmountInt = Convert.ToInt32(setsAmount);
 
             int iterator = 9;
+            int priceIterator = iterator + (setsAmountInt * 4);
             for(int x = 0; x < setsAmountInt; x++) 
             {
                 string date = tokens[iterator];
                 string code = tokens[iterator + 1];
                 string name = tokens[iterator + 2];
                 string rarity = tokens[iterator + 3];
-                string market = tokens[iterator + 4];
-                string mediam = tokens[iterator + 5];
+                string market = tokens[priceIterator];
+                string mediam = tokens[priceIterator + 1];
                 _Sets.Add(new Set(date, code, name, rarity, market, mediam));
+                iterator += 4;
+                priceIterator += 2;
             }
         }
 
         public int SetsCount
         {
             get { return _Sets.Count; }
+        }
+
+        public string GetMasterInfoLine()
+        {
+            string line = "";
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append(_ID);
+            sb.Append("|");
+
+            sb.Append(_Name);
+            sb.Append("|");
+
+            sb.Append(_Attribute);
+            sb.Append("|");
+
+            sb.Append(_Type);
+            sb.Append("|");
+
+            sb.Append(_LevelRankLink);
+            sb.Append("|");
+
+            sb.Append(_Attack);
+            sb.Append("|");
+
+            sb.Append(_Defense);
+            sb.Append("|");
+
+            sb.Append(_Pendulum);
+            sb.Append("|");
+
+            sb.Append(_Sets.Count.ToString());
+            sb.Append("|");
+
+            foreach (Set set in _Sets) 
+            {
+                sb.Append(set.ReleaseDate);
+                sb.Append("|");
+                sb.Append(set.Code);
+                sb.Append("|");
+                sb.Append(set.Name);
+                sb.Append("|");
+                sb.Append(set.Rarity);
+                sb.Append("|");
+            }
+
+            foreach (Set set in _Sets)
+            {
+                sb.Append(set.MarketPrice);
+                sb.Append("|");
+                sb.Append(set.MediamPrice);
+                sb.Append("|");
+            }
+
+
+            line = sb.ToString();
+            return line;
         }
 
         private string _ID;
@@ -64,6 +125,13 @@ namespace YGODBExtractor
             _MarketPrice = market;
             _MediamPrice = medium;
         }
+
+        public string ReleaseDate { get { return _ReleaseDate; } } 
+        public string Code { get { return _Code; } } 
+        public string Name { get { return _Name; } } 
+        public string Rarity { get { return _Rarity; } } 
+        public string MarketPrice { get { return _MarketPrice; } } 
+        public string MediamPrice { get { return _MediamPrice; } } 
 
         private string _ReleaseDate = "00/00/0000";
         private string _Code = "XXXX-EN000";

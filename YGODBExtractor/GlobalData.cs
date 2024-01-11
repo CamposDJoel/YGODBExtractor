@@ -7,9 +7,16 @@ using System.Threading.Tasks;
 
 namespace YGODBExtractor
 {
-    internal class GlobalData
+    public static class GlobalData
     {
         //The actual Web Driver must be global to be accessible everywhere
-        public static IWebDriver? Chrome;
+        public static IWebDriver Chrome;
+
+        //ULRS
+        public static string KonamiDB_URL = "https://www.db.yugioh-card.com/yugiohdb/card_search.action";
+        public static string Prodeck_URL = "https://ygoprodeck.com/card-database/?&num=24&offset=0";
+
+        //Loggin
+        public static List<string> Log = new List<string>();
     }
 }
