@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace YGODBExtractor
 {
-    internal class Driver
+    public static class Driver
     {
         /// <summary>
         /// Initializes the Chrome Driver. (Browser will open and maximize the window).
