@@ -25,11 +25,23 @@ namespace SeleniumTest
             //Load the Current DB for the group being worked on
             LoadCurrentDBFile(CardGroup.Aqua_Monsters);
 
-            foreach(CardInfo cardInfo in CurrentDB.AquaMonsters)
-            {
-                Console.WriteLine(cardInfo.GetMasterInfoLine()); 
-            }
+            //Test the Data
+            //foreach(CardInfo cardInfo in CurrentDB.AquaMonsters)
+            //{
+              //  Console.WriteLine(cardInfo.GetMasterInfoLine()); 
+            //}
             
+            //Do the group search
+            KonamiCardSearchPage.SearchMonsterCard(CardGroup.Aqua_Monsters);
+
+            //Extract how many cards in total are in this group
+            int totalcards = KonamiCardListPage.GetCardListTotalCards();
+
+
+
+
+
+            Console.WriteLine("TEST PASSED!!!!!!!!!!!!!!!!!!");
         }
 
         private static void LoadCurrentDBFile(CardGroup cardGroup) 

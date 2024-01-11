@@ -13,10 +13,10 @@ namespace YGODBExtractor
         /// Waits 2 seconds and verifies element can be found (is visible)
         /// </summary>
         /// <param name="elementID">Designated element ID</param>
-        public static void WaitUntilElementIsVisble(string elementID)
+        public static void WaitUntilElementIsVisble(string xpath)
         {
             GlobalData.Chrome.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-            GlobalData.Chrome.FindElement(By.Id(elementID));
+            GlobalData.Chrome.FindElement(By.XPath(xpath));
         }
 
         /// <summary>
@@ -29,9 +29,18 @@ namespace YGODBExtractor
             GlobalData.Chrome.FindElement(By.Id(elementID)).SendKeys(text);
         }
 
-        public static void Click(string elementID) 
+        public static void ClickByID(string elementID) 
         {
             GlobalData.Chrome.FindElement(By.Id(elementID)).Click();
+        }
+        public static void ClickByXpath(string xpath)
+        {
+            GlobalData.Chrome.FindElement(By.XPath(xpath)).Click();
+        }
+
+        public static string GetText(string xpath)
+        {
+            return GlobalData.Chrome.FindElement(By.XPath(xpath)).Text;
         }
     }
 }

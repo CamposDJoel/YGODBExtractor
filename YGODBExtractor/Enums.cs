@@ -12,6 +12,7 @@ namespace YGODBExtractor
         Beast_Monsters,
         BeastWarrior_Monsters,
         Cyberse_Monsters,
+        Warrior_Monsters
 
     }
 }

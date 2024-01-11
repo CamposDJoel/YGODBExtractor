@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,5 +19,14 @@ namespace YGODBExtractor
 
         //Loggin
         public static List<string> Log = new List<string>();
+
+        public static string CardGroupToString(CardGroup cardGroup)
+        {
+            switch(cardGroup) 
+            {
+                case CardGroup.Aqua_Monsters: return "Aqua";
+                default: return "NONE";
+            }
+        }
     }
 }
