@@ -66,5 +66,9 @@ namespace YGODBExtractor
                 IJavaScriptExecutor js = (IJavaScriptExecutor)GlobalData.Chrome; js.ExecuteScript(String.Format("window.scrollTo({0}, {1})", xPosition, yPosition));
             }
         }    
+        public static bool ElementExist(string xpath)
+        {
+            return GetElementCount(xpath) > 0;
+        }
     }
 }

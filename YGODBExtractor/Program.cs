@@ -90,7 +90,37 @@ namespace SeleniumTest
                     if (setsCountNow > currentSetsAmountInDB)
                     {
                         //New Sets exists, extract the sets again and gets the new set(s) TCG links from Prodeck
+                        CardInfo CardsNewInfo = CurrentDB.GetCard(CardName).GetCopyWithoutSets();
+                        for(int x = 1; x <= setsCountNow; x++)
+                        {
+                            string releaseDate = KonamiCardInfoPage.GetSetReleaseDate(x);
+                            string code = KonamiCardInfoPage.GetSetCode(x);
+                            string name = KonamiCardInfoPage.GetSetName(x);
+                            string rarity = KonamiCardInfoPage.GetRarity(x);
+                            CardsNewInfo.AddSet(releaseDate, code, name, rarity);
+                        }
 
+                        //Go to its Prodeck URL
+                        Driver.GoToURL("https://ygoprodeck.com/card/elemental-mistress-doriado-8254"); //TODO: GetProDeckURL(NAme);
+                        ProdeckCardInfoPage.WaitUntilPageIsLoaded();
+
+                        //Validate if this page contains TCG prices
+                        if(ProdeckCardInfoPage.PageContainsTCGPrices())
+                        {
+                            if(ProdeckCardInfoPage.TCGPricesHasViewMore())
+                            {
+                                //Click the view more and extract the links there
+                            }
+                            else
+                            {
+                                //extract the links directly from the page.
+                            }
+                        }
+                        else
+                        {
+                            //Do nothing, all prices were set to $0.00 by default.
+                        }
+                        
                     }
                     else
                     {

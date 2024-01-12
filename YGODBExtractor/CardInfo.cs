@@ -54,7 +54,13 @@ namespace YGODBExtractor
             string info = GetMasterInfoLine();
             return new CardInfo(info);
         }
-
+        public CardInfo GetCopyWithoutSets()
+        {
+            string info = GetMasterInfoLine();
+            CardInfo copy = new CardInfo(info);
+            copy.Sets.Clear();
+            return copy;
+        }
         public string GetMasterInfoLine()
         {
             string line = "";
@@ -112,6 +118,10 @@ namespace YGODBExtractor
             line = sb.ToString();
             return line;
         }
+        public void AddSet(string date, string code, string name, string rarity)
+        {
+            _Sets.Add(new Set(date, code, name, rarity));
+        }
 
         private string _ID;
         private string _Name;
@@ -134,6 +144,14 @@ namespace YGODBExtractor
             _Rarity = rarity;
             _MarketPrice = market;
             _MediamPrice = medium;
+        }
+
+        public Set(string date, string code, string name, string rarity)
+        {
+            _ReleaseDate = date;
+            _Code = code;
+            _Name = name;
+            _Rarity = rarity;
         }
 
         public void OverridePrices(string market, string median)

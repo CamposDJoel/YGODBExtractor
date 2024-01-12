@@ -23,6 +23,21 @@ namespace YGODBExtractor
             return Element.GetElementCount(Xpath_SetsRows);
         }
 
-        
+        public static string GetSetReleaseDate(int index)
+        {
+            return Element.GetText("div[@id=\"update_list\"]//div[@class=\"t_body\"]/div[@class=\"t_row\"][" + index + "]//div[@class=\"time\"]");
+        }
+        public static string GetSetCode(int  index)
+        {
+            return Element.GetText("//div[@id=\"update_list\"]//div[@class=\"t_body\"]/div[@class=\"t_row\"][" + index + "]//div[@class=\"card_number\"]");
+        }
+        public static string GetSetName(int index)
+        {
+            return Element.GetText("//div[@id=\"update_list\"]//div[@class=\"t_body\"]/div[@class=\"t_row\"][" + index + "]//div[@class=\"pack_name flex_1\"]");
+        }
+        public static string GetRarity(int index)
+        {
+            return Element.GetText("//div[@id=\"update_list\"]/div[@class=\"t_body\"]/div[" + index + "]//span");
+        }
     }
 }
