@@ -58,7 +58,16 @@ namespace YGODBExtractor
         }
         public static string GetCardName(int index)
         {
-            return Element.GetText("//div[@id=\"card_list\"]/div/div[" + index + "]//div[@class=\"card_name flex_1\"]//span");
+            string cardname = Element.GetText("//div[@id=\"card_list\"]/div/div[" + index + "]//div[@class=\"card_name flex_1\"]//span");
+
+            //Remove the "Update from" extra part if the card contains it
+            if(cardname.Contains("Updated from:"))
+            {
+                int indexofPa = cardname.IndexOf("(");
+                cardname = cardname.Substring(0, indexofPa - 1);
+            }
+                    
+            return cardname;
         }
         public static string GetCardURL(int index)
         {

@@ -16,11 +16,18 @@ namespace YGODBExtractor
         public static string Xpath_MarketPrice = "//section[@class=\"price-points price-guide__points\"]/table/tr[2]/td[2]/span";
         public static string Xpath_MediamPrice = "//section[@class=\"price-points price-guide__points\"]/table/tr[4]/td[2]/span";
 
+        public static string Xpath_InvalidPage = "//span[.='Sorry but that page does not exist on our site!']";
+
         public static void WaitUntilPageIsLoaded()
         {
             Element.WaitUntilElementIsVisble(Xpath_CardNameBanner);
             Element.WaitUntilElementIsVisble(Xpath_ProductDetailsContainer);
             Element.WaitUntilElementIsVisble(Xpath_PricesHeader);
+        }
+
+        public static bool IsAValidPage()
+        {
+            return !Element.ElementExist(Xpath_InvalidPage);
         }
 
         public static string GetCode()
@@ -29,11 +36,15 @@ namespace YGODBExtractor
         }
         public static string GetMarketPrice()
         {
-            return Element.GetText(Xpath_MarketPrice);
+            string price  = Element.GetText(Xpath_MarketPrice);
+            if(price == "-") { price = "$0.00"; }
+            return price;
         }
         public static string GetMediamPrice()
         {
-            return Element.GetText(Xpath_MediamPrice);
+            string price = Element.GetText(Xpath_MediamPrice);
+            if (price == "-") { price = "$0.00"; }
+            return price;
         }
     }
 }

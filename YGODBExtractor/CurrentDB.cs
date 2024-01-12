@@ -32,5 +32,14 @@ namespace YGODBExtractor
         {
             return ProdeckURLs[cardName];
         }
+
+        public static bool TCGPlayerURLExistg(string code)
+        {
+            return TCGPlayerURLs.ContainsKey(code);
+        }
+        public static string GetTCGPlayerURL(string code)
+        {
+            return TCGPlayerURLs[code];
+        }
     }
 }

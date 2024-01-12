@@ -182,9 +182,87 @@ namespace YGODBExtractor
                             //Scan each set for its price
                             for (int x = 0; x < setsCountNow; x++)
                             {
-                                string code = CardsNewInfo.Sets[x].Code;
-                                // TODO: GetTCGPlayerURL(string code);
+                                string Code = CardsNewInfo.Sets[x].Code;
+                                Set thisSet = CardsNewInfo.Sets[x];
 
+                                if (CurrentDB.TCGPlayerURLExistg(Code))
+                                {
+                                    //log
+                                    sb.Append("Code: " + Code + "'s TCG URL Found!|");
+
+                                    string TCGURL = CurrentDB.GetTCGPlayerURL(Code);
+                                    Driver.GoToURL(TCGURL);
+                                    TCGCardInfoPage.WaitUntilPageIsLoaded();
+
+                                    //Extract the updated prices
+                                    string marketPrice = TCGCardInfoPage.GetMarketPrice();
+                                    string mediamPrice = TCGCardInfoPage.GetMediamPrice();
+
+                                    //Overide the current prices
+                                    thisSet.OverridePrices(marketPrice, mediamPrice);                                    
+                                }
+                                else
+                                {
+                                    //log
+                                    sb.Append("Code: " + Code + "'s TCG URL NOT Found!, searching the extracted urls.|");
+
+                                    //Find the code in the available links extracted from prodeck
+                                    string finalURLUsed = "NONE";
+                                    foreach(string url in availableUrls)
+                                    {
+                                        Driver.GoToURL(url);
+
+                                        if(TCGCardInfoPage.IsAValidPage())
+                                        {
+                                            TCGCardInfoPage.WaitUntilPageIsLoaded();
+
+                                            //If the page corresponds to the code, then extract its price
+                                            string CodeInPage = TCGCardInfoPage.GetCode();
+                                            if (Code == CodeInPage)
+                                            {
+                                                double currentMarketPrice = CovertPriceToDouble(thisSet.MarketPrice);
+
+                                                string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                                                string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+
+                                                double priceInPageMarket = CovertPriceToDouble(priceInPageMarketstr);
+                                                double priceInPageMedian = CovertPriceToDouble(priceInPageMedianstr);
+
+                                                if (currentMarketPrice == 0.00)
+                                                {
+                                                    if (priceInPageMarket > 0)
+                                                    {
+                                                        thisSet.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                                        finalURLUsed = url;
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    if (priceInPageMarket < currentMarketPrice)
+                                                    {
+                                                        thisSet.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                                        finalURLUsed = url;
+                                                    }
+                                                }
+                                            }
+                                            else
+                                            {
+                                                //DO nothing just continue the loop
+                                            }
+                                        }
+                                        else
+                                        {
+                                            //Do nothing, Skip URL
+                                        }                                      
+                                    }
+
+                                    //if a finalURL was set, save it to the TCG Player URLs list
+                                    if(finalURLUsed != "NONE")
+                                    {
+                                        CurrentDB.TCGPlayerURLs.Add(Code, finalURLUsed);
+                                        sb.Append("URL found and saved!|");
+                                    }
+                                }
                             }
                         }
                         else
@@ -192,7 +270,10 @@ namespace YGODBExtractor
                             //Do nothing, all prices were set to $0.00 by default.
                             sb.Append("TCG Prices NOT available! all will be set to zero|");
                         }
-                        
+
+                        //CardIfo Object is ready, Add it to the new DB
+                        NewDB.CardInfoList.Add(CardsNewInfo);
+                        NewDB.CardNamesList.Add(CardName);
                     }
                     else
                     {
@@ -204,21 +285,34 @@ namespace YGODBExtractor
                         foreach(Set thisSet in CardsNewInfo.Sets)
                         {
                             string Code = thisSet.Code;
-                            string TCGURL = "https://www.tcgplayer.com/product/520489/yugioh-age-of-overlord-sp-little-knight?promo_name=homepage-small-cards&promo_id=homepage-small-cards&promo_creative=left-side-stack&promo_position=4&Language=English"; // TODO: GetTCGPlayerURL(string code);
-                            Driver.GoToURL(TCGURL);
-                            TCGCardInfoPage.WaitUntilPageIsLoaded();
+                            if(CurrentDB.TCGPlayerURLExistg(Code))
+                            {
+                                //log
+                                sb.Append("Code: " + Code + "'s TCG URL Found!|");
 
-                            //Extract the updated prices
-                            string marketPrice = TCGCardInfoPage.GetMarketPrice();
-                            string mediamPrice = TCGCardInfoPage.GetMediamPrice();
+                                string TCGURL = CurrentDB.GetTCGPlayerURL(Code);
+                                Driver.GoToURL(TCGURL);
+                                TCGCardInfoPage.WaitUntilPageIsLoaded();
 
-                            //Overide the current prices
-                            thisSet.OverridePrices(marketPrice, mediamPrice);                            
+                                //Extract the updated prices
+                                string marketPrice = TCGCardInfoPage.GetMarketPrice();
+                                string mediamPrice = TCGCardInfoPage.GetMediamPrice();
 
-                            //Add it to the new DB
-                            NewDB.CardInfoList.Add(CardsNewInfo);
-                            NewDB.CardNamesList.Add(CardName);
+                                //Overide the current prices
+                                thisSet.OverridePrices(marketPrice, mediamPrice);                                
+                            }
+                            else
+                            {
+                                //Do nothing keep the old amount
+                                //log
+                                sb.Append("Code: " + Code + "'s TCG URL NOT available!|");
+                                GlobalData.CodesWithoutTCGLink.Add(CardName + "|" + Code);
+                            }                           
                         }
+
+                        //CardInfo Object is ready, Add it to the new DB
+                        NewDB.CardInfoList.Add(CardsNewInfo);
+                        NewDB.CardNamesList.Add(CardName);
 
                         //log
                         sb.Append("Prices Overrided!|");
@@ -236,6 +330,9 @@ namespace YGODBExtractor
                 GlobalData.RecordLog(sb.ToString());
             }
 
+            //TEST TEARDOWN
+
+            SavePostRunFiles(CurrentTestGroup);
             GlobalData.RecordLog("TEST PASSED!!!!!!!!!!!!!!!!!!");
         }
         private static void LoadCurrentDBFile(CardGroup cardGroup) 
@@ -261,6 +358,22 @@ namespace YGODBExtractor
             }
 
             SR_SaveFile.Close();
+
+            //TEST
+            /*List<CardInfo> listwithoutsets = new List<CardInfo>();
+            foreach(CardInfo card in CurrentDB.CardInfoList) 
+            {
+                listwithoutsets.Add(card.GetCopyWithoutSets());
+            }
+            List<string> newDBData = new List<string>();
+            newDBData.Add(listwithoutsets.Count.ToString());
+            foreach (CardInfo card in listwithoutsets)
+            {
+                newDBData.Add(card.GetMasterInfoLine());
+            }
+            //Write file
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\NewDB\\listwithoutsets.txt", newDBData);*/
+
 
             //Log
             GlobalData.RecordLog("Load Current DB Successful!");
@@ -320,6 +433,73 @@ namespace YGODBExtractor
 
             //Log
             GlobalData.RecordLog("Load TCG Player URLs DB Successful!");
+        }
+        private static double CovertPriceToDouble(string price)
+        {
+            price = price.Replace("$", "");
+            return Convert.ToDouble(price);
+        }
+        private static void SavePostRunFiles(CardGroup group)
+        {
+            //Override the Prodeck URLs
+            List<string> prodeckUrlsData = new List<string>();
+            prodeckUrlsData.Add(CurrentDB.ProdeckURLs.Count.ToString());
+            foreach(KeyValuePair<string, string> line in CurrentDB.ProdeckURLs)
+            {
+                prodeckUrlsData.Add(line.Key + "|" + line.Value);
+            }
+            //Write file
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\MasterURLFiles\\ProdeckURLs.txt", prodeckUrlsData);
+
+            //////////////////////////////////////////////////////
+
+            //Override the TCG URLs
+            List<string> tcgUrlsData = new List<string>();
+            tcgUrlsData.Add(CurrentDB.TCGPlayerURLs.Count.ToString());
+            foreach (KeyValuePair<string, string> line in CurrentDB.TCGPlayerURLs)
+            {
+                tcgUrlsData.Add(line.Key + "|" + line.Value);
+            }
+            //Write file
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\MasterURLFiles\\TCGPlayerURLs.txt", tcgUrlsData);
+
+            //////////////////////////////////////////////////////
+
+            //Write out the failed manual search cards
+            List<string> failedManualSearchData = new List<string>();
+            failedManualSearchData.Add(GlobalData.CardsThatFailedManualSearch.Count.ToString());
+            foreach(string card in GlobalData.CardsThatFailedManualSearch)
+            {
+                failedManualSearchData.Add(card);
+            }
+            //Write file
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\CardsThatFailedManualSearch.txt", failedManualSearchData);
+
+            /////////////////////////////////////////////////////////
+            
+
+            //Write out the failed manual search cards
+            List<string> exitingCodesWithoutTCGURL = new List<string>();
+            exitingCodesWithoutTCGURL.Add(GlobalData.CodesWithoutTCGLink.Count.ToString());
+            foreach (string card in GlobalData.CodesWithoutTCGLink)
+            {
+                exitingCodesWithoutTCGURL.Add(card);
+            }
+            //Write file
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\exitingCodesWithoutTCGURL.txt", exitingCodesWithoutTCGURL);
+
+            /////////////////////////////////////////////////////////
+            ///
+
+            //Write out the new DB
+            List<string> newDBData = new List<string>();
+            newDBData.Add(NewDB.CardInfoList.Count.ToString());
+            foreach(CardInfo card in NewDB.CardInfoList)
+            {
+                newDBData.Add(card.GetMasterInfoLine());
+            }
+            //Write file
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\NewDB\\" + group + ".txt", newDBData);
         }
     }
 }

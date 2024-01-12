@@ -1,2 +1,5 @@
-1
+4
 GAOV-EN046|https://www.tcgplayer.com/product/520489/yugioh-age-of-overlord-sp-little-knight?promo_name=homepage-small-cards&promo_id=homepage-small-cards&promo_creative=left-side-stack&promo_position=4&Language=English
+SGX3-ENI20|https://www.tcgplayer.com/product/489554/yugioh-speed-duel-gx-duelists-of-shadows-aqua-spirit?xid=pi41214119-edde-426d-95a9-fd2da8e457f6&Language=English&page=1
+SDFC-EN021|https://www.tcgplayer.com/product/232204/yugioh-structure-deck-freezing-chains-aqua-spirit?xid=pi0fc9b459-c1b6-47e5-b31a-3f5bcdbfa3c2&Language=English&page=1
+DB2-EN006|https://www.tcgplayer.com/product/39387/yugioh-dark-beginning-2-aqua-spirit?xid=pi1f09edf1-835e-4a0f-aea7-460715b5d128&Language=English&page=1

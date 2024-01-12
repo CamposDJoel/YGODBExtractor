@@ -18,6 +18,7 @@ namespace YGODBExtractor
         public static string Prodeck_URL = "https://ygoprodeck.com/card-database/?&num=24&offset=0";
 
         public static List<string> CardsThatFailedManualSearch = new List<string>();
+        public static List<string> CodesWithoutTCGLink = new List<string>();
 
         //Loggin
         public static List<string> Log = new List<string>();

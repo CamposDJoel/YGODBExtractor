@@ -15,6 +15,7 @@ namespace YGODBExtractor
         public static string Xpath_ViewMoreLinksContainer = "//div[@class=\"modal-body tcgplayer-modal\"]";
 
         public static string Xpath_PricesInPage = "//div[@class=\"card-sets-tcgplayer-small\"]/div";
+        public static string Xpath_PricesInViewMore = "//div[@class=\"card-sets-tcgplayer\"]/li";
 
         public static void WaitUntilPageIsLoaded()
         {
@@ -36,7 +37,7 @@ namespace YGODBExtractor
             
             //Extract each link and add it to the list
             List<string> urls = new List<string>();
-            for(int i = 0; i < linksAvailable; i++) 
+            for(int i = 1; i <= linksAvailable; i++) 
             {
                 string url = Element.GetElementAttribute("//div[@class=\"card-sets-tcgplayer-small\"]/div[" + i + "]/a", "href");
                 urls.Add(url);
@@ -44,27 +45,21 @@ namespace YGODBExtractor
 
             return urls;
         }
-
         public static void ClickViewMore()
         {
             Element.ClickByXpath(Xpath_ViewMoreLink);
             Element.WaitUntilElementIsVisble(Xpath_ViewMoreLinksContainer);
         }
-
         public static List<string> GetPricesURLsViewMore()
         {
-            //Click the view more 
-
-
-
             //Get the amount of links available
-            int linksAvailable = Element.GetElementCount(Xpath_PricesInPage);
+            int linksAvailable = Element.GetElementCount(Xpath_PricesInViewMore);
 
             //Extract each link and add it to the list
             List<string> urls = new List<string>();
-            for (int i = 0; i < linksAvailable; i++)
+            for (int i = 1; i <= linksAvailable; i++)
             {
-                string url = Element.GetElementAttribute("//div[@class=\"card-sets-tcgplayer-small\"]/div[" + i + "]/a", "href");
+                string url = Element.GetElementAttribute("//div[@class=\"card-sets-tcgplayer\"]/li[" + i + "]/span/a", "href");
                 urls.Add(url);
             }
 
