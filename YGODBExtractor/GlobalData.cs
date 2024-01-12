@@ -17,6 +17,8 @@ namespace YGODBExtractor
         public static string KonamiDB_URL = "https://www.db.yugioh-card.com/yugiohdb/card_search.action";
         public static string Prodeck_URL = "https://ygoprodeck.com/card-database/?&num=24&offset=0";
 
+        public static List<string> CardsThatFailedManualSearch = new List<string>();
+
         //Loggin
         public static List<string> Log = new List<string>();
 
@@ -27,6 +29,11 @@ namespace YGODBExtractor
                 case CardGroup.Aqua_Monsters: return "Aqua";
                 default: return "NONE";
             }
+        }
+        public static void RecordLog(string message)
+        {
+            Console.WriteLine(message);
+            Log.Add(message);
         }
     }
 }

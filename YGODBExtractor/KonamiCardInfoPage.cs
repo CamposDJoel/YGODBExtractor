@@ -25,7 +25,7 @@ namespace YGODBExtractor
 
         public static string GetSetReleaseDate(int index)
         {
-            return Element.GetText("div[@id=\"update_list\"]//div[@class=\"t_body\"]/div[@class=\"t_row\"][" + index + "]//div[@class=\"time\"]");
+            return Element.GetText("//div[@class=\"t_body\"]/div[" + index + "]//div[@class=\"time\"]");
         }
         public static string GetSetCode(int  index)
         {

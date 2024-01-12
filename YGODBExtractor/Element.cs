@@ -26,9 +26,9 @@ namespace YGODBExtractor
         /// </summary>
         /// <param name="elementID">Designeted element ID.</param>
         /// <param name="text">The text to be inputted.</param>
-        public static void InputText(string elementID, string text)
+        public static void InputText(string xpath, string text)
         {
-            GlobalData.Chrome.FindElement(By.Id(elementID)).SendKeys(text);
+            GlobalData.Chrome.FindElement(By.XPath(xpath)).SendKeys(text);
         }
         public static void ClickByXpath(string xpath)
         {

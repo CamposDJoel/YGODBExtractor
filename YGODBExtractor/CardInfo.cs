@@ -123,7 +123,7 @@ namespace YGODBExtractor
             _Sets.Add(new Set(date, code, name, rarity));
         }
 
-        private string _ID;
+        private string _ID = "IDMISSING";
         private string _Name;
         private string _Attribute;
         private string _Type;
