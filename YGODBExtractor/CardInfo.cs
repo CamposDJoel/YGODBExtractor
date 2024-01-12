@@ -40,9 +40,19 @@ namespace YGODBExtractor
             }
         }
 
+        public string Name
+        {
+            get { return _Name; }
+        }
         public int SetsCount
         {
             get { return _Sets.Count; }
+        }
+        public List<Set> Sets { get { return _Sets; } }
+        public CardInfo GetCopy()
+        {
+            string info = GetMasterInfoLine();
+            return new CardInfo(info);
         }
 
         public string GetMasterInfoLine()
@@ -124,6 +134,12 @@ namespace YGODBExtractor
             _Rarity = rarity;
             _MarketPrice = market;
             _MediamPrice = medium;
+        }
+
+        public void OverridePrices(string market, string median)
+        {
+            _MarketPrice = market;
+            _MediamPrice = median;
         }
 
         public string ReleaseDate { get { return _ReleaseDate; } } 

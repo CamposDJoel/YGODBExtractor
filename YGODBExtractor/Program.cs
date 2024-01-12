@@ -5,13 +5,20 @@ using System.Xml.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using YGODBExtractor;
+using System.Collections.Generic;
+using System.Collections;
+using System.Xml;
+using OpenQA.Selenium.DevTools.V118.Browser;
 
 namespace SeleniumTest
 {
     class Program
-    {
+    {      
         static void Main(string[] args)
         {
+            //Set the test group
+            CardGroup CurrentTestGroup = CardGroup.Aqua_Monsters;
+
             //Initialize the driver and open the browser
             Driver.OpenBrowser();
 
@@ -23,7 +30,7 @@ namespace SeleniumTest
             KonamiCardSearchPage.AcceptCookiesBanner();
 
             //Load the Current DB for the group being worked on
-            LoadCurrentDBFile(CardGroup.Aqua_Monsters);
+            LoadCurrentDBFile(CurrentTestGroup);
 
             //Test the Data
             //foreach(CardInfo cardInfo in CurrentDB.AquaMonsters)
@@ -32,16 +39,91 @@ namespace SeleniumTest
             //}
             
             //Do the group search
-            KonamiCardSearchPage.SearchMonsterCard(CardGroup.Aqua_Monsters);
+            KonamiCardSearchPage.SearchMonsterCard(CurrentTestGroup);
 
             //Extract how many cards in total are in this group
-            int totalcards = KonamiCardListPage.GetCardListTotalCards();
+            int totalCards = KonamiCardListPage.GetCardListTotalCards();
 
+            //Scan all the pages to populate the Konami URL list          
+            int totalPages = KonamiCardListPage.GetPageCount();
+            Dictionary<string, string> KonamiURLs = new Dictionary<string, string>();
+            for(int x = 1; x <= totalPages; x++) 
+            {
+                int cardsInPage = KonamiCardListPage.GetCardsCountInCurrentPage();
+                for(int y = 1; y <= cardsInPage; y++) 
+                {
+                    string cardName = KonamiCardListPage.GetCardName(y);
+                    string cardURL = KonamiCardListPage.GetCardURL(y);
+                    //Add the Name/URL combo into the dictionary
+                    KonamiURLs.Add(cardName, cardURL);
+                }
+                //Move to the next page except if we already on the last page
+                if (x < totalPages) { KonamiCardListPage.ClickNextPage(); }
+            }
 
+            //test
+            //foreach (KeyValuePair<string, string> entry in KonamiURLs)
+            //{
+            //Console.WriteLine("Key: " +  entry.Key + "|URL:" + entry.Value);
+            //}
 
+            //Now Access each individual Card
+            foreach (KeyValuePair<string, string> card in KonamiURLs)
+            {
+                //set the card name for readibility and use
+                string CardName = card.Key;
+                string KomaniURL = "https://www.db.yugioh-card.com/" + card.Value;
 
+                //Go to the card info page
+                Driver.GoToURL(KomaniURL);
+                KonamiCardInfoPage.WaitUntilPageIsLoaded();
 
-            Console.WriteLine("TEST PASSED!!!!!!!!!!!!!!!!!!");
+                //Extract the amount of sets (we already have the name)
+                int setsCountNow = KonamiCardInfoPage.GetSetsCount();
+
+                //Check this card against the current DB
+                if(CurrentDB.CardExist(CardName)) 
+                {
+                    //Check its sets
+                    int currentSetsAmountInDB = CurrentDB.GetCard(CardName).SetsCount;
+
+                    if (setsCountNow > currentSetsAmountInDB)
+                    {
+                        //New Sets exists, extract the sets again and gets the new set(s) TCG links from Prodeck
+
+                    }
+                    else
+                    {
+                        //otherwise simply extract the prices from the saved TCG Player URL list
+                        CardInfo CardsNewInfo = CurrentDB.GetCard(CardName).GetCopy();
+                        foreach(Set thisSet in CardsNewInfo.Sets)
+                        {
+                            string Code = thisSet.Code;
+                            string TCGURL = "https://www.tcgplayer.com/product/520489/yugioh-age-of-overlord-sp-little-knight?promo_name=homepage-small-cards&promo_id=homepage-small-cards&promo_creative=left-side-stack&promo_position=4&Language=English"; // TODO: GetTCGPlayerURL(string code);
+                            Driver.GoToURL(TCGURL);
+                            TCGCardInfoPage.WaitUntilPageIsLoaded();
+
+                            //Extract the updated prices
+                            string marketPrice = TCGCardInfoPage.GetMarketPrice();
+                            string mediamPrice = TCGCardInfoPage.GetMediamPrice();
+
+                            //Overide the current prices
+                            thisSet.OverridePrices(marketPrice, mediamPrice);
+
+                            //Add it to the new DB
+                            NewDB.CardInfoList.Add(CardsNewInfo);
+                            NewDB.CardNamesList.Add(CardName);
+                        }
+
+                    }
+                }
+                else
+                {
+                    //TODO: Otherwise, extract the whole card
+                }
+            }
+
+                Console.WriteLine("TEST PASSED!!!!!!!!!!!!!!!!!!");
         }
 
         private static void LoadCurrentDBFile(CardGroup cardGroup) 
@@ -57,13 +139,13 @@ namespace SeleniumTest
             //Loop thru each card, convert it into a CardInfo Object and Populate the Current Master DB
             for (int i = 0; i < CardAmount; i++) 
             {
+                //Extract the line and create the CardInfo Object from it.
                 Line = SR_SaveFile.ReadLine();
+                CardInfo thisCard = new CardInfo(Line);
 
-                switch(cardGroup)
-                {
-                    case CardGroup.Aqua_Monsters: CurrentDB.AquaMonsters.Add(new CardInfo(Line)); break;
-                        //TODO: Finish this swtich statement
-                }
+                //Add it to the list
+                CurrentDB.CardInfoList.Add(thisCard);
+                CurrentDB.CardNamesList.Add(thisCard.Name);
             }
 
 
