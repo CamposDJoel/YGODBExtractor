@@ -83,7 +83,7 @@ namespace YGODBExtractor
         }
         public static void ResetPageNumber()
         {
-            _CurrentPage = 0;
+            _CurrentPage = 1;
         }
     }
 }

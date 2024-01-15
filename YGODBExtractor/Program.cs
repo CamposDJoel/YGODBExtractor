@@ -21,9 +21,10 @@ namespace YGODBExtractor
             SUITE_SETUP();
 
             //STEP 2: Set the TEST GROUP(s)
+            /*
             List<CardGroup> CardGroups = new List<CardGroup>
             {
-                //CardGroup.Aqua_Monsters,
+                CardGroup.Aqua_Monsters,
                 CardGroup.Beast_Monsters,
                 CardGroup.BeastWarrior_Monsters,
                 CardGroup.Cyberse_Monsters,
@@ -40,13 +41,19 @@ namespace YGODBExtractor
                 CardGroup.Pyro_Monsters,
                 CardGroup.Reptile_Monsters,
                 CardGroup.Rock_Monsters,
-                //CardGroup.SeaSerpent_Monsters,
+                CardGroup.SeaSerpent_Monsters,
                 CardGroup.Spellcaster_Monsters,
                 CardGroup.Thunder_Monsters,
-                //CardGroup.Warrior_Monsters,
+                CardGroup.Warrior_Monsters,
                 CardGroup.WingedBeast_Monsters,
-                //CardGroup.Wyrm_Monsters,
+                CardGroup.Wyrm_Monsters,
                 CardGroup.Zombie_Monsters
+            };*/
+
+            List<CardGroup> CardGroups = new List<CardGroup>
+            {
+                CardGroup.SeaSerpent_Monsters,
+                CardGroup.Wyrm_Monsters
             };
 
             //STEP 3: RUN ALL THE TEST CASES

@@ -18,6 +18,7 @@ namespace YGODBExtractor
         Fairy_Monsters,
         Fiend_Monsters,
         Fish_Monsters,
+        IllusionType_Monsters,
         Insect_Monsters,
         Machine_Monsters,
         Plant_Monsters,
