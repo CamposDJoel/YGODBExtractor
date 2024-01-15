@@ -12,8 +12,25 @@ namespace YGODBExtractor
         Beast_Monsters,
         BeastWarrior_Monsters,
         Cyberse_Monsters,
+        Dinosaur_Monsters,
+        DivineBeast_Monsters,
+        Dragon_Monsters,
+        Fairy_Monsters,
+        Fiend_Monsters,
+        Fish_Monsters,
+        Insect_Monsters,
         Machine_Monsters,
-        Warrior_Monsters
-
+        Plant_Monsters,
+        Psychic_Monsters,
+        Pyro_Monsters,
+        Reptile_Monsters,
+        Rock_Monsters,
+        SeaSerpent_Monsters,
+        Spellcaster_Monsters,
+        Thunder_Monsters,
+        Warrior_Monsters,  
+        WingedBeast_Monsters,
+        Wyrm_Monsters,
+        Zombie_Monsters,
     }
 }

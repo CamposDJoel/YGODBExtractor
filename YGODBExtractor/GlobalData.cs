@@ -28,8 +28,29 @@ namespace YGODBExtractor
             switch(cardGroup) 
             {
                 case CardGroup.Aqua_Monsters: return "Aqua";
+                case CardGroup.Beast_Monsters: return "Beast";
+                case CardGroup.BeastWarrior_Monsters: return "Beast-Warrior";
+                case CardGroup.Cyberse_Monsters: return "Cyberse";
+                case CardGroup.Dinosaur_Monsters: return "Dinosaur";
+                case CardGroup.DivineBeast_Monsters: return "Divine-Beast";
+                case CardGroup.Dragon_Monsters: return "Dragon";
+                case CardGroup.Fairy_Monsters: return "Fairy";
+                case CardGroup.Fiend_Monsters: return "Fiend";
+                case CardGroup.Fish_Monsters: return "Fish";
+                case CardGroup.Insect_Monsters: return "Insect";
                 case CardGroup.Machine_Monsters: return "Machine";
+                case CardGroup.Plant_Monsters: return "Plant";
+                case CardGroup.Psychic_Monsters: return "Psychic";
+                case CardGroup.Pyro_Monsters: return "Pyro";
+                case CardGroup.Reptile_Monsters: return "Reptile";
+                case CardGroup.Rock_Monsters: return "Rock";
+                case CardGroup.SeaSerpent_Monsters: return "Sea Serpent";
+                case CardGroup.Spellcaster_Monsters: return "Spellcaster";
+                case CardGroup.Thunder_Monsters: return "Thunder";
                 case CardGroup.Warrior_Monsters: return "Warrior";
+                case CardGroup.WingedBeast_Monsters: return "Winged Beast";
+                case CardGroup.Wyrm_Monsters: return "Wyrm";
+                case CardGroup.Zombie_Monsters: return "Zombie";
                 default: return "NONE";
             }
         }

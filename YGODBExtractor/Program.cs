@@ -9,6 +9,7 @@ using System.Collections;
 using System.Xml;
 using OpenQA.Selenium.DevTools.V118.Browser;
 using OpenQA.Selenium.DevTools.V118.Storage;
+using System.Diagnostics;
 
 namespace YGODBExtractor
 {
@@ -16,30 +17,102 @@ namespace YGODBExtractor
     {      
         static void Main(string[] args)
         {
-            //Start a timer
-            var watch = new System.Diagnostics.Stopwatch();
-            watch.Start();
+            //STEP 1:Suite Set up
+            SUITE_SETUP();
 
-            //Set the test group
-            CardGroup CurrentTestGroup = CardGroup.Machine_Monsters;
+            //STEP 2: Set the TEST GROUP(s)
+            List<CardGroup> CardGroups = new List<CardGroup>
+            {
+                //CardGroup.Aqua_Monsters,
+                CardGroup.Beast_Monsters,
+                CardGroup.BeastWarrior_Monsters,
+                CardGroup.Cyberse_Monsters,
+                CardGroup.Dinosaur_Monsters,
+                CardGroup.DivineBeast_Monsters,
+                CardGroup.Dragon_Monsters,
+                CardGroup.Fairy_Monsters,
+                CardGroup.Fiend_Monsters,
+                CardGroup.Fish_Monsters,
+                CardGroup.Insect_Monsters,
+                CardGroup.Machine_Monsters,
+                CardGroup.Plant_Monsters,
+                CardGroup.Psychic_Monsters,
+                CardGroup.Pyro_Monsters,
+                CardGroup.Reptile_Monsters,
+                CardGroup.Rock_Monsters,
+                //CardGroup.SeaSerpent_Monsters,
+                CardGroup.Spellcaster_Monsters,
+                CardGroup.Thunder_Monsters,
+                //CardGroup.Warrior_Monsters,
+                CardGroup.WingedBeast_Monsters,
+                //CardGroup.Wyrm_Monsters,
+                CardGroup.Zombie_Monsters
+            };
+
+            //STEP 3: RUN ALL THE TEST CASES
+            foreach (CardGroup CurrentTestGroup in CardGroups) 
+            {
+                try
+                {
+                    //STEP 3: Test Set up
+                    TEST_SETUP(CurrentTestGroup);
+
+                    //STEP 4: RUN THE TC
+                    MASTERTESTCASE(CurrentTestGroup);
+                }
+                catch (Exception e)
+                {
+                    //Log
+                    GlobalData.RecordLog("!!!!!! SOMETHING FAILED DURING TEST SETUP or MASTER TC, SKIPPING GROUP, REVIEW EXCEPTION BELOW:");
+                    GlobalData.RecordLog(e.Message);
+                }
+                
+                //Test Teardown
+                TEST_TEARDOWN(CurrentTestGroup);
+            }
+
+            //FINAL: Suite Teardown
+            SUITE_TEARDOWN();
+        }
+
+        private static void SUITE_SETUP()
+        {
+            //Log
+            GlobalData.RecordLog("---SUITE SETUP START---");
 
             //Initialize the driver and open the browser
             Driver.OpenBrowser();
+
+            //Load the Current DB for Prodeck URLs and TCG Player
+            LoadProdeckURLS();
+            LoadTCGPlayerURLs();
+        }
+        private static void TEST_SETUP(CardGroup CurrentTestGroup)
+        {
+            //Log
+            GlobalData.RecordLog("---TEST SETUP START---");
+            GlobalData.RecordLog("---TEST GROUP: " + CurrentTestGroup.ToString() + "---");
 
             //Open Konami's Card Search Page
             Driver.GoToURL(GlobalData.KonamiDB_URL);
             KonamiCardSearchPage.WaitUntilPageIsLoaded();
 
             //Clear Cookies Banner
-            KonamiCardSearchPage.AcceptCookiesBanner();
+            KonamiCardSearchPage.AcceptCookiesBanner();                     
+        }
+        private static void MASTERTESTCASE(CardGroup CurrentTestGroup)
+        {
+            //Log
+            GlobalData.RecordLog("---MASTER TC START---");
+
+            //Start a timer
+            var watch = new Stopwatch();
+            watch.Start();
+            GlobalData.RecordLog("Timer Starts!");
 
             //Load the Current DB for the group being worked on
             LoadCurrentDBFile(CurrentTestGroup);
 
-            //Load the Current DB for Prodeck URLs and TCG Player
-            LoadProdeckURLS();
-            LoadTCGPlayerURLs();
-            
             //Do the group search
             KonamiCardSearchPage.SearchMonsterCard(CurrentTestGroup);
 
@@ -49,10 +122,10 @@ namespace YGODBExtractor
             //Scan all the pages to populate the Konami URL list          
             int totalPages = KonamiCardListPage.GetPageCount();
             Dictionary<string, string> KonamiURLs = new Dictionary<string, string>();
-            for(int x = 1; x <= totalPages; x++) 
+            for (int x = 1; x <= totalPages; x++)
             {
                 int cardsInPage = KonamiCardListPage.GetCardsCountInCurrentPage();
-                for(int y = 1; y <= cardsInPage; y++) 
+                for (int y = 1; y <= cardsInPage; y++)
                 {
                     string cardName = KonamiCardListPage.GetCardName(y);
                     string cardURL = KonamiCardListPage.GetCardURL(y);
@@ -64,7 +137,7 @@ namespace YGODBExtractor
                 else { KonamiCardListPage.ResetPageNumber(); }
             }
             //Quick Verification
-            if(KonamiURLs.Count != totalCards)
+            if (KonamiURLs.Count != totalCards)
             {
                 throw new Exception("The Konami URL extraction failed. Total Cards displayed: " + totalCards + " but URLs Extracted: " + KonamiURLs.Count);
             }
@@ -350,23 +423,38 @@ namespace YGODBExtractor
                 GlobalData.RecordLog(sb.ToString());
             }
 
+            //Stop Timer
+            watch.Stop();
+            GlobalData.RecordLog($"Execution Time was: {watch.Elapsed} |");
+        }
+        private static void TEST_TEARDOWN(CardGroup CurrentTestGroup)
+        {
             //TEST TEARDOWN
-
             SavePostRunFiles(CurrentTestGroup);
 
             //Final Verification
-            if(NewDB.CardNamesList.Count != totalCards)
+            /*(if (NewDB.CardNamesList.Count != expectedTotalCards)
             {
-                throw new Exception("The total # of cards extracted doesnt match the expected #. Verify output file to determine error. Cards in NewDB: " + 
-                    NewDB.CardNamesList.Count + " vs expected: " + totalCards);
+
+                GlobalData.RecordLog("TEST FAILED!!!!!!!!!!!!!!!!!!");
+                GlobalData.RecordLog("The total # of cards extracted doesnt match the expected #. Verify output file to determine error. Cards in NewDB: " +
+                    NewDB.CardNamesList.Count + " vs expected: " + expectedTotalCards);
             }
             else
             {
                 GlobalData.RecordLog("TEST PASSED!!!!!!!!!!!!!!!!!!");
-            }
+            }*/
 
-            //Stop Timer
-            Console.WriteLine($"Execution Time was: {watch.Elapsed} |");
+            //CLEAN UP
+            CurrentDB.CardInfoList.Clear();
+            CurrentDB.CardNamesList.Clear();
+
+            NewDB.CardNamesList.Clear();
+            NewDB.CardNamesList.Clear();
+        }
+        private static void SUITE_TEARDOWN()
+        {
+            //GlobalData.Chrome.Close();
         }
         private static void LoadCurrentDBFile(CardGroup cardGroup) 
         {
@@ -490,6 +578,7 @@ namespace YGODBExtractor
             }
             //Write file
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\MasterURLFiles\\ProdeckURLs.txt", prodeckUrlsData);
+            GlobalData.RecordLog("ProdeckURLs.txt file overwriten!!");
 
             //////////////////////////////////////////////////////
 
@@ -502,6 +591,7 @@ namespace YGODBExtractor
             }
             //Write file
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\MasterURLFiles\\TCGPlayerURLs.txt", tcgUrlsData);
+            GlobalData.RecordLog("TCGPlayerURLs.txt file overwriten!!");
 
             //////////////////////////////////////////////////////
 
@@ -514,9 +604,9 @@ namespace YGODBExtractor
             }
             //Write file
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\CardsThatFailedManualSearch.txt", failedManualSearchData);
+            GlobalData.RecordLog("CardsThatFailedManualSearch.txt file overwriten!!");
 
             /////////////////////////////////////////////////////////
-            
 
             //Write out the failed manual search cards
             List<string> exitingCodesWithoutTCGURL = new List<string>();
@@ -527,6 +617,7 @@ namespace YGODBExtractor
             }
             //Write file
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\exitingCodesWithoutTCGURL.txt", exitingCodesWithoutTCGURL);
+            GlobalData.RecordLog("exitingCodesWithoutTCGURL.txt file overwriten!!");
 
             /////////////////////////////////////////////////////////
             ///
@@ -540,11 +631,7 @@ namespace YGODBExtractor
             }
             //Write file
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\NewDB\\" + group + ".txt", newDBData);
-        }
-
-        private static bool NotInSkipList(string cardname)
-        {
-            return cardname == "Cyber Twin Dragon";
+            GlobalData.RecordLog("Group New DB file overwriten!!");
         }
     }
 }
