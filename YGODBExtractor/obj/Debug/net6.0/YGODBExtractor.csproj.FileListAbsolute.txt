@@ -1,8 +1,3 @@
-D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.csproj.AssemblyReference.cache
-D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.GeneratedMSBuildEditorConfig.editorconfig
-D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.AssemblyInfoInputs.cache
-D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.AssemblyInfo.cs
-D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.csproj.CoreCompileInputs.cache
 D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\bin\Debug\net6.0\selenium-manager\linux\selenium-manager
 D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\bin\Debug\net6.0\selenium-manager\macos\selenium-manager
 D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\bin\Debug\net6.0\selenium-manager\windows\selenium-manager.exe
@@ -13,6 +8,11 @@ D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\bin\Debug\net6.0\YGODBExtracto
 D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\bin\Debug\net6.0\YGODBExtractor.pdb
 D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\bin\Debug\net6.0\WebDriver.dll
+D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.csproj.AssemblyReference.cache
+D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.AssemblyInfoInputs.cache
+D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.AssemblyInfo.cs
+D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.csproj.CoreCompileInputs.cache
 D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.csproj.CopyComplete
 D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\YGODBExtractor.dll
 D:\Documents\GitHub\YGODBExtractor\YGODBExtractor\obj\Debug\net6.0\refint\YGODBExtractor.dll
