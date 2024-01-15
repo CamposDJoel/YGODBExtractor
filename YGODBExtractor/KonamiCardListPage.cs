@@ -37,7 +37,7 @@ namespace YGODBExtractor
 
             //mod the string to make it ready for conversion
             int indexofF = totalsString.IndexOf('f');
-            totalsString.Replace(",", "");
+            totalsString = totalsString.Replace(",", "");
 
             totalsString = totalsString.Substring(indexofF + 2);
 
@@ -80,6 +80,10 @@ namespace YGODBExtractor
             Element.ScrollToView("//a[.='" + _CurrentPage + "']");
             Element.ClickByXpath("//a[.='" + _CurrentPage + "']");
             WaitUntilPageIsLoaded();
+        }
+        public static void ResetPageNumber()
+        {
+            _CurrentPage = 0;
         }
     }
 }

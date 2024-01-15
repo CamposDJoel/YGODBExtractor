@@ -16,8 +16,12 @@ namespace YGODBExtractor
     {      
         static void Main(string[] args)
         {
+            //Start a timer
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+
             //Set the test group
-            CardGroup CurrentTestGroup = CardGroup.Aqua_Monsters;
+            CardGroup CurrentTestGroup = CardGroup.Machine_Monsters;
 
             //Initialize the driver and open the browser
             Driver.OpenBrowser();
@@ -35,12 +39,6 @@ namespace YGODBExtractor
             //Load the Current DB for Prodeck URLs and TCG Player
             LoadProdeckURLS();
             LoadTCGPlayerURLs();
-
-            //Test the Data
-            //foreach(CardInfo cardInfo in CurrentDB.AquaMonsters)
-            //{
-              //  Console.WriteLine(cardInfo.GetMasterInfoLine()); 
-            //}
             
             //Do the group search
             KonamiCardSearchPage.SearchMonsterCard(CurrentTestGroup);
@@ -63,13 +61,13 @@ namespace YGODBExtractor
                 }
                 //Move to the next page except if we already on the last page
                 if (x < totalPages) { KonamiCardListPage.ClickNextPage(); }
+                else { KonamiCardListPage.ResetPageNumber(); }
             }
-
-            //test
-            //foreach (KeyValuePair<string, string> entry in KonamiURLs)
-            //{
-            //Console.WriteLine("Key: " +  entry.Key + "|URL:" + entry.Value);
-            //}
+            //Quick Verification
+            if(KonamiURLs.Count != totalCards)
+            {
+                throw new Exception("The Konami URL extraction failed. Total Cards displayed: " + totalCards + " but URLs Extracted: " + KonamiURLs.Count);
+            }
 
             //Now Access each individual Card
             foreach (KeyValuePair<string, string> card in KonamiURLs)
@@ -90,7 +88,7 @@ namespace YGODBExtractor
                 int setsCountNow = KonamiCardInfoPage.GetSetsCount();
 
                 //Check this card against the current DB
-                if(CurrentDB.CardExist(CardName)) 
+                if (CurrentDB.CardExist(CardName))
                 {
                     //log
                     sb.Append("Card In DB|");
@@ -105,7 +103,7 @@ namespace YGODBExtractor
 
                         //New Sets exists, extract the sets again and gets the new set(s) TCG links from Prodeck
                         CardInfo CardsNewInfo = CurrentDB.GetCard(CardName).GetCopyWithoutSets();
-                        for(int x = 1; x <= setsCountNow; x++)
+                        for (int x = 1; x <= setsCountNow; x++)
                         {
                             string releaseDate = KonamiCardInfoPage.GetSetReleaseDate(x);
                             string code = KonamiCardInfoPage.GetSetCode(x);
@@ -115,7 +113,7 @@ namespace YGODBExtractor
                         }
 
                         //Check if this card has a Prodeck URL
-                        if(CurrentDB.ProdeckURLExist(CardName))
+                        if (CurrentDB.ProdeckURLExist(CardName))
                         {
                             //log
                             sb.Append("Prodeck URL Found!|");
@@ -136,7 +134,7 @@ namespace YGODBExtractor
                             //Perform the manual search and return if the search was successful
                             bool SearchSucess = ProDeckCardSearchPage.SearchCard(CardName);
 
-                            if(SearchSucess)
+                            if (SearchSucess)
                             {
                                 sb.Append("Prodeck Search Success!|");
 
@@ -192,14 +190,21 @@ namespace YGODBExtractor
 
                                     string TCGURL = CurrentDB.GetTCGPlayerURL(Code);
                                     Driver.GoToURL(TCGURL);
-                                    TCGCardInfoPage.WaitUntilPageIsLoaded();
+                                    bool PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded();
 
-                                    //Extract the updated prices
-                                    string marketPrice = TCGCardInfoPage.GetMarketPrice();
-                                    string mediamPrice = TCGCardInfoPage.GetMediamPrice();
+                                    if (PageLoadedCorrectly)
+                                    {
+                                        //Extract the updated prices
+                                        string marketPrice = TCGCardInfoPage.GetMarketPrice();
+                                        string mediamPrice = TCGCardInfoPage.GetMediamPrice();
 
-                                    //Overide the current prices
-                                    thisSet.OverridePrices(marketPrice, mediamPrice);                                    
+                                        //Overide the current prices
+                                        thisSet.OverridePrices(marketPrice, mediamPrice);
+                                    }
+                                    else
+                                    {
+                                        sb.Append("***TCG Link Page Failed to load... Review it***|");
+                                    }
                                 }
                                 else
                                 {
@@ -208,56 +213,63 @@ namespace YGODBExtractor
 
                                     //Find the code in the available links extracted from prodeck
                                     string finalURLUsed = "NONE";
-                                    foreach(string url in availableUrls)
+                                    foreach (string url in availableUrls)
                                     {
                                         Driver.GoToURL(url);
 
-                                        if(TCGCardInfoPage.IsAValidPage())
+                                        if (TCGCardInfoPage.IsAValidPage())
                                         {
-                                            TCGCardInfoPage.WaitUntilPageIsLoaded();
+                                            bool PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded();
 
-                                            //If the page corresponds to the code, then extract its price
-                                            string CodeInPage = TCGCardInfoPage.GetCode();
-                                            if (Code == CodeInPage)
+                                            if (PageLoadedCorrectly)
                                             {
-                                                double currentMarketPrice = CovertPriceToDouble(thisSet.MarketPrice);
-
-                                                string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
-                                                string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-
-                                                double priceInPageMarket = CovertPriceToDouble(priceInPageMarketstr);
-                                                double priceInPageMedian = CovertPriceToDouble(priceInPageMedianstr);
-
-                                                if (currentMarketPrice == 0.00)
+                                                //If the page corresponds to the code, then extract its price
+                                                string CodeInPage = TCGCardInfoPage.GetCode();
+                                                if (Code == CodeInPage)
                                                 {
-                                                    if (priceInPageMarket > 0)
+                                                    double currentMarketPrice = CovertPriceToDouble(thisSet.MarketPrice);
+
+                                                    string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                                                    string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+
+                                                    double priceInPageMarket = CovertPriceToDouble(priceInPageMarketstr);
+                                                    double priceInPageMedian = CovertPriceToDouble(priceInPageMedianstr);
+
+                                                    if (currentMarketPrice == 0.00)
                                                     {
-                                                        thisSet.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
-                                                        finalURLUsed = url;
+                                                        if (priceInPageMarket > 0)
+                                                        {
+                                                            thisSet.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                                            finalURLUsed = url;
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        if (priceInPageMarket < currentMarketPrice)
+                                                        {
+                                                            thisSet.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                                            finalURLUsed = url;
+                                                        }
                                                     }
                                                 }
                                                 else
                                                 {
-                                                    if (priceInPageMarket < currentMarketPrice)
-                                                    {
-                                                        thisSet.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
-                                                        finalURLUsed = url;
-                                                    }
+                                                    //DO nothing just continue the loop
                                                 }
                                             }
                                             else
                                             {
-                                                //DO nothing just continue the loop
+                                                //Also do nothing, bad page
                                             }
                                         }
                                         else
                                         {
                                             //Do nothing, Skip URL
-                                        }                                      
+                                        }
                                     }
 
                                     //if a finalURL was set, save it to the TCG Player URLs list
-                                    if(finalURLUsed != "NONE")
+                                    if (finalURLUsed != "NONE")
                                     {
                                         CurrentDB.TCGPlayerURLs.Add(Code, finalURLUsed);
                                         sb.Append("URL found and saved!|");
@@ -282,24 +294,32 @@ namespace YGODBExtractor
 
                         //otherwise simply extract the prices from the saved TCG Player URL list
                         CardInfo CardsNewInfo = CurrentDB.GetCard(CardName).GetCopy();
-                        foreach(Set thisSet in CardsNewInfo.Sets)
+                        foreach (Set thisSet in CardsNewInfo.Sets)
                         {
                             string Code = thisSet.Code;
-                            if(CurrentDB.TCGPlayerURLExistg(Code))
+                            if (CurrentDB.TCGPlayerURLExistg(Code))
                             {
                                 //log
                                 sb.Append("Code: " + Code + "'s TCG URL Found!|");
 
                                 string TCGURL = CurrentDB.GetTCGPlayerURL(Code);
                                 Driver.GoToURL(TCGURL);
-                                TCGCardInfoPage.WaitUntilPageIsLoaded();
+                                bool PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded();
 
-                                //Extract the updated prices
-                                string marketPrice = TCGCardInfoPage.GetMarketPrice();
-                                string mediamPrice = TCGCardInfoPage.GetMediamPrice();
+                                if (PageLoadedCorrectly)
+                                {
+                                    //Extract the updated prices
+                                    string marketPrice = TCGCardInfoPage.GetMarketPrice();
+                                    string mediamPrice = TCGCardInfoPage.GetMediamPrice();
 
-                                //Overide the current prices
-                                thisSet.OverridePrices(marketPrice, mediamPrice);                                
+                                    //Overide the current prices
+                                    thisSet.OverridePrices(marketPrice, mediamPrice);
+                                }
+                                else
+                                {
+                                    sb.Append("***TCG Link Page Failed to load... Review it***|");
+                                }
+
                             }
                             else
                             {
@@ -307,7 +327,7 @@ namespace YGODBExtractor
                                 //log
                                 sb.Append("Code: " + Code + "'s TCG URL NOT available!|");
                                 GlobalData.CodesWithoutTCGLink.Add(CardName + "|" + Code);
-                            }                           
+                            }
                         }
 
                         //CardInfo Object is ready, Add it to the new DB
@@ -333,7 +353,20 @@ namespace YGODBExtractor
             //TEST TEARDOWN
 
             SavePostRunFiles(CurrentTestGroup);
-            GlobalData.RecordLog("TEST PASSED!!!!!!!!!!!!!!!!!!");
+
+            //Final Verification
+            if(NewDB.CardNamesList.Count != totalCards)
+            {
+                throw new Exception("The total # of cards extracted doesnt match the expected #. Verify output file to determine error. Cards in NewDB: " + 
+                    NewDB.CardNamesList.Count + " vs expected: " + totalCards);
+            }
+            else
+            {
+                GlobalData.RecordLog("TEST PASSED!!!!!!!!!!!!!!!!!!");
+            }
+
+            //Stop Timer
+            Console.WriteLine($"Execution Time was: {watch.Elapsed} |");
         }
         private static void LoadCurrentDBFile(CardGroup cardGroup) 
         {
@@ -425,8 +458,15 @@ namespace YGODBExtractor
                 string code = tokens[0];
                 string url = tokens[1];
 
-                //Populate the Dictionary
-                CurrentDB.TCGPlayerURLs.Add(code, url);
+                if(CurrentDB.TCGPlayerURLs.ContainsKey(code)) 
+                {
+                    Console.WriteLine("Duplicate code found: " + code);
+                }
+                else
+                {
+                    //Populate the Dictionary
+                    CurrentDB.TCGPlayerURLs.Add(code, url);
+                }                
             }
 
             SR_SaveFile.Close();
@@ -500,6 +540,11 @@ namespace YGODBExtractor
             }
             //Write file
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\NewDB\\" + group + ".txt", newDBData);
+        }
+
+        private static bool NotInSkipList(string cardname)
+        {
+            return cardname == "Cyber Twin Dragon";
         }
     }
 }

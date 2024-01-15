@@ -18,11 +18,19 @@ namespace YGODBExtractor
 
         public static string Xpath_InvalidPage = "//span[.='Sorry but that page does not exist on our site!']";
 
-        public static void WaitUntilPageIsLoaded()
+        public static bool WaitUntilPageIsLoaded()
         {
-            Element.WaitUntilElementIsVisble(Xpath_CardNameBanner);
-            Element.WaitUntilElementIsVisble(Xpath_ProductDetailsContainer);
-            Element.WaitUntilElementIsVisble(Xpath_PricesHeader);
+            try
+            {
+                //Element.WaitUntilElementIsVisble(Xpath_CardNameBanner);
+                //Element.WaitUntilElementIsVisble(Xpath_ProductDetailsContainer);
+                Element.WaitUntilElementIsVisble(Xpath_PricesHeader);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }           
         }
 
         public static bool IsAValidPage()

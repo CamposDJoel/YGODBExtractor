@@ -28,6 +28,8 @@ namespace YGODBExtractor
             switch(cardGroup) 
             {
                 case CardGroup.Aqua_Monsters: return "Aqua";
+                case CardGroup.Machine_Monsters: return "Machine";
+                case CardGroup.Warrior_Monsters: return "Warrior";
                 default: return "NONE";
             }
         }
