@@ -33,5 +33,14 @@ namespace YGODBExtractor
         WingedBeast_Monsters,
         Wyrm_Monsters,
         Zombie_Monsters,
+        Normal_Spells,
+        Continuous_Spells,
+        QuickPlay_Spells,
+        Equip_Spells,
+        Field_Spells,
+        Ritual_Spells,
+        Normal_Traps,
+        Continuous_Traps,
+        Counter_Traps
     }
 }

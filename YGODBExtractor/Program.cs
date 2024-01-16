@@ -52,8 +52,7 @@ namespace YGODBExtractor
 
             List<CardGroup> CardGroups = new List<CardGroup>
             {
-                CardGroup.SeaSerpent_Monsters,
-                CardGroup.Wyrm_Monsters
+                CardGroup.Counter_Traps
             };
 
             //STEP 3: RUN ALL THE TEST CASES
@@ -121,7 +120,7 @@ namespace YGODBExtractor
             LoadCurrentDBFile(CurrentTestGroup);
 
             //Do the group search
-            KonamiCardSearchPage.SearchMonsterCard(CurrentTestGroup);
+            KonamiCardSearchPage.SearchCardGroup(CurrentTestGroup);
 
             //Extract how many cards in total are in this group
             int totalCards = KonamiCardListPage.GetCardListTotalCards();
@@ -398,6 +397,7 @@ namespace YGODBExtractor
                                 else
                                 {
                                     sb.Append("***TCG Link Page Failed to load... Review it***|");
+                                    GlobalData.TCGUrlsThatFailedLoading.Add(thisSet.Code + "|" + TCGURL);
                                 }
 
                             }
@@ -461,7 +461,7 @@ namespace YGODBExtractor
         }
         private static void SUITE_TEARDOWN()
         {
-            //GlobalData.Chrome.Close();
+            GlobalData.Chrome.Close();
         }
         private static void LoadCurrentDBFile(CardGroup cardGroup) 
         {
@@ -603,31 +603,24 @@ namespace YGODBExtractor
             //////////////////////////////////////////////////////
 
             //Write out the failed manual search cards
-            List<string> failedManualSearchData = new List<string>();
-            failedManualSearchData.Add(GlobalData.CardsThatFailedManualSearch.Count.ToString());
-            foreach(string card in GlobalData.CardsThatFailedManualSearch)
-            {
-                failedManualSearchData.Add(card);
-            }
-            //Write file
-            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\CardsThatFailedManualSearch.txt", failedManualSearchData);
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\CardsThatFailedManualSearch.txt", GlobalData.CardsThatFailedManualSearch);
             GlobalData.RecordLog("CardsThatFailedManualSearch.txt file overwriten!!");
 
             /////////////////////////////////////////////////////////
 
             //Write out the failed manual search cards
-            List<string> exitingCodesWithoutTCGURL = new List<string>();
-            exitingCodesWithoutTCGURL.Add(GlobalData.CodesWithoutTCGLink.Count.ToString());
-            foreach (string card in GlobalData.CodesWithoutTCGLink)
-            {
-                exitingCodesWithoutTCGURL.Add(card);
-            }
-            //Write file
-            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\exitingCodesWithoutTCGURL.txt", exitingCodesWithoutTCGURL);
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\exitingCodesWithoutTCGURL.txt", GlobalData.CodesWithoutTCGLink);
             GlobalData.RecordLog("exitingCodesWithoutTCGURL.txt file overwriten!!");
 
             /////////////////////////////////////////////////////////
-            ///
+
+            //Write out the TCG URLS that failed to load
+            //Write out the failed manual search cards
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\TCGUrlsThatFailedLoading.txt", GlobalData.TCGUrlsThatFailedLoading);
+            GlobalData.RecordLog("TCGUrlsThatFailedLoading.txt file overwriten!!");
+
+            /////////////////////////////////////////////////////////
+
 
             //Write out the new DB
             List<string> newDBData = new List<string>();
