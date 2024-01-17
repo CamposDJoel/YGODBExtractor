@@ -47,6 +47,7 @@ namespace YGODBExtractor
         }
         public static void ClickViewMore()
         {
+            Element.ScrollToView(Xpath_ViewMoreLink);
             Element.ClickByXpath(Xpath_ViewMoreLink);
             Element.WaitUntilElementIsVisble(Xpath_ViewMoreLinksContainer);
         }

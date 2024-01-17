@@ -45,13 +45,13 @@ namespace YGODBExtractor
         public static string GetMarketPrice()
         {
             string price  = Element.GetText(Xpath_MarketPrice);
-            if(price == "-") { price = "$0.00"; }
+            if(price == "-" || price == "") { price = "$0.00"; }
             return price;
         }
         public static string GetMediamPrice()
         {
             string price = Element.GetText(Xpath_MediamPrice);
-            if (price == "-") { price = "$0.00"; }
+            if (price == "-" || price == "") { price = "$0.00"; }
             return price;
         }
     }

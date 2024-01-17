@@ -1,0 +1,1633 @@
+1632
+Catapult Turtle|YGLD-ENA08
+Evilswarm Ketos|BPW2-EN050
+Evilswarm Ketos|WGRT-EN050
+Gishki Marker|DT05-EN066
+Skull Kraken|BPW2-EN041
+Skull Kraken|WGRT-EN041
+Swap Frog|OP03-EN001
+Yomi Ship|BPW2-EN006
+Yomi Ship|WGRT-EN006
+Aloof Lupine|MP20-EN015
+Berserk Gorilla|BPW2-EN009
+Berserk Gorilla|WGRT-EN009
+Big-Tusked Mammoth|BPW2-EN013
+Big-Tusked Mammoth|WGRT-EN013
+Chimaera, the Master of Beasts|WCPS-AE803
+Chimera the Flying Mythical Beast|YGLD-ENB41
+Diamond Dire Wolf|CT10-EN012
+Firewing Pegasus|WCS-AE503
+Gazelle the King of Mythical Beasts|YGLD-ENB10
+Griffore|YGLD-ENA13
+Grizzly, the Red Star Beast|2010-EN002
+Hop Ear Squadron|MP20-EN164
+Hypnocorn|BPW2-EN034
+Hypnocorn|WGRT-EN034
+Madolche Baaple|BPW2-EN049
+Madolche Baaple|WGRT-EN049
+Mementotlan Tatsunootoshigo|VASM-EN003
+Mogmole|BPW2-EN052
+Mogmole|WGRT-EN052
+Playful Possum|BPW2-EN033
+Playful Possum|WGRT-EN033
+T.G. Rush Rhino|BATT-EN020
+Test Panther|MP20-EN176
+The Twin Kings, Founders of the Empire|2015-EN003
+The Twin Kings, Founders of the Empire|2014-EN001
+Vampiric Koala|BP03-EN094
+Vampiric Koala|ORCS-EN093
+Yokotuner|INOV-ENSE4
+Beaver Warrior|YGLD-ENA12
+Brotherhood of the Fire Fist - Bear|CT10-EN008
+Bujin Yamato|AP05-EN001
+Dragoons of Draconia|SECE-ENSP1
+Fire King Avatar Rangbali|SR14-EN003
+Gladiator Beast Attorix|MP20-EN156
+Gladiator Beast Heraklinos|TU02-EN000
+King Landia the Goldfang|2012-AE003
+King Landia the Goldfang|2011-EN001
+Meteo the Matchless|WCS-EN402
+Reborn Tengu|EXVC-ENSP1
+Sengenjin|WCS-AE403
+Skuna, the Leonine Rakan|WCPS-EN902
+XX-Saber Boggart Knight|TSHD-ENSP1
+XX-Saber Gardestrike|ANPR-ENSP1
+XX-Saber Gottoms|CT06-ENS04
+Zoodiac Kataroost|RATE-ENSE3
+Zoodiac Whiptail|OP05-EN002
+Cyberse Quantum Dragon|MP20-EN018
+Decode Talker|SP18-EN031
+Decode Talker|OP06-EN001
+Firewall Dragon|OP16-EN002
+Firewall Dragon|GFTP-EN131
+Firewall Dragon Darkfluid|MP20-EN168
+Firewall eXceed Dragon|MP20-EN067
+I:P Masquerena|MP20-EN178
+Link Spider|OP07-EN002
+Linkmail Archfiend|MP20-EN125
+Marincess Blue Slug|MP20-EN118
+Marincess Blue Tang|MP20-EN149
+Marincess Coral Anemone|MP20-EN119
+Marincess Crown Tail|MP20-EN148
+Marincess Crystal Heart|MP20-EN170
+Marincess Mandarin|MP20-EN147
+Marincess Marbled Rock|MP20-EN120
+Marincess Sea Angel|MP20-EN172
+Marincess Sea Horse|MP20-EN102
+Marincess Sea Star|MP20-EN103
+Marincess Wonder Heart|MP20-EN171
+Mekk-Knight Crusadia Avramax|MP20-EN071
+Micro Coder|LOD2-EN002
+Proxy Horse|GFP2-EN040
+RAM Clouder|YS18-EN006
+RAM Clouder|YS17-EN003
+Rasterliger|FIGA-EN047
+Rebuildeer|MP22-EN245
+Rebuildeer|BODE-EN094
+Recovery Sorcerer|MP18-EN198
+Recovery Sorcerer|EXFO-EN042
+Rescue Interlacer|RIRA-EN001
+Salamangreat Fennec|MP20-EN051
+Salamangreat Foxer|MP20-EN004
+Salamangreat Heatleo|SDSB-EN040
+Salamangreat Parro|MP20-EN003
+Salamangreat Pyro Phoenix|MP20-EN169
+Salamangreat Sunlight Wolf|MP20-EN020
+Salamangreat Violet Chimera|MP20-EN016
+Salamangreat Wolvie|MP20-EN002
+Beatraptor|MP20-EN115
+Black Brachios|SGX1-ENI10
+Black Brachios|SR04-EN010
+Black Brachios|BP03-EN112
+Black Brachios|BP03-EN112
+Black Brachios|LVAL-EN038
+Black Ptera|SBTK-EN020
+Black Ptera|SD09-EN012
+Dinowrestler Chimera T Wrextle|MP20-EN063
+Dinowrestler Coelasilat|MP20-EN053
+Dinowrestler Eskrimamenchi|MP20-EN052
+Dinowrestler Giga Spinosavate|MP20-EN066
+Dinowrestler Martial Ampelo|MP20-EN150
+Dinowrestler Martial Anga|MP20-EN054
+Dinowrestler Martial Ankylo|MP20-EN104
+Dinowrestler Rambrachio|MP20-EN105
+Dinowrestler Terra Parkourio|MP20-EN069
+Dinowrestler Valeonyx|MP20-EN151
+Evilswarm Salamandra|BPW2-EN058
+Evilswarm Salamandra|WGRT-EN058
+Gatebridgeo the Waterfront Warbeast|2023-EN002
+Jurrac Gallim|BPW2-EN038
+Jurrac Gallim|WGRT-EN038
+Jurrac Guaiba|BATT-EN019
+Jurrac Protops|DT02-EN065
+Lancephorhynchus|NECH-ENSP1
+Mammoth Graveyard|YGLD-ENA16
+Sauropod Brachion|BPW2-EN027
+Sauropod Brachion|WGRT-EN027
+Steel Cavalry of Dinon|BOSH-ENSP1
+Submareed Tour Ride|BACH-EN027
+Super Conductor Tyranno|SR04-EN005
+Super Conductor Tyranno|BP02-EN046
+Super Conductor Tyranno|BP02-EN046
+Super Conductor Tyranno|BP01-EN013
+Super Conductor Tyranno|BP01-EN013
+Super Conductor Tyranno|WCPP-EN017
+Super Conductor Tyranno|SD09-EN001
+Super-Ancient Dinobeast|SS03-ENA08
+Super-Ancient Dinobeast|SR04-EN007
+Super-Ancient Dinobeast|DL17-EN004
+Super-Ancient Dinobeast|LODT-EN088
+Super-Ancient Dinobeast|LODT-EN088
+Sword Arm of Dragon|LCJW-EN146
+T.G. Booster Raptor|OP23-EN019
+T.G. Booster Raptor|SAST-EN010
+Tomozaurus|SS03-ENA05
+Tomozaurus|LCJW-EN144
+Trakodon|MDP2-EN017
+Transcendosaurus Drillygnathus|WISU-EN005
+Transcendosaurus Exaraptor|AGOV-EN044
+Transcendosaurus Gigantozowler|WISU-EN003
+Transcendosaurus Glaciasaurus|WISU-EN004
+Transcendosaurus Meteorus|WISU-EN002
+Two-Headed King Rex|SBTK-ENSP1
+Two-Headed King Rex|SS03-ENA02
+Two-Headed King Rex|LCJW-EN140
+Two-Headed King Rex|LCYW-EN158
+Two-Headed King Rex|DB2-EN096
+Two-Headed King Rex|TP2-025
+Two-Mouth Darkruler|LOB-EN030
+Two-Mouth Darkruler|LOB-030
+Tyranno Infinity|SR04-EN009
+Tyranno Infinity|LCJW-EN153
+Tyranno Infinity|DR04-EN029
+Tyranno Infinity|SD09-EN009
+Tyranno Infinity|CRV-EN029
+Ultimate Conductor Tyranno|WISU-EN009
+Ultimate Conductor Tyranno|WISU-EN009
+Ultimate Conductor Tyranno|MGED-EN014
+Ultimate Conductor Tyranno|SR04-EN001
+Ultimate Tyranno|SR04-EN006
+Ultimate Tyranno|BP02-EN045
+Ultimate Tyranno|BP02-EN045
+Ultimate Tyranno|DL13-EN010
+Ultimate Tyranno|DT02-EN059
+Ultimate Tyranno|SD09-EN014
+Ultimate Tyranno|POTD-EN020
+Ultimate Tyranno|POTD-EN020
+Uraby|LOB-EN069
+Uraby|SS03-ENA03
+Uraby|DB1-EN125
+Uraby|SKE-006
+Uraby|SDP-006
+Uraby|SDK-010
+Uraby|LOB-069
+Xeno Meteorus|WISU-EN001
+Xeno Meteorus|WISU-EN001
+Yellow Dragon Ninja|SHVA-EN013
+Zuttomozaurus|DUNE-EN081
+Obelisk the Tormentor|KICO-EN064
+Slifer the Sky Dragon|KICO-EN063
+Slifer the Sky Dragon|MVP1-ENSV6
+The Winged Dragon of Ra|KICO-EN065
+The Winged Dragon of Ra|ORCS-ENSE2
+The Winged Dragon of Ra - Sphere Mode|GFP2-EN180
+Alexandrite Dragon|YS15-ENY01
+Alexandrite Dragon|PHSW-ENSP1
+Amatsu-Okami of the Divine Peaks|2018-EN002
+Ancient Dragon|YS15-ENY08
+Armed Dragon LV10|OP15-EN001
+Axe Dragonute|YS15-END05
+Beast-Eyes Pendulum Dragon|BOSH-ENSE1
+Black Dragon's Chick|LCJW-EN038
+Black Dragon's Chick|SDDC-EN007
+Black Dragon's Chick|DR3-EN017
+Black Dragon's Chick|SD1-EN007
+Black Dragon's Chick|SOD-EN017
+Black Rose Dragon|LIOV-EN100
+Black Skull Dragon|MRD-EN018
+Black Skull Dragon|LDS1-EN012
+Black Skull Dragon|MIL1-EN011
+Black Skull Dragon|LCJW-EN054
+Black Skull Dragon|DLG1-EN029
+Black Skull Dragon|RP01-EN028
+Black Skull Dragon|DB1-EN153
+Black Skull Dragon|TP3-004
+Black Skull Dragon|BPT-006
+Black Skull Dragon|MRD-018
+Blaster, Dragon Ruler of Infernos|CT10-EN002
+Blue-Eyes Alternative White Dragon|GFTP-EN129
+Blue-Eyes Toon Dragon|SRL-EN000
+Blue-Eyes Ultimate Dragon|GFP2-EN181
+Blue-Eyes Ultimate Dragon|BATT-EN001
+Blue-Eyes White Dragon|GFP2-EN175
+Blue-Eyes White Dragon|2020-EN001
+Blue-Eyes White Dragon|MVP1-ENSV4
+Blue-Eyes White Dragon|MVP1-ENGV4
+Blue-Eyes White Dragon|JMPS-EN002
+Blue-Eyes White Dragon|JUMP-EN068
+Blue-Eyes White Dragon|JMP-EN001
+Borreload eXcharge Dragon|MP20-EN117
+Borreload Savage Dragon|MP20-EN017
+Bright Star Dragon|YS15-END09
+Chaos Dragon Levianeer|OP12-EN001
+Chaos Emperor Dragon - Envoy of the End|DPKB-EN016
+Crystal Wing Synchro Dragon|GFTP-EN130
+Curse of Dragon|YGLD-ENA07
+Dark Armed Dragon|GFP2-EN179
+Dark Armed Dragon|TU06-EN000
+Dark Rebellion Xyz Dragon|SP15-EN036
+Dark Requiem Xyz Dragon|OP15-EN002
+Debris Dragon|AP01-EN002
+Destruction Dragon|LC06-EN003
+Dragunity Knight - Romulus|MP20-EN145
+Dragunity Knight - Vajrayana|BPW2-EN101
+Dragunity Knight - Vajrayana|WGRT-EN101
+Exploder Dragon|YS15-ENL12
+Exploder Dragon|YS15-END10
+Fallen of Albaz|OP19-EN001
+Fantastical Dragon Phantazmay|MP20-EN012
+Gaia Dragon, the Thunder Charger|AP07-EN001
+Gaia the Dragon Champion|YGLD-ENA41
+Galactic Spiral Dragon|MP20-EN160
+Galaxy Serpent|JOTL-ENSP1
+Gandora the Dragon of Destruction|YGLD-ENC03
+Guardragon Andrake|MP20-EN011
+Guardragon Elpy|MP20-EN021
+Guardragon Garmides|MP20-EN009
+Guardragon Justicia|MP20-EN008
+Guardragon Pisty|MP20-EN022
+Guardragon Promineses|MP20-EN010
+Gungnir, Dragon of the Ice Barrier|HAC1-EN053
+Gungnir, Dragon of the Ice Barrier|H5SE-EN002
+Hundred Eyes Dragon|JUMP-EN039
+Judgment Dragon|BATT-EN017
+Judgment Dragon|TU01-EN000
+Kaiser Glider - Golden Burst|LDS3-EN136
+Legendary Dragon of White|WSUP-EN051
+Legendary Dragon of White|2013-AE003
+Legendary Dragon of White|2012-EN001
+Legendary Dragon of White|2012-EN001
+Light and Darkness Dragon|STOR-ENSE1
+Light and Darkness Dragon|LDPP-EN001
+Malefic Red-Eyes Black Dragon|LDS1-EN006
+Malefic Red-Eyes Black Dragon|YMP1-EN001
+Mementotlan-Horned Dragon|VASM-EN002
+Meteor Black Dragon|LDS1-EN013
+Meteor Black Dragon|SBLS-EN013
+Meteor Black Dragon|PRC1-EN004
+Mirage Dragon|YS15-ENY06
+Montage Dragon|BPW2-EN023
+Montage Dragon|WGRT-EN023
+Nebula Dragon|MP20-EN159
+Number 17: Leviathan Dragon|BROL-EN000
+Odd-Eyes Dragon|YS15-ENF03
+Odd-Eyes Dragon|YS15-ENY03
+Odd-Eyes Pendulum Dragon|SP15-EN012
+Odd-Eyes Rebellion Dragon|SP17-EN044
+Odd-Eyes Saber Dragon|YS15-ENY00
+Omni Dragon Brotaur|MP20-EN059
+Overburst Dragon|MP20-EN200
+Ranryu|MP20-EN112
+Red Dragon Archfiend|GFP2-EN182
+Red-Eyes Black Dragon|LOB-EN070
+Red-Eyes Black Dragon|2022-EN001
+Red-Eyes Black Dragon|GFP2-EN176
+Red-Eyes Black Dragon|LDS1-EN001
+Red-Eyes Black Dragon|STP1-EN007
+Red-Eyes Black Dragon|SS02-ENB01
+Red-Eyes Black Dragon|LEDU-EN000
+Red-Eyes Black Dragon|LDK2-ENJ01
+Red-Eyes Black Dragon|MIL1-EN027
+Red-Eyes Black Dragon|DPBC-EN021
+Red-Eyes Black Dragon|LCJW-EN003
+Red-Eyes Black Dragon|SDDC-EN005
+Red-Eyes Black Dragon|DT01-EN003
+Red-Eyes Black Dragon|DTP1-EN003
+Red-Eyes Black Dragon|YAP1-EN002
+Red-Eyes Black Dragon|DLG1-EN012
+Red-Eyes Black Dragon|DTP1-EN003
+Red-Eyes Black Dragon|RP01-EN011
+Red-Eyes Black Dragon|SD1-EN002
+Red-Eyes Black Dragon|DB1-EN126
+Red-Eyes Black Dragon|PCJ-EN001
+Red-Eyes Black Dragon|SDJ-001
+Red-Eyes Black Dragon|BPT-005
+Red-Eyes Black Dragon|LOB-070
+Red-Eyes Darkness Metal Dragon|ABPF-ENSE2
+Redox, Dragon Ruler of Boulders|CT10-EN003
+Rokket Synchron|MP20-EN006
+Sanctity of Dragon|2017-EN001
+Schwarzschild Limit Dragon|BPW2-EN064
+Schwarzschild Limit Dragon|WGRT-EN064
+Seiyaryu|WCPS-AE603
+Speedburst Dragon|MP20-EN005
+Stardust Dragon|DAMA-EN100
+Starliege Seyfert|MP20-EN158
+Striker Dragon|MP20-EN204
+Subterror Guru|MP20-EN047
+Supreme King Dragon Lightwurm|
+Tempest, Dragon Ruler of Storms|CT10-EN004
+Tidal, Dragon Ruler of Waterfalls|CT10-EN001
+Tri-Horned Dragon|LOB-000
+Trishula, Dragon of the Ice Barrier|HAC1-EN054
+Trishula, Dragon of the Ice Barrier|AP08-EN001
+Ultimaya Tzolkin|CORE-ENSE1
+Vice Dragon|YS15-END03
+Victory Dragon|WCS-002
+Winged Dragon, Guardian of the Fortress #1|YGLD-ENA10
+World Chalice Guardragon Almarduke|MP20-EN065
+World Legacy Guardragon Mardark|MP20-EN058
+Aluber the Jester of Despia|OP20-EN003
+Apollousa, Bow of the Goddess|MP20-EN126
+Artifact Scythe|PRIO-ENSP1
+Avenging Knight Parshath|TDGS-ENSP1
+Bountiful Artemis|OP01-EN001
+Cherubini, Ebon Angel of the Burning Abyss|MP20-EN096
+Darklord Nurse Reficule|GX05-EN001
+Gnomaterial|MP20-EN050
+Goddess of Sweet Revenge|LC06-EN001
+Herald of Orange Light|OP07-EN001
+Juno, the Celestial Goddess|2016-EN001
+Knightmare Incarnation Idlee|MP20-EN057
+Madolche Petingcessoeur|MP20-EN013
+Madolche Teacher Glassouffle|MP20-EN068
+Majestic Mech - Goryu|BPW2-EN018
+Majestic Mech - Goryu|WGRT-EN018
+Marshmallon|YGLD-ENC22
+Mementotlan Mace|VASM-EN006
+Mystical Shine Ball|BATT-EN014
+Queen of Fate - Eternia|WCS-EN502
+Sephylon, the Ultimate Timelord|JUMP-EN054
+Skelengel|YS15-ENY10
+Soul of Purity and Light|DB2-EN005
+Spirit Sculptor|MP20-EN116
+Stardust Divinity|2011-AE003
+Stardust Divinity|2010-EN001
+Trickstar Corobane|MP20-EN048
+Trickstar Lycoris|OP09-EN002
+Tyr, the Vanquishing Warlord|WCPS-AE903
+Tyr, the Vanquishing Warlord|WCPS-EN801
+Valkyrie Chariot|MP20-EN090
+Valkyrie Erda|MP20-EN089
+Valkyrie Funfte|MP20-EN088
+Valkyrie Sechste|MP20-EN043
+Valkyrie Vierte|MP20-EN044
+White Night Queen|BPW2-EN045
+White Night Queen|WGRT-EN045
+Aggiba, the Malevolent Sh'nn S'yo|2010-AE003
+Aggiba, the Malevolent Sh'nn S'yo|WCPS-EN901
+Archfiend Emperor, the First Lord of Horror|JOTL-ENDE1
+Archfiend of Gilfer|YGLD-ENB05
+Archfiend of Gilfer|BPW2-EN020
+Archfiend of Gilfer|WGRT-EN020
+Archfiend Soldier|YS15-END02
+Armityle the Chaos Phantasm|SDSA-EN045
+Armityle the Chaos Phantasm|DUSA-EN099
+Armityle the Chaos Phantasm|LCGX-EN211
+Armityle the Chaos Phantasm|ANPR-EN091
+Basilius, Familiar of the Evil Eye|MP20-EN235
+Beast of Talwar|YS15-END01
+Berfomet|YGLD-ENB09
+Big Eye|BPW2-EN003
+Big Eye|WGRT-EN003
+Caius the Shadow Monarch|TU03-EN000
+Capshell|MP20-EN101
+Catoblepas, Familiar of the Evil Eye|MP20-EN234
+Chaos Betrayer|MP20-EN060
+D/D/D Dragon King Pendragon|YS15-END00
+Darklord Marie|DB1-EN241
+Darklord Marie|LON-046
+Dystopia the Despondent|INOV-ENSE1
+Emperor Maju Garzett|MP20-EN062
+Evil★Twin Ki-sikil|BLCR-EN096
+Fabled Ashenveil|YS15-END07
+Fabled Soulkius|BPW2-EN036
+Fabled Soulkius|WGRT-EN036
+Feral Imp|YGLD-ENA11
+Frightfur Tiger|CORE-ENSE2
+Garbage Lord|BPW2-EN055
+Garbage Lord|WGRT-EN055
+Goblin Elite Attack Force|YS15-END04
+Gorgon, Empress of the Evil Eyed|MP20-EN177
+Grave Squirmer|YS15-END11
+Hallohallo|CIBR-ENSP1
+Infernity Destroyer|BPW2-EN030
+Infernity Destroyer|WGRT-EN030
+Invader of Darkness|BPW2-EN010
+Invader of Darkness|WGRT-EN010
+King of Destruction - Xexex|WCS-EN501
+Legendary Fiend|BPW2-EN021
+Legendary Fiend|WGRT-EN021
+Mad Archfiend|YS15-END06
+Maestroke the Symphony Djinn|AP03-EN002
+Malice, Lady of Lament|
+Malice, Lady of Lament|ETCO-ENSP1
+Medusa, Watcher of the Evil Eye|MP20-EN233
+Mementotlan Goblin|VASM-EN007
+Muckraker From the Underworld|
+Relinkuriboh|INOV-ENSE2
+Scrap Archfiend|DREV-ENSP1
+Serziel, Watcher of the Evil Eye|MP20-EN232
+Summoned Skull|YGLD-ENA06
+Theban Nightmare|YS15-END08
+Tlakalel, His Malevolent Majesty|RIRA-ENSP1
+Token Collector|SOFU-ENSP1
+Tour Guide From the Underworld|AP06-EN001
+Tragoedia|TU04-EN000
+Unchained Abomination|MP20-EN175
+Unchained Soul of Anguish|MP20-EN174
+Unchained Soul of Disaster|MP20-EN154
+Unchained Soul of Rage|MP20-EN173
+Unchained Twins - Aruha|MP20-EN152
+Unchained Twins - Rakea|MP20-EN153
+Vanity's Fiend|OP01-EN002
+Vanquish Soul Dr. Mad Love|WISU-EN019
+Vanquish Soul Dr. Mad Love|WISU-EN019
+Wall of Illusion|BPW2-EN002
+Wall of Illusion|WGRT-EN002
+Zerrziel, Ruler of the Evil Eyed|MP20-EN236
+Deep Sweeper|BPW2-EN053
+Deep Sweeper|WGRT-EN053
+Earthbound Immortal Chacu Challhua|CT06-ENS03
+Ghoti of the Deep Beyond|
+Superancient Deepsea King Coelacanth|BATT-EN007
+White Aura Monoceros|MP20-EN142
+Beetrooper Scout Buggy|
+Desert Locusts|MP20-EN198
+Flying "C"|JOTL-ENDE2
+Flying Kamakiri #1|DL13-EN003
+Koa'ki Meiru Beetle|SOVR-ENSP1
+Kuwagata α|OP19-EN013
+Maxx "C"|AP04-EN002
+Number 20: Giga-Brilliant|ZTIN-ENV02
+XX-Saber Emmersblade|HASE-EN001
+Adhesive Explosive|BPW2-EN015
+Adhesive Explosive|WGRT-EN015
+Ally of Justice Catastor|CT10-EN006
+Ally of Justice Catastor|TU07-EN000
+Amphibious Swarmship Amblowhale|DANE-ENSP1
+B.E.S. Big Core|DR3-EN090
+B.E.S. Big Core|RDS-EN030
+B.E.S. Big Core|RDS-EN030
+B.E.S. Blaster Cannon Core|MP20-EN111
+Barricadeborg Blocker|MP20-EN140
+Chimeratech Fortress Dragon|BATT-EN015
+Chronomaly Magella Globe|DAMA-EN013
+Cipher Soldier|TU06-EN013
+Cipher Soldier|SDMM-EN010
+Cipher Soldier|CP04-EN010
+Cipher Soldier|WC4-002
+Crystron Halqifibrax|OP15-EN003
+Crystron Rion|INOV-ENSE3
+Cyber Dragon|GFP2-EN178
+Cyber Dragon|OP16-EN001
+Cyber Dragon|YS15-ENY04
+Cyber Raider|BPW2-EN008
+Cyber Raider|WGRT-EN008
+Dingirsu, the Orcust of the Evening Star|OP11-EN001
+Divine Arsenal AA-ZEUS - Sky Thunder|OP18-EN002
+DUCKER Mobile Cannon|YS15-ENY09
+F.A. Shining Star GT|MP20-EN144
+Galatea, the Orcust Automaton|OP10-EN003
+Gear Gigant X|CT10-EN017
+Gizmek Orochi, the Serpentron Sky Slasher|MP20-EN114
+Gizmek Yata, the Gleaming Vanguard|MP20-EN163
+Grandopolis, The Eternal Golden City|2014-AE003
+Grandopolis, The Eternal Golden City|2013-EN001
+Green Gadget|YGLD-ENC16
+Infinitrack Anchor Drill|MP20-EN207
+Infinitrack Brutal Dozer|MP20-EN162
+Infinitrack Crab Crane|MP20-EN208
+Infinitrack Drag Shovel|MP20-EN209
+Infinitrack Earth Slicer|MP20-EN214
+Infinitrack Fortress Megaclops|MP20-EN216
+Infinitrack Goliath|MP20-EN215
+Infinitrack Harvester|MP20-EN206
+Infinitrack Mountain Smasher|MP20-EN213
+Infinitrack River Stormer|MP20-EN212
+Infinitrack Trencher|MP20-EN210
+Infinitrack Tunneller|MP20-EN211
+Iron Knight of Revolution|2017-EN002
+Karakuri Barrel mdl 96 "Shinkuro"|STBL-EN088
+Karakuri Shogun mdl 00 "Burei"|CT10-EN009
+Leonardo's Silver Skyship|2014-EN002
+Lorelei, the Symphonic Arsenal|WCPS-EN802
+Mecha Phantom Beast Blackfalcon|BPW2-EN061
+Mecha Phantom Beast Blackfalcon|WGRT-EN061
+Mecha Phantom Beast Stealthray|BPW2-EN062
+Mecha Phantom Beast Stealthray|WGRT-EN062
+Mecha Phantom Beast Tetherwolf|BPW2-EN060
+Mecha Phantom Beast Tetherwolf|WGRT-EN060
+Mecha Phantom Beast Turtletracer|LTGY-ENSP1
+Meklord Army of Granel|BPW2-EN040
+Meklord Army of Granel|WGRT-EN040
+Meklord Astro Mekanikle|WQ11-EN001
+Meklord Emperor Granel|WQ11-EN003
+Number 40: Gimmick Puppet of Strings|CT10-EN011
+Number 88: Gimmick Puppet of Leo|CT10-EN013
+Red Gadget|YGLD-ENC17
+Sergeant Electro|BPW2-EN043
+Sergeant Electro|WGRT-EN043
+Sky Striker Ace - Hayate|OP10-EN002
+Sky Striker Ace - Kagari|OP08-EN002
+Sky Striker Ace - Kaina|MP20-EN023
+Sky Striker Ace - Kaina|OP11-EN002
+Sky Striker Ace - Shizuku|OP09-EN003
+Speedroid Terrortop|OP03-EN002
+Super Anti-Kaiju War Machine Mecha-Thunder-King|MP20-EN036
+Super Quantal Mech Beast Grampulse|OP03-EN003
+Superdreadnought Rail Cannon Gustav Max|CT10-EN007
+Time Thief Bezel Ship|MP20-EN038
+Time Thief Regulator|MP20-EN039
+Yellow Gadget|YGLD-ENC18 
+Baobaboon|RATE-ENSE4
+Cursed Fig|BPW2-EN024
+Cursed Fig|WGRT-EN024
+Dandylion|AP04-EN001
+Dandylion|ABPF-ENSE1
+Evilswarm Mandragora|BPW2-EN051
+Evilswarm Mandragora|WGRT-EN051
+Hellebore the Rikka Fairy|SESL-EN020
+Homunculus the Alchemic Being|FUEN-EN045
+Homunculus the Alchemic Being|SDHS-EN018
+Homunculus the Alchemic Being|CP07-EN015
+Homunculus the Alchemic Being|DR3-EN094
+Homunculus the Alchemic Being|RDS-EN034
+Horseytail|CSOC-EN026
+Ibicella Lutea|VASM-EN052
+Ibicella Lutea|MP21-EN009
+Ibicella Lutea|IGAS-EN027
+Impcantation Talismandra|WISU-EN044
+Impcantation Talismandra|OP18-EN020
+Impcantation Talismandra|MP19-EN084
+Impcantation Talismandra|CYHO-EN013
+Inmato|DL11-EN012
+Inmato|CRMS-EN031
+Interceptomato|MP14-EN062
+Interceptomato|JOTL-EN003
+Jerry Beans Man|BP03-EN001
+Jerry Beans Man|BP03-EN001
+Jerry Beans Man|DR04-EN004
+Jerry Beans Man|YSDS-EN007
+Jerry Beans Man|CRV-EN004
+Kanzashi the Rikka Queen|SESL-EN021
+Koa'ki Meiru Gravirose|ANPR-EN083
+Koa'ki Meiru Gravirose|ANPR-EN083
+Lekunga|IOC-EN027
+Lekunga|LCJW-EN119
+Lekunga|GLD2-EN003
+Lekunga|DR2-EN027
+Lekunga|IOC-027
+Lekunga|IOC-EN027
+Lonefire Blossom|RA01-EN002
+Lonefire Blossom|RA01-EN002
+Lonefire Blossom|RA01-EN002
+Lonefire Blossom|RA01-EN002
+Lonefire Blossom|RA01-EN002
+Lonefire Blossom|RA01-EN002
+Lonefire Blossom|RA01-EN002
+Lonefire Blossom|SDBT-EN013
+Lonefire Blossom|OP19-EN018
+Lonefire Blossom|SESL-EN040
+Lonefire Blossom|MYFI-EN042
+Lonefire Blossom|AC18-EN017
+Lonefire Blossom|FUEN-EN046
+Lonefire Blossom|PGLD-EN034
+Lonefire Blossom|AP04-EN017
+Lonefire Blossom|CP07-EN005
+Lonefire Blossom|PTDN-EN088
+Lord Poison|IOC-EN028
+Lord Poison|BP03-EN009
+Lord Poison|BP03-EN009
+Lord Poison|LCJW-EN120
+Lord Poison|GLD2-EN004
+Lord Poison|DR2-EN028
+Lord Poison|IOC-028
+Lord Poison|IOC-EN028
+Man Eater|LOB-EN075
+Man Eater|LOB-075
+Mandragon|DEM4-EN005
+Mandragon|CORE-EN097
+Mardel, Generaider Boss of Light|GFP2-EN089
+Mardel, Generaider Boss of Light|MYFI-EN027
+Mariña, Princess of Sunflowers|SESL-EN053
+Mariña, Princess of Sunflowers|MP14-EN157
+Mariña, Princess of Sunflowers|SHSP-EN040
+Meliae of the Trees|MP14-EN165
+Meliae of the Trees|SHSP-EN055
+Mudan the Rikka Fairy|MAZE-EN048
+Mudan the Rikka Fairy|SESL-EN017
+Mushroom Man|CP08-EN012
+Mystic Macrocarpa Seed|LVAL-EN035
+Mystic Tomato|SRL-EN094
+Mystic Tomato|DASA-EN046
+Mystic Tomato|LCYW-EN239
+Mystic Tomato|SDDC-EN016
+Mystic Tomato|DT06-EN005
+Mystic Tomato|SDMA-EN002
+Mystic Tomato|DL09-EN006
+Mystic Tomato|DLG1-EN077
+Mystic Tomato|5DS1-EN017
+Mystic Tomato|RP01-EN076
+Mystic Tomato|HL03-EN005
+Mystic Tomato|DB1-EN057
+Mystic Tomato|SKE-021
+Mystic Tomato|TP4-015
+Mystic Tomato|MRL-094
+Naturia Bamboo Shoot|HAC1-EN111
+Naturia Bamboo Shoot|DREV-EN029
+Naturia Bamboo Shoot|DREV-EN029
+Naturia Beans|DREV-EN028
+Naturia Camellia|MP23-EN171
+Naturia Camellia|DABL-EN021
+Naturia Cherries|HAC1-EN116
+Naturia Cherries|STBL-EN030
+Naturia Cosmobeet|HAC1-EN100
+Naturia Cosmobeet|HA02-EN042
+Naturia Cosmobeet|DT02-EN072
+Naturia Eggplant|EXVC-EN098
+Naturia Guardian|HAC1-EN095
+Naturia Guardian|HA02-EN003
+Naturia Guardian|DT02-EN009
+Naturia Hydrangea|HAC1-EN107
+Naturia Hydrangea|HA03-EN044
+Naturia Hydrangea|DT03-EN072
+Naturia Marron|OP20-EN015
+Naturia Marron|PHSW-EN029
+Naturia Pineapple|HAC1-EN118
+Naturia Pineapple|HASE-EN002
+Naturia Pineapple|DREV-EN082
+Naturia Pumpkin|HAC1-EN117
+Naturia Pumpkin|STBL-EN031
+Naturia Ragweed|HAC1-EN114
+Naturia Ragweed|HA04-EN050
+Naturia Ragweed|DT04-EN080
+Naturia Rosewhip|HAC1-EN099
+Naturia Rosewhip|HA02-EN041
+Naturia Rosewhip|DT02-EN071
+Naturia Strawberry|HAC1-EN110
+Naturia Strawberry|BP01-EN210
+Naturia Strawberry|BP01-EN210
+Naturia Strawberry|HA04-EN021
+Naturia Strawberry|DT04-EN031
+Naturia Sunflower|HAC1-EN102
+Naturia Sunflower|HA03-EN011
+Naturia Sunflower|DT03-EN018
+Naturia Tulip|HAC1-EN104
+Naturia Tulip|HA03-EN013
+Naturia Tulip|DT03-EN020
+Naturia Vein|HAC1-EN096
+Naturia Vein|HA02-EN004
+Naturia Vein|DT02-EN010
+Naturia White Oak|HAC1-EN115
+Naturia White Oak|HA04-EN051
+Naturia White Oak|DT04-EN081
+Necro Fleur|LED8-EN029
+Necro Fleur|WC11-EN001
+Neo-Spacian Glow Moss|SHVA-EN032
+Neo-Spacian Glow Moss|LCGX-EN023
+Neo-Spacian Glow Moss|DP06-EN003
+Neo-Spacian Glow Moss|STON-EN006
+Neo-Spacian Twinkle Moss|PTDN-EN042
+Nettles|CSOC-EN024
+Number 50: Blackship of Corn|CT10-EN018
+Number 50: Blackship of Corn|YZ02-EN001
+Number 87: Queen of the Night|MAGO-EN059
+Number 87: Queen of the Night|NUMH-EN034
+Queen Nereia the Silvercrown|2011-EN002
+Spore|GENF-ENSE2
+Sylvan Bladefender|LVAL-ENSP1
+Sylvan Snapdrassinagon|PRIO-ENPL1
+Traptrix Rafflesia|OP13-EN003
+Vampiric Orchis|DR1-EN069
+Vampiric Orchis|MFC-014
+Amazement Abomination Arlekino|CYAC-EN023
+Ghost Ogre & Snow Rabbit|OP05-EN001
+Hyper Psychic Riser|MP20-EN019
+Kashtira Fenrir|OP21-EN003
+Libromancer Geek Boy|
+Libromancer Geek Boy|BACH-ENSP1
+Psychic Wheeleder|MP20-EN014
+Shelga, the Tri-Warlord|2016-EN002
+Time Thief Redoer|MP20-EN040
+Time Thief Winder|MP20-EN037
+Gentlemander|BPW2-EN063
+Gentlemander|WGRT-EN063
+Worm Apocalypse|BPW2-EN028
+Worm Apocalypse|WGRT-EN028
+Worm Jetelikpse|BPW2-EN029
+Worm Jetelikpse|WGRT-EN029
+Evilswarm Obliviwisp|BPW2-EN057
+Evilswarm Obliviwisp|WGRT-EN057
+Neo Flamvell Lady|MP20-EN056
+Adamancipator Researcher|MP21-EN225
+Alpha The Magnet Warrior|YGLD-ENB11
+Beta The Magnet Warrior|YGLD-ENB12
+Blockman|YGLD-ENC21
+Cyber Jar|DPKB-EN010
+Evilswarm Heliotrope|BPW2-EN001
+Evilswarm Heliotrope|WGRT-EN001
+Gallant Granite|MP20-EN167
+Gamma The Magnet Warrior|YGLD-ENB13
+Giant Soldier of Stone|YGLD-ENA15
+Golem Sentry|BPW2-EN014
+Golem Sentry|WGRT-EN014
+Legendary Jujitsu Master|BPW2-EN011
+Legendary Jujitsu Master|WGRT-EN011
+Naturia Rock|HAC1-EN094
+Naturia Rock|HA02-EN002
+Naturia Rock|DT02-EN008
+Nibiru, the Primal Being|OP14-EN003
+Skyfaring Castle of the Black Forest|2019-EN002
+Valkyrion the Magna Warrior|YGLD-ENB01
+Abyss Dweller|OP13-EN002
+Atlantean Dragoons|AP02-EN001
+Atlantean Marksman|AP03-EN001
+Bahamut Shark|LED9-EN011
+Bahamut Shark|OP13-EN009
+Bahamut Shark|PGL3-EN069
+Brionac, Dragon of the Ice Barrier|H5SE-EN001
+Danger! Ogopogo!|MP20-EN001
+Gladiator Beast Domitianus|MP20-EN165
+Gladiator Beast Vespasius|MP20-EN157
+Mermail Abyssalacia|MP20-EN095
+Skystarray|BPW2-EN042
+Skystarray|WGRT-EN042
+Xyz Slidolphin|MP20-EN061
+Apprentice Magician|BATT-EN002
+Chow Len the Prophet|BPW2-EN044
+Chow Len the Prophet|WGRT-EN044
+Dark Magician|2021-EN001
+Dark Magician|GFTP-EN128
+Dark Magician|MVP1-ENSV3
+Dark Magician|MVP1-ENGV3
+Dark Magician Girl|GFP2-EN177
+Dark Magician Girl|LART-EN019
+Dark Magician of Chaos|YGLD-ENC02
+Dark Paladin|YGLD-ENC41
+Dogmatika Ecclesia, the Virtuous|OP18-EN001
+Droll & Lock Bird|MAGO-EN006
+Droll & Lock Bird|OP08-EN001
+Ebon Illusion Magician|SHVI-ENSE1
+Effect Veiler|ORCS-ENSE1
+Engraver of the Mark|CORE-ENSE3
+Exodia the Forbidden One|YGLD-ENA17
+E☆HERO Pit Boss|2013-EN002
+Fog King|OP02-EN001
+Fog King|BPW2-EN099
+Fog King|WGRT-EN099
+Gagaga Girl|ABYR-ENSE1
+Gagaga Magician|ZTIN-ENV01
+Gravekeeper's Descendant|BATT-EN010
+Gravekeeper's Priestess|ABPF-ENSP1
+Herald of Creation|YS15-ENY05
+High Priestess of Prophecy|BPW2-EN100
+High Priestess of Prophecy|WGRT-EN100
+Hiita the Fire Charmer, Ablaze|PHRA-EN100
+Hiita the Fire Charmer, Ablaze|MP20-EN024
+Kazejin|BPW2-EN004
+Kazejin|WGRT-EN004
+Kuzunoha, the Onmyojin|2015-EN001
+Left Arm of the Forbidden One|YGLD-ENA21
+Left Leg of the Forbidden One|YGLD-ENA19
+Legendary Magician of Dark|WSUP-EN052
+Legendary Magician of Dark|2012-EN002
+Legendary Magician of Dark|2012-EN002
+Lyla, Lightsworn Sorceress|BPW2-EN022
+Lyla, Lightsworn Sorceress|WGRT-EN022
+Magician of Black Chaos|YGLD-ENC01
+Magician's Robe|SHVI-ENSE3
+Maha Vailo|YS15-ENY07
+Masterful Magician, Servant of the Sanctuary|2023-EN001
+Medium of the Ice Barrier|BPW2-EN031
+Medium of the Ice Barrier|WGRT-EN031
+Mementotlan Angwitch|VASM-EN005
+Mystical Elf|YGLD-ENA14
+Mystical Elf|YS15-ENY02
+Mystical Elf - White Lightning|LDS3-EN135
+Noritoshi in Darkest Rainment|2019-EN004
+Noritoshi in Darkest Rainment|2018-EN001
+Number 11: Big Eye|AP06-EN002
+Number 11: Big Eye|BPW2-EN102
+Number 11: Big Eye|WGRT-EN102
+Otohime|BPW2-EN005
+Otohime|WGRT-EN005
+Red-Eyes Dark Dragoon|MP20-EN249
+Right Arm of the Forbidden One|YGLD-ENA20
+Right Leg of the Forbidden One|YGLD-ENA18
+Rogue Doll|SS01-ENA03
+Rogue Doll|SS01-ENC01
+Rogue of Endymion|MP20-EN146
+Silent Magician LV4|YGLD-ENC05
+Silent Magician LV8|YGLD-ENC04
+Skilled Dark Magician|YGLD-ENC19
+Skilled White Magician|YGLD-ENC20
+T.G. Hyper Librarian|WQ11-EN002
+Testament of the Arcane Lords|WCPS-AE703
+Testament of the Arcane Lords|WCPS-EN601
+The Dark Magicians|LDS3-EN090
+The King of D.|LC06-EN002
+The Tricky|YGLD-ENC12
+Tsukuyomi|AP01-EN001
+Water Enchantress of the Temple|OP19-EN002
+Witchcrafter Edel|MP20-EN222
+Witchcrafter Golem Aruru|MP20-EN113
+Witchcrafter Haine|MP20-EN223
+Witchcrafter Madame Verre|MP20-EN224
+Witchcrafter Pittore|MP20-EN220
+Witchcrafter Potterie|MP20-EN219
+Witchcrafter Schmietta|MP20-EN221
+Wynn the Wind Charmer, Verdant|MP20-EN124
+Electric Virus|BATT-EN005
+Emperor of Lightning|WCPS-EN702
+Spright Blue|OP21-EN001
+The Calculator|YS15-ENY11
+Thunder Dragon Colossus|OP10-EN001
+Thunder King Rai-Oh|TU08-EN000
+Thunder Sea Horse|CT10-EN016
+Wattkid|DB2-EN085
+Wattkid|TP1-016
+Wattlemur|BPW2-EN035
+Wattlemur|WGRT-EN035
+A/D Changer|BPW2-EN032
+A/D Changer|WGRT-EN032
+Amazoness Archer|DB1-EN233
+Amazoness Archer|LON-032
+Amazoness Swords Woman|SGX3-END02
+Amazoness Swords Woman|SGX3-END02
+Amazoness Swords Woman|STP2-EN004
+Amazoness Swords Woman|SS02-ENC06
+Amazoness Swords Woman|LEDU-EN013
+Amazoness Swords Woman|GLD3-EN006
+Amazoness Swords Woman|TP7-EN007
+Amazoness Swords Woman|DR1-EN116
+Amazoness Swords Woman|MFC-061
+Armament of the Lethal Lords|WCPS-EN602
+Battle Shogun of the Six Samurai|MGED-EN143
+Battle Shogun of the Six Samurai|CHIM-ENSE2
+Battle Survivor|SGX3-END10
+Battle Warrior|OP01-EN015
+Beckoned by the World Chalice|MP18-EN046
+Beckoned by the World Chalice|COTD-EN020
+Big Shield Gardna|YGLD-ENB14
+Big Shield Gardna|DB1-EN097
+Black Luster Soldier|YGLD-ENA01
+Black Luster Soldier|WCS-003
+Black Luster Soldier - Envoy of the Beginning|YGLD-ENA02
+Black Luster Soldier - Envoy of the Beginning|CT10-EN005
+Black Luster Soldier - Soldier of Chaos|MAMA-EN073
+Black Luster Soldier - Soldier of Chaos|MAMA-EN073
+Black Luster Soldier - Soldier of Chaos|OP17-EN003
+Black Luster Soldier - Soldier of Chaos|GFTP-EN132
+Black Luster Soldier - Soldier of Chaos|BLHR-EN046
+Black Luster Soldier - Super Soldier|MP16-EN136
+Black Luster Soldier - Super Soldier|DOCS-EN042
+Black Luster Soldier - Super Soldier|DOCS-EN042
+Blackwing Tamer - Obsidian Hawk Joe|LDS2-EN042
+Blackwing Tamer - Obsidian Hawk Joe|PGL2-EN012
+Blade Armor Ninja|CBLZ-ENSE2
+Blade Armor Ninja|ORCS-EN041
+Blade Bounzer|GAOV-EN010
+Blade Knight|STP4-EN017
+Blade Knight|SBAD-EN006
+Blade Knight|LDK2-ENK13
+Blade Knight|YS15-ENF07
+Blade Knight|BPW2-EN012
+Blade Knight|WGRT-EN012
+Blade Knight|YSKR-EN018
+Blade Knight|YS11-EN014
+Blade Knight|DT04-EN003
+Blade Knight|DL09-EN007
+Blade Knight|CP06-EN007
+Blade Knight|DB2-EN034
+Blade Knight|CT1-EN002
+Blade Skater|SGX1-ENE01
+Blade Skater|DR04-EN063
+Blade Skater|EEN-EN003
+Blindly Loyal Goblin|DCR-EN022
+Blindly Loyal Goblin|DCR-EN022
+Blindly Loyal Goblin|DR1-EN184
+Blindly Loyal Goblin|DCR-022
+Blizzard Warrior|HAC1-EN030
+Blizzard Warrior|DT01-EN011
+Blizzard Warrior|HA01-EN002
+Blue Flame Swordsman|LDK2-ENJ14
+Blue Flame Swordsman|LC04-EN001
+Blue Mountain Butterspy|LEHD-ENC07
+Blue Mountain Butterspy|NUMH-EN012
+Boost Warrior|BLAR-EN063
+Boost Warrior|DP10-EN012
+Cameraclops|BPW2-EN048
+Cameraclops|WGRT-EN048
+Celtic Guardian|YGLD-ENA09
+Chaos-End Master|RGBT-EN092
+Colossal Fighter|BATT-EN018
+Colossal Fighter|TU05-EN000
+Cyber Gymnast|BPW2-EN016
+Cyber Gymnast|WGRT-EN016
+Cyber Prima|BPW2-EN017
+Cyber Prima|WGRT-EN017
+Cyber Tutu|SGX1-ENE07
+D.D. Esper Star Sparrow|BPW2-EN056
+D.D. Esper Star Sparrow|WGRT-EN056
+Dark Grepher|PTDN-ENSP1
+Dark Scorpion - Cliff the Trap Remover|DR1-EN133
+Dark Scorpion - Cliff the Trap Remover|MFC-078
+Defender of the Labyrinth|MP20-EN127
+Destiny HERO - Defender|BPW2-EN019
+Destiny HERO - Defender|WGRT-EN019
+Destiny HERO - Destroyer Phoenix Enforcer|POTE-EN100
+Destiny HERO - Dominance|MP20-EN064
+Destiny HERO - Drawhand|MP20-EN055
+Divine Knight Ishzark|LCJW-EN046
+Divine Knight Ishzark|LODT-EN091
+Dododo Warrior|BPW2-EN059
+Dododo Warrior|WGRT-EN059
+Dragodies, the Empowered Warrior|MP17-EN120
+Dragodies, the Empowered Warrior|TDIL-EN093
+Dragon Horn Hunter|DUEA-ENSP1
+Drill Warrior|DREV-ENSE1
+Driven Daredevil|LC5D-EN248
+Driven Daredevil|ORCS-EN097
+Dual Avatar - Empowered Mitsu-Jaku|BLVO-EN041
+Dual Avatar - Manifested A-Un|CYAC-EN038
+Dual Avatar Feet - Armored Un-Gyo|PHRA-EN033
+Dual Avatar Feet - Kokoku|PHRA-EN015
+Dual Avatar Fists - Armored Ah-Gyo|PHRA-EN032
+Dual Avatar Fists - Yuhi|PHRA-EN014
+Dust Knight|REDU-EN034
+Dverg of the Nordic Alfar|OP18-EN015
+Dverg of the Nordic Alfar|LEHD-ENB05
+Dverg of the Nordic Alfar|LC5D-EN183
+Dverg of the Nordic Alfar|STOR-EN016
+Earth Armor Ninja|SP13-EN018
+Earth Armor Ninja|SP13-EN018
+Earth Armor Ninja|ORCS-EN016
+Edea the Heavenly Squire|BROL-EN078
+Edea the Heavenly Squire|SR01-EN003
+Ehren, Lightsworn Monk|SR02-EN021
+Ehren, Lightsworn Monk|SDLI-EN011
+Ehren, Lightsworn Monk|DT07-EN059
+Ehren, Lightsworn Monk|CT08-EN016
+Ehren, Lightsworn Monk|LODT-EN082
+Eka the Flame Buddy|MP23-EN130
+Eka the Flame Buddy|POTE-EN034
+Elder of the Six Samurai|SDWA-EN021
+Elder of the Six Samurai|SAAS-EN001
+Elder of the Six Samurai|EXVC-EN028
+Elemental HERO Absolute Zero|BLHR-EN065
+Elemental HERO Absolute Zero|OP05-EN023
+Elemental HERO Absolute Zero|GENF-ENSE1
+Elemental HERO Absolute Zero|YG04-EN001
+Elemental HERO Air Neos|STON-EN034
+Elemental HERO Air Neos|STON-EN034
+Elemental HERO Aqua Neos|LCGX-EN057
+Elemental HERO Aqua Neos|DP03-EN012
+Elemental HERO Aqua Neos|POTD-EN031
+Elemental HERO Aqua Neos|POTD-EN031
+Elemental HERO Avian|SGX3-ENA02
+Elemental HERO Avian|SGX2-ENA01
+Elemental HERO Avian|SGX1-ENA01
+Elemental HERO Avian|SDHS-EN006
+Elemental HERO Avian|RYMP-EN001
+Elemental HERO Avian|LCGX-EN001
+Elemental HERO Avian|LCGX-EN002
+Elemental HERO Avian|YSDJ-EN005
+Elemental HERO Avian|DR3-EN181
+Elemental HERO Avian|YSD-EN007
+Elemental HERO Avian|DP1-EN001
+Elemental HERO Avian|TLM-EN001
+Elemental HERO Bladedge|SGX2-ENA09
+Elemental HERO Bladedge|SGX1-ENA09
+Elemental HERO Bladedge|SDHS-EN009
+Elemental HERO Bladedge|LCGX-EN013
+Elemental HERO Bladedge|DR04-EN067
+Elemental HERO Bladedge|YSDJ-EN018
+Elemental HERO Bladedge|DP03-EN002
+Elemental HERO Bladedge|YSD-EN019
+Elemental HERO Bladedge|EEN-EN007
+Elemental HERO Bladedge|EEN-EN007
+Elemental HERO Blazeman|STP6-EN009
+Elemental HERO Blazeman|SGX2-ENA11
+Elemental HERO Blazeman|LEHD-ENA16
+Elemental HERO Blazeman|WSUP-EN032
+Elemental HERO Brave Neos|SAST-EN035
+Elemental HERO Bubbleman|SGX2-ENA08
+Elemental HERO Bubbleman|SGX2-ENA08
+Elemental HERO Bubbleman|SGX1-ENA08
+Elemental HERO Bubbleman|SDHS-EN012
+Elemental HERO Bubbleman|LCGX-EN012
+Elemental HERO Bubbleman|DR04-EN014
+Elemental HERO Bubbleman|YSDJ-EN017
+Elemental HERO Bubbleman|DP1-EN009
+Elemental HERO Bubbleman|CRV-EN014
+Elemental HERO Bubbleman|CRV-EN014
+Elemental HERO Burstinatrix|SGX3-ENA03
+Elemental HERO Burstinatrix|SGX2-ENA02
+Elemental HERO Burstinatrix|SGX1-ENA02
+Elemental HERO Burstinatrix|LART-EN041
+Elemental HERO Burstinatrix|RYMP-EN002
+Elemental HERO Burstinatrix|LCGX-EN003
+Elemental HERO Burstinatrix|LCGX-EN004
+Elemental HERO Burstinatrix|YSDJ-EN006
+Elemental HERO Burstinatrix|MDP2-EN003
+Elemental HERO Burstinatrix|DR3-EN182
+Elemental HERO Burstinatrix|YSD-EN008
+Elemental HERO Burstinatrix|DP1-EN002
+Elemental HERO Burstinatrix|TLM-EN002
+Elemental HERO Captain Gold|LCGX-EN026
+Elemental HERO Captain Gold|GLD2-EN025
+Elemental HERO Captain Gold|DP06-EN004
+Elemental HERO Captain Gold|FOTB-EN014
+Elemental HERO Captain Gold|FOTB-EN014
+Elemental HERO Chaos Neos|BLAR-EN055
+Elemental HERO Chaos Neos|SHVA-EN035
+Elemental HERO Chaos Neos|LCGX-EN065
+Elemental HERO Chaos Neos|GLAS-EN036
+Elemental HERO Chaos Neos|GLAS-EN036
+Elemental HERO Clayman|SGX3-ENA04
+Elemental HERO Clayman|SGX2-ENA03
+Elemental HERO Clayman|SGX1-ENA03
+Elemental HERO Clayman|LCGX-EN005
+Elemental HERO Clayman|YSDJ-EN007
+Elemental HERO Clayman|DR3-EN183
+Elemental HERO Clayman|YSD-EN009
+Elemental HERO Clayman|DP1-EN003
+Elemental HERO Clayman|TLM-EN003
+Elemental HERO Core|SHVI-ENSE2
+Elemental HERO Core|JUMP-EN071
+Elemental HERO Cosmo Neos|SAST-EN036
+Elemental HERO Dark Neos|LCGX-EN059
+Elemental HERO Dark Neos|DP03-EN014
+Elemental HERO Dark Neos|POTD-EN033
+Elemental HERO Dark Neos|POTD-EN033
+Elemental HERO Darkbright|SGX1-ENA25
+Elemental HERO Darkbright|LCGX-EN063
+Elemental HERO Darkbright|DT04-EN036
+Elemental HERO Darkbright|TAEV-EN042
+Elemental HERO Darkbright|TAEV-EN042
+Elemental HERO Divine Neos|RYMP-EN020
+Elemental HERO Divine Neos|LCGX-EN077
+Elemental HERO Divine Neos|CSOC-EN098
+Elemental HERO Electrum|SGX2-ENA22
+Elemental HERO Electrum|RYMP-EN017
+Elemental HERO Electrum|LCGX-EN052
+Elemental HERO Electrum|MDP2-EN001
+Elemental HERO Escuridao|BLAR-EN056
+Elemental HERO Escuridao|SP13-EN046
+Elemental HERO Escuridao|SP13-EN046
+Elemental HERO Escuridao|YG09-EN001
+Elemental HERO Flame Wingman|SGX1-ENA21
+Elemental HERO Flame Wingman|SGX1-ENA21
+Elemental HERO Flame Wingman|HAC1-EN019
+Elemental HERO Flame Wingman|RYMP-EN016
+Elemental HERO Flame Wingman|LCGX-EN045
+Elemental HERO Flame Wingman|DT03-EN035
+Elemental HERO Flame Wingman|DR3-EN215
+Elemental HERO Flame Wingman|DP1-EN010
+Elemental HERO Flame Wingman|TLM-EN035
+Elemental HERO Flame Wingman|TLM-EN035
+Elemental HERO Flame Wingman - Infernal Rage|BLMR-EN012
+Elemental HERO Flare Neos|LCGX-EN058
+Elemental HERO Flare Neos|DP03-EN013
+Elemental HERO Flare Neos|POTD-EN032
+Elemental HERO Flare Neos|POTD-EN032
+Elemental HERO Flash|GENF-EN090
+Elemental HERO Gaia|DT06-EN034
+Elemental HERO Gaia|CT08-EN011
+Elemental HERO Gaia|ANPR-EN099
+Elemental HERO Glow Neos|LCGX-EN061
+Elemental HERO Glow Neos|STON-EN036
+Elemental HERO Glow Neos|STON-EN036
+Elemental HERO Grand Neos|LCGX-EN060
+Elemental HERO Grand Neos|CT04-EN001
+Elemental HERO Grand Neos|STON-EN035
+Elemental HERO Grand Neos|STON-EN035
+Elemental HERO Grandmerge|DUPO-EN004
+Elemental HERO Great Tornado|SDHS-EN045
+Elemental HERO Great Tornado|LC02-EN010
+Elemental HERO Honest Neos|LDS3-EN102
+Elemental HERO Honest Neos|LED6-EN019
+Elemental HERO Honest Neos|BLRR-EN079
+Elemental HERO Honest Neos|DUSA-EN028
+Elemental HERO Ice Edge|AP01-EN018
+Elemental HERO Ice Edge|STOR-EN098
+Elemental HERO Liquid Soldier|LDS3-EN103
+Elemental HERO Liquid Soldier|LED6-EN013
+Elemental HERO Liquid Soldier|LED6-EN013
+Elemental HERO Magma Neos|SHVA-EN034
+Elemental HERO Magma Neos|LCGX-EN064
+Elemental HERO Magma Neos|TAEV-EN043
+Elemental HERO Marine Neos|LCGX-EN062
+Elemental HERO Marine Neos|TAEV-EN041
+Elemental HERO Mariner|SGX2-ENA24
+Elemental HERO Mariner|LCGX-EN054
+Elemental HERO Mariner|DR04-EN214
+Elemental HERO Mariner|EOJ-EN034
+Elemental HERO Mudballman|RYMP-EN018
+Elemental HERO Mudballman|LCGX-EN053
+Elemental HERO Mudballman|MDP2-EN002
+Elemental HERO Nebula Neos|CT15-EN001
+Elemental HERO Necroid Shaman|SGX2-ENE11
+Elemental HERO Necroid Shaman|LCGX-EN056
+Elemental HERO Necroid Shaman|DR04-EN216
+Elemental HERO Necroid Shaman|EOJ-EN036
+Elemental HERO Necroshade|SGX1-ENA11
+Elemental HERO Necroshade|SDHS-EN010
+Elemental HERO Necroshade|RYMP-EN005
+Elemental HERO Necroshade|LCGX-EN015
+Elemental HERO Necroshade|DT04-EN007
+Elemental HERO Necroshade|YSDJ-EN000
+Elemental HERO Necroshade|GX1-EN001
+Elemental HERO Neo Bubbleman|DR04-EN124
+Elemental HERO Neo Bubbleman|SOI-EN004
+Elemental HERO Neos|TN23-EN006
+Elemental HERO Neos|MAMA-EN106
+Elemental HERO Neos|HAC1-EN004
+Elemental HERO Neos|MGED-EN004
+Elemental HERO Neos|DUPO-EN102
+Elemental HERO Neos|SHVA-EN031
+Elemental HERO Neos|SDHS-EN007
+Elemental HERO Neos|RYMP-EN004
+Elemental HERO Neos|LCGX-EN008
+Elemental HERO Neos|DL12-EN001
+Elemental HERO Neos|DT01-EN005
+Elemental HERO Neos|DTP1-EN005
+Elemental HERO Neos|DTP1-EN005
+Elemental HERO Neos|DP03-EN001
+Elemental HERO Neos|CT03-EN001
+Elemental HERO Neos|POTD-EN001
+Elemental HERO Neos Alius|BLAR-EN053
+Elemental HERO Neos Alius|OP09-EN013
+Elemental HERO Neos Alius|PGL2-EN029
+Elemental HERO Neos Alius|SDHS-EN008
+Elemental HERO Neos Alius|DT06-EN052
+Elemental HERO Neos Alius|RYMP-EN010
+Elemental HERO Neos Alius|LCGX-EN028
+Elemental HERO Neos Alius|GLD2-EN028
+Elemental HERO Neos Alius|DP06-EN005
+Elemental HERO Neos Alius|TAEV-EN018
+Elemental HERO Neos Alius|TAEV-EN018
+Elemental HERO Neos Knight|BLHR-EN064
+Elemental HERO Neos Knight|EXVC-EN093
+Elemental HERO Neos Knight|EXVC-EN093
+Elemental HERO Nova Master|STP6-EN011
+Elemental HERO Nova Master|SGX2-ENA25
+Elemental HERO Nova Master|BLLR-EN056
+Elemental HERO Nova Master|GENF-EN093
+Elemental HERO Nova Master|GENF-EN093
+Elemental HERO Ocean|SDHS-EN002
+Elemental HERO Ocean|LCGX-EN025
+Elemental HERO Ocean|DT05-EN014
+Elemental HERO Ocean|CT07-EN018
+Elemental HERO Ocean|CP07-EN006
+Elemental HERO Ocean|JUMP-EN013
+Elemental HERO Phoenix Enforcer|LCGX-EN138
+Elemental HERO Phoenix Enforcer|DR04-EN212
+Elemental HERO Phoenix Enforcer|DP05-EN012
+Elemental HERO Phoenix Enforcer|EOJ-EN032
+Elemental HERO Phoenix Enforcer|EOJ-EN032
+Elemental HERO Plasma Vice|STP5-EN003
+Elemental HERO Plasma Vice|SGX1-ENA26
+Elemental HERO Plasma Vice|LCGX-EN066
+Elemental HERO Plasma Vice|CT04-EN006
+Elemental HERO Plasma Vice|GLAS-EN037
+Elemental HERO Prisma|FUEN-EN047
+Elemental HERO Prisma|PGL2-EN072
+Elemental HERO Prisma|RYMP-EN012
+Elemental HERO Prisma|LCGX-EN033
+Elemental HERO Prisma|DT03-EN007
+Elemental HERO Prisma|GLD3-EN014
+Elemental HERO Prisma|DPCT-EN002
+Elemental HERO Rampart Blaster|SGX1-ENA23
+Elemental HERO Rampart Blaster|LCGX-EN047
+Elemental HERO Rampart Blaster|DR04-EN093
+Elemental HERO Rampart Blaster|DP1-EN012
+Elemental HERO Rampart Blaster|EEN-EN033
+Elemental HERO Rampart Blaster|EEN-EN033
+Elemental HERO Shadow Mist|LEHD-ENA15
+Elemental HERO Shadow Mist|SDHS-EN001
+Elemental HERO Shining Flare Wingman|SGX3-ENI25
+Elemental HERO Shining Flare Wingman|SGX3-ENI25
+Elemental HERO Shining Flare Wingman|HAC1-EN020
+Elemental HERO Shining Flare Wingman|BLAR-EN054
+Elemental HERO Shining Flare Wingman|LCGX-EN050
+Elemental HERO Shining Flare Wingman|DT03-EN086
+Elemental HERO Shining Flare Wingman|DR04-EN096
+Elemental HERO Shining Flare Wingman|CT03-EN004
+Elemental HERO Shining Flare Wingman|EEN-EN036
+Elemental HERO Shining Flare Wingman|EEN-EN036
+Elemental HERO Stratos|BODE-EN100
+Elemental HERO Stratos|MAGO-EN004
+Elemental HERO Stratos|OP09-EN001
+Gagaga Cowboy|AP05-EN002
+Gagaga Cowboy|CT10-EN010
+Gaia The Fierce Knight|YGLD-ENA05
+Gaia the Fierce Knight Origin|
+General Raiho of the Ice Barrier|BPW2-EN039
+General Raiho of the Ice Barrier|WGRT-EN039
+Giltia the D. Knight - Soul Spear|LDS3-EN137
+Gold Pride - Leon|
+Gold Pride - Leon|PHHY-ENSP1
+Grandmaster of the Six Samurai|BATT-EN016
+Guardian of Order|LODT-ENSP1
+Hand of the Six Samurai|STOR-ENSE2
+Hard Armor|LOB-EN074
+Hard Armor|LOB-074
+Heroic Challenger - Night Watchman|BPW2-EN054
+Heroic Challenger - Night Watchman|WGRT-EN054
+Ignoble Knight of Black Laundsallyn|ABYR-ENSP1
+Junk Forward|BPW2-EN046
+Junk Forward|WGRT-EN046
+Junk Gardna|YMP1-EN006
+Kanan the Swordmistress|WCS-001
+Kuraz the Light Monarch|OP02-EN002
+Legendary Six Samurai - Shi En|RYMP-ENSE1
+Masked HERO Acid|TOCH-EN045
+Masked HERO Acid|PRC1-EN018
+Masked HERO Blast|RATE-ENSE2
+Masked HERO Dark Law|OP01-EN003
+Neo Space Connector|MP20-EN007
+Noble Knight Gawayn|REDU-ENSP1
+Number 39: Utopia|OP17-EN001
+Number 39: Utopia|BLAR-EN000
+Number 90: Galaxy-Eyes Photon Lord|BLRR-EN033
+Number S39: Utopia the Lightning|OP04-EN001
+Number S39: Utopia the Lightning|TDIL-ENSE2
+Number XX: Utopic Dark Infinity|MP20-EN094
+Obnoxious Celtic Guard|SD5-EN007
+Photon Papilloperative|AP02-EN002
+Photon Thrasher|AP01-EN003
+Power Breaker|BPW2-EN037
+Power Breaker|WGRT-EN037
+Rose, Warrior of Revenge|CSOC-ENSP1
+Sakyo, Swordmaster of the Far East|2015-EN002
+Silent Swordsman LV3|YGLD-ENC08
+Silent Swordsman LV5|YGLD-ENC07
+Silent Swordsman LV7|YGLD-ENC06
+Sky Striker Ace - Raye|OP20-EN002
+Strike Ninja|BATT-EN003
+Subterror Nemesis Warrior|TDIL-ENSE3
+Swallowtail Butterspy|BPW2-EN047
+Swallowtail Butterspy|WGRT-EN047
+Tatakawa Knight|LTGY-EN005
+Tearlaments Reinoheart|OP21-EN002
+Utopic Onomatopoeia|DUPO-EN009
+Visas Starfrost|CYAC-EN100
+Visas Starfrost|
+Xtra HERO Cross Crusader|MP20-EN070
+Zubaba General|WGRT-EN104
+Battlestorm|RGBT-ENSP1
+Blackwing - Elphin the Raven|BPW2-EN026
+Blackwing - Elphin the Raven|WGRT-EN026
+Blackwing - Elphin the Raven|CT06-ENS01
+Blackwing - Gram the Shining Star|TDIL-ENSE1
+Blackwing Armor Master|BATT-EN009
+Castel, the Skyblaster Musketeer|AP07-EN002
+Cyber Harpie Lady|BATT-EN012
+D.D. Crow|ROTD-EN100
+Earthbound Immortal Aslla piscu|CT06-ENS02
+Floowandereeze & Empen|
+Gladiator Beast Gyzarus|BATT-EN008
+Gladiator Beast Sagittarii|MP20-EN155
+Hraesvelgr, the Desperate Doom Eagle|MP20-EN141
+Kaiser Eagle, the Heavens' Mandate|2019-EN001
+Raider's Wing|MP21-EN166
+Sky Scout|DB1-EN094
+Sky Scout|SDJ-011
+Sky Scout|PSV-049
+Tornado Bird|DB2-EN009
+Ulevo|WCS-EN401
+Vortex the Whirlwind|STOR-ENSP1
+Winged Sage Falcos|BPW2-EN007
+Winged Sage Falcos|WGRT-EN007
+Berserker of the Tenyi|MP20-EN123
+Draco Berserker of the Tenyi|MP20-EN166
+Draco Masters of the Tenyi|MP20-EN205
+Mementoal Tecuhtlica - Combined Creation|VASM-EN001
+Monk of the Tenyi|MP20-EN121
+Shaman of the Tenyi|MP20-EN122
+Tenyi Spirit - Adhara|MP20-EN106
+Tenyi Spirit - Ashuna|MP20-EN161
+Tenyi Spirit - Mapura|MP20-EN108
+Tenyi Spirit - Nahata|MP20-EN109
+Tenyi Spirit - Shthana|MP20-EN107
+Tenyi Spirit - Vishuda|MP20-EN110
+Astra Ghouls|MP20-EN201
+Ghost Reaper & Winter Cherries|OP20-EN001
+Ghostrick Ghoul|SHSP-ENSP1
+Number 22: Zombiestein|RATE-ENSE1
+Number 23: Lancelot, Dark Knight of the Underworld|BOSH-ENSE2
+Red Ogre|BPW2-EN025
+Red Ogre|WGRT-EN025
+Scapeghost|SHVI-ENSE4
+Shinobi Necro|MP20-EN049
+Shiranui Squiresaga|SAST-ENSP1
+Spirit Reaper|BATT-EN013
+Vampire Baby|DB1-EN200
+Vampire Baby|PSV-090
+Vendread Scavenger|POTE-EN040
+Black Luster Ritual|YGLD-ENA36
+Black Magic Ritual|YGLD-ENC32
+Abominable Chamber of the Unchained|MP20-EN192
+Adhesion Trap Hole|BPW2-EN083
+Adhesion Trap Hole|WGRT-EN083
+Amazement Family Faces|LIOV-EN070
+Apple of Enlightenment|MP20-EN046
+Appointer of the Red Lotus|SDFC-EN035
+Attention!|BPW2-EN090
+Attention!|WGRT-EN090
+Beast Soul Swap|DL16-EN015
+Beast Soul Swap|DR3-EN175
+Beast Soul Swap|FET-EN055
+Blasting Fuse|CDIP-EN049
+Blasting Fuse|CDIP-EN049
+Blasting the Ruins|IOC-EN048
+Blasting the Ruins|DR2-EN048
+Blasting the Ruins|IOC-048
+Blasting the Ruins|IOC-EN048
+Blazing Mirror Force|SDPL-EN034
+Blazing Mirror Force|PGL3-EN100
+Blazing Mirror Force|DOCS-EN076
+Blessings for Gusto|HA05-EN059
+Blessings for Gusto|DT05-EN097
+Blind Obliteration|COTD-EN079
+Blooming of the Darkest Rose|LDS2-EN120
+Blooming of the Darkest Rose|LED4-EN027
+Blossom Bombardment|LC5D-EN108
+Blossom Bombardment|TSHD-EN074
+Bonding - DHO|SGX2-ENC18
+Bonding - DHO|LEDU-EN039
+Bone Temple Block|RGBT-EN077
+Boo-Boo Game|LIOV-EN079
+Booby Trap E|WIRA-EN013
+Boot-Up Order - Gear Force|FIGA-EN004
+Born from Draconis|GEIM-EN044
+Born from Draconis|BLRR-EN017
+Butterflyoke|BPW2-EN093
+Butterflyoke|WGRT-EN093
+Butterspy Protection|BPW2-EN097
+Butterspy Protection|WGRT-EN097
+Bye Bye Damage|MP20-EN202
+Card of Last Will|LC04-EN003
+Cemetary Bomb|SOD-EN059
+Chain Destruction|YGLD-ENB38
+Chain Hole|MP20-EN083
+Chthonian Blast|BPW2-EN086
+Chthonian Blast|WGRT-EN086
+Confusion Chaff|DP08-EN026
+Conscription|BPW2-EN085
+Conscription|WGRT-EN085
+Counter Gem|DP07-EN024
+Covering Fire|BPW2-EN084
+Covering Fire|WGRT-EN084
+Crush Card Virus|DPKB-EN039
+D.D. Dynamite|DR3-EN177
+Dances with Beasts|MP20-EN203
+Dark Renewal|SBC1-ENG19
+Dark Renewal|SBC1-ENG19
+Dark Renewal|LEDD-ENA30
+Dark Renewal|YGLD-ENB00
+Dark Scheme|SDGU-EN031
+Dark Scorpion Combination|DCR-EN098
+Dark Scorpion Combination|DCR-EN098
+Dark Scorpion Combination|DR1-EN260
+Dark Spirit of the Silent|RP02-EN044
+Dark Spirit of the Silent|DB2-EN013
+Dark Spirit of the Silent|LON-079
+Darkfall|DL16-EN020
+Darkfall|STBL-EN080
+Destined Rivals|MP20-EN248
+Destruction Sword Flash|CORE-ENSE4
+Dimension Slice|BPW2-EN094
+Dimension Slice|WGRT-EN094
+Draw Discharge|MP20-EN132
+Dust Tornado|YS15-END18
+Escape of the Unchained|MP20-EN191
+Evil Eye Defeat|MP20-EN242
+Get Out!|MP20-EN137
+Gladiator Beast Charge|MP20-EN193
+Gleipnir, the Fetters of Fenrir|BATT-EN011
+Graceful Tear|MP17-EN045
+Graceful Tear|SHVI-EN080
+Grave Lure|DR3-EN236
+Grave Lure|TLM-EN056
+Gravedigger's Trap Hole|SDBT-EN033
+Gravedigger's Trap Hole|MP21-EN086
+Gravedigger's Trap Hole|ETCO-EN078
+Gravelstorm|SGX1-ENF19
+Gravelstorm|GENF-EN080
+Graverobber|PSV-EN008
+Graverobber|DB1-EN072
+Graverobber|PSV-008
+Graydle Split|DOCS-EN075
+Grinning Grave Virus|SR06-EN030
+Grisaille Prison|FUEN-EN059
+Grisaille Prison|SHSP-EN078
+Gryphon Wing|OP15-EN013
+Gryphon Wing|LCJW-EN110
+Gryphon Wing|SDP-050
+Guard Go!|WSUP-EN029
+Guard Mines|DP11-EN028
+Guard Mines|TSHD-EN067
+Guardragon Cataclysm|MP20-EN032
+Guardragon Cataclysm|SAST-EN073
+Gunkan Suship Daily Special|MP22-EN169
+Gunkan Suship Daily Special|DAMA-EN074
+Gust|PSV-EN017
+Gust|PSV-017
+Half Counter|SGX3-END20
+Half Counter|BP02-EN207
+Half Counter|BP02-EN207
+Half Counter|STBL-EN070
+Half or Nothing|BP02-EN201
+Half or Nothing|BP02-EN201
+Half or Nothing|BP01-EN101
+Half or Nothing|BP01-EN101
+Half or Nothing|CRMS-EN067
+Half Unbreak|MP16-EN040
+Half Unbreak|CROS-EN090
+Halfway to Forever|LED6-EN044
+Halfway to Forever|DUSA-EN040
+Hallowed Life Barrier|SGX1-ENE18
+Hallowed Life Barrier|DR3-EN060
+Hallowed Life Barrier|SOD-EN060
+Hallowed Life Barrier|SOD-EN060
+Harpie Lady Elegance|LDS2-EN089
+Harpie Lady Elegance|LED4-EN005
+Harpie's Feather Storm|RA01-EN073
+Harpie's Feather Storm|RA01-EN073
+Harpie's Feather Storm|RA01-EN073
+Harpie's Feather Storm|RA01-EN073
+Harpie's Feather Storm|RA01-EN073
+Harpie's Feather Storm|RA01-EN073
+Harpie's Feather Storm|RA01-EN073
+Harpie's Feather Storm|LDS2-EN088
+Harpie's Feather Storm|LED4-EN000
+Harpie's Feather Storm|DUSA-EN027
+Hate Buster|BP03-EN205
+Hate Buster|BP03-EN205
+Hate Buster|DT04-EN097
+Hate Buster|PTDN-EN066
+Hatsugai|CYAC-EN080
+Haunted Shrine|STP3-EN030
+Haunted Shrine|SBTK-EN043
+Haunted Shrine|SR07-EN035
+Haunted Zombies|MP23-EN106
+Haunted Zombies|DIFO-EN076
+Heartfelt Appeal|SP13-EN036
+Heartfelt Appeal|SP13-EN036
+Heartfelt Appeal|YS12-EN029
+Heartfelt Appeal|PHSW-EN063
+Heavy Slump|MYFI-EN059
+Heavy Slump|AP03-EN026
+Heavy Slump|DR3-EN054
+Heavy Slump|SOD-EN054
+Heavy Storm Duster|SDFC-EN039
+Heavy Storm Duster|DUDE-EN050
+Heavy Storm Duster|MP18-EN086
+Heavy Storm Duster|COTD-EN076
+Heraldry Change|CBLZ-EN070
+Hero Barrier|LCGX-EN108
+Hero Barrier|DR04-EN109
+Hero Barrier|DP03-EN027
+Hero Barrier|EEN-EN049
+Hero Barrier|EEN-EN049
+Hero Blast|SDHS-EN036
+Hero Blast|RYMP-EN032
+Hero Blast|LCGX-EN120
+Hero Blast|LODT-EN064
+Hero Counterattack|SGX2-ENA20
+Hero Counterattack|LCGX-EN118
+Hero Counterattack|DP06-EN023
+Hero Counterattack|TAEV-EN064
+Hero Medal|DP06-EN021
+Hero Medal|STON-EN050
+Hero Medal|STON-EN050
+Hero Ring|SGX2-ENA19
+Hero Ring|LCGX-EN110
+Hero Ring|GX1-EN003
+Hero Signal|SGX3-ENA18
+Hero Signal|SGX2-ENA18
+Hero Signal|LDS3-EN115
+Hero Signal|SGX1-ENA20
+Hero Signal|SDHS-EN035
+Hero Signal|RYMP-EN031
+Hero Signal|LCGX-EN107
+Hero Signal|DR3-EN229
+Hero Signal|DP1-EN028
+Hero Signal|TLM-EN049
+Hero Signal|TLM-EN049
+Hero Spirit|LCGX-EN117
+Hero Spirit|DPK-ENSE3
+Heroic Advance|ABYR-EN069
+Heroic Gift|ABYR-EN068
+Heroic Retribution Sword|REDU-EN068
+Hi-Five the Sky|WSUP-EN030
+Hidden Soldiers|LCYW-EN146
+Hidden Soldiers|SP02-EN003
+Hidden Spellbook|DR1-EN154
+Hidden Spellbook|MFC-099
+Hope for Escape|SDPD-EN040
+Icarus Attack|BATT-EN004
+Infinite Impermanence|OP17-EN002
+Jelly Cannon|MP20-EN197
+Judgment of the Pharaoh|JMP-EN008
+Lightforce Sword|YGLD-ENB37
+Magic Cylinder|YGLD-ENB35
+Magic Cylinder|YS15-ENF22
+Magic Cylinder|YS15-ENL23
+Magic Cylinder|YS15-END17
+Magician's Circle|YGLD-ENC37
+Marincess Cascade|MP20-EN190
+Marincess Current|MP20-EN134
+Marincess Snow|MP20-EN189
+Marincess Wave|MP20-EN133
+Mask of Weakness|YS15-END19
+Mementotlan Fracture Dance|VASM-EN011
+Memory Loss|BPW2-EN096
+Memory Loss|WGRT-EN096
+Miracle Restoring|YGLD-ENC40
+Mirror Force|YS15-ENF21
+Mirror Force|YS15-ENL22
+Mirror Force|YS15-END16
+Muko|DR3-EN057
+Muko|SOD-EN057
+Muko|SOD-EN057
+Needle Ceiling|BPW2-EN081
+Needle Ceiling|WGRT-EN081
+Nitwit Outwit|BPW2-EN092
+Nitwit Outwit|WGRT-EN092
+Nordic Relic Brisingamen|BPW2-EN088
+Nordic Relic Brisingamen|WGRT-EN088
+Nordic Relic Laevateinn|BPW2-EN089
+Nordic Relic Laevateinn|WGRT-EN089
+Peaceful Burial|MP20-EN196
+Pikeru's Second Sight|DR3-EN230
+Pikeru's Second Sight|TLM-EN050
+Pineapple Blast|BPW2-EN082
+Pineapple Blast|WGRT-EN082
+Pinpoint Guard|YS15-ENY18
+Reverse Glasses|BPW2-EN098
+Reverse Glasses|WGRT-EN098
+Ring of Destruction|DPKB-EN036
+Shift|YGLD-ENA40
+Shift|BPW2-EN079
+Shift|WGRT-EN079
+Soul Rope|YGLD-ENB39
+Spin Turn|MP20-EN218
+Storm Dragon's Return|MP20-EN138
+Subterror Succession|MP20-EN033
+Supernatural Regeneration|CRMS-EN077
+That Wacky Alchemy!|BPW2-EN095
+That Wacky Alchemy!|WGRT-EN095
+The Return to the Normal|MP20-EN136
+Time Thief Flyback|MP20-EN042
+Tragedy|YGLD-ENB40
+Trap Hole|YS15-ENY17
+Traptrix Trap Hole Nightmare|AP06-EN003
+White Howling|MP20-EN143
+Witch's Strike|MP20-EN035
+Witchcrafter Masterpiece|MP20-EN231
+World Legacy Cliffhanger|MP20-EN082
+You're in Danger!|MP20-EN087
+Call of the Haunted|YS15-END20
+Call of the Haunted|YS15-ENY19
+Crackdown|MP20-EN084
+Crusher Run|MP20-EN195
+Dark Factory of More Production|MP20-EN034
+Dark Smog|ABYR-ENSE2
+Dwimmered Glimmer|MP20-EN139
+Evil Eye Mesmerism|MP20-EN243
+Fiendish Chain|AP08-EN003
+Gladiator Naumachia|MP20-EN194
+Guardragon Corewakening|MP20-EN031
+Loge's Flame|MP20-EN093
+Loop of Destruction|LCKC-EN110
+Mementotlan Cranium Burst|VASM-EN012
+Raigeki Bottle|BPW2-EN091
+Raigeki Bottle|WGRT-EN091
+Roar of the Earthbound Immortal|LC5D-EN159
+Roar of the Earthbound Immortal|SOVR-EN071
+Safe Zone|BPW2-EN103
+Safe Zone|WGRT-EN103
+Shattered Axe|YGLD-ENC38
+Skill Drain|OP19-EN003
+Spatial Collapse|IOC-EN051
+Spatial Collapse|IOC-EN051
+Spellbinding Circle|YGLD-ENB36
+Stronghold the Moving Fortress|YGLD-ENC39
+Stygian Dirge|LART-EN058
+Stygian Dirge|DL16-EN019
+Stygian Dirge|SOVR-EN078
+The Eye of Truth|YGLD-ENA39
+Xyz Veil|GENF-ENSP1
+Dark Bribe|BPW2-EN087
+Dark Bribe|WGRT-EN087
+Evil Eye Retribution|MP20-EN244
+Fists of the Unrivaled Tenyi|MP20-EN135
+Negate Attack|YS15-ENY20
+Riryoku Field|BPW2-EN080
+Riryoku Field|WGRT-EN080
+Solemn Judgment|OP12-EN003
+Solemn Strike|OP04-EN003

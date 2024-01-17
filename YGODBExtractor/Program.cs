@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿//Joel Campos
+
 using System.Text;
-using System.Xml.Linq;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using System.Collections.Generic;
-using System.Collections;
-using System.Xml;
-using OpenQA.Selenium.DevTools.V118.Browser;
-using OpenQA.Selenium.DevTools.V118.Storage;
 using System.Diagnostics;
 
 namespace YGODBExtractor
@@ -20,9 +12,8 @@ namespace YGODBExtractor
             //STEP 1:Suite Set up
             SUITE_SETUP();
 
-            //STEP 2: Set the TEST GROUP(s)
-            /*
-            List<CardGroup> CardGroups = new List<CardGroup>
+            //STEP 2: Set the TEST GROUP(s)          
+            /*List<CardGroup> CardGroups = new List<CardGroup>
             {
                 CardGroup.Aqua_Monsters,
                 CardGroup.Beast_Monsters,
@@ -47,12 +38,21 @@ namespace YGODBExtractor
                 CardGroup.Warrior_Monsters,
                 CardGroup.WingedBeast_Monsters,
                 CardGroup.Wyrm_Monsters,
-                CardGroup.Zombie_Monsters
+                CardGroup.Zombie_Monsters,
+                CardGroup.Normal_Spells,
+                CardGroup.Continuous_Spells,
+                CardGroup.QuickPlay_Spells,
+                CardGroup.Field_Spells,
+                CardGroup.Equip_Spells,
+                CardGroup.Ritual_Spells,
+                CardGroup.Normal_Traps,
+                CardGroup.Continuous_Traps,
+                CardGroup.Counter_Traps
             };*/
 
             List<CardGroup> CardGroups = new List<CardGroup>
             {
-                CardGroup.Counter_Traps
+                CardGroup.Beast_Monsters
             };
 
             //STEP 3: RUN ALL THE TEST CASES
@@ -65,6 +65,7 @@ namespace YGODBExtractor
 
                     //STEP 4: RUN THE TC
                     MASTERTESTCASE(CurrentTestGroup);
+                    
                 }
                 catch (Exception e)
                 {
@@ -76,7 +77,7 @@ namespace YGODBExtractor
                 //Test Teardown
                 TEST_TEARDOWN(CurrentTestGroup);
             }
-
+         
             //FINAL: Suite Teardown
             SUITE_TEARDOWN();
         }
@@ -434,6 +435,173 @@ namespace YGODBExtractor
             watch.Stop();
             GlobalData.RecordLog($"Execution Time was: {watch.Elapsed} |");
         }
+        private static void TCGRecuerMasterCase()
+        {            
+            LoadTCGRescueList();
+
+            
+            //iterate thru all the cards in the rescue list
+            foreach (KeyValuePair<string, string> RescueCard in CurrentDB.TCGRescueList)
+            {               
+                string CardName = RescueCard.Value;
+                string Code = RescueCard.Key;
+
+                //Use this string builder to save the execution log for this card
+                StringBuilder sb = new StringBuilder();
+                sb.Append("Card:" + CardName + "|CODE:" + Code + "|");
+
+                //Go to this card's PRODECK page
+                if (CurrentDB.ProdeckURLExist(CardName))
+                {
+                    sb.Append("Prodeck URL Found!|");
+                    //Go to the direct url
+
+                    bool ProdeckPageLoadedCorrectly = false;
+                    try
+                    {
+                        Driver.GoToURL(CurrentDB.GetProdeckURL(CardName));
+                        ProdeckCardInfoPage.WaitUntilPageIsLoaded();
+                        ProdeckPageLoadedCorrectly = true;
+                    }
+                    catch (Exception)
+                    {
+                        ProdeckPageLoadedCorrectly = false;
+                    }
+                    if(ProdeckPageLoadedCorrectly) 
+                    {
+                        //Extract all the Price URLS
+                        //Validate if this page contains TCG prices
+                        //This is going to work even if the search failed.
+                        if (ProdeckCardInfoPage.PageContainsTCGPrices())
+                        {
+                            sb.Append("TCG Prices available!|");
+
+                            //Extract the available TCG Player links
+                            List<string> availableUrls = new List<string>();
+                            if (ProdeckCardInfoPage.TCGPricesHasViewMore())
+                            {
+                                //Click the view more and extract the links there
+                                ProdeckCardInfoPage.ClickViewMore();
+
+                                availableUrls = ProdeckCardInfoPage.GetPricesURLsViewMore();
+                                sb.Append(availableUrls.Count + " URLS extracted from view more window.|");
+                            }
+                            else
+                            {
+                                //extract the links directly from the page.
+                                availableUrls = ProdeckCardInfoPage.GetPricesURLsFromPage();
+                                sb.Append(availableUrls.Count + " URLS extracted from page.|");
+                            }
+
+                            //Access each extracted URL and save all that contain the code in question.
+                            List<string> ValidURLS = new List<string>();
+                            foreach (string url in availableUrls)
+                            {
+                                bool PageLoadedCorrectly = false;
+
+                                try
+                                {
+                                    Driver.GoToURL(url);
+                                    PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded();
+                                }
+                                catch (Exception)
+                                {
+                                    PageLoadedCorrectly = false;
+                                }
+
+
+                                if (PageLoadedCorrectly)
+                                {
+                                    string codeInPage = TCGCardInfoPage.GetCode();
+
+                                    if (codeInPage == Code)
+                                    {
+                                        //Save it
+                                        ValidURLS.Add(url);
+                                    }
+                                }
+                                else
+                                {
+                                    sb.Append("***TCG Link Page Failed to load... Review it***|");
+                                }
+                            }
+
+                            //Eliminate to there is only 1 urls
+                            if (ValidURLS.Count == 0)
+                            {
+                                sb.Append("No URLS Exist for this code, review it|");
+                            }
+                            else if (ValidURLS.Count == 1)
+                            {
+                                sb.Append("Single URL extracted, CARD RESCUED!!|");
+                                GlobalData.TCGUrlsRescued.Add(Code + "|" + ValidURLS[0]);
+                            }
+                            else
+                            {
+                                //Eliminate until there is one left.
+                                double initialPrice = 100000;
+                                string winnerURL = "NONE";
+                                foreach (string url in ValidURLS)
+                                {
+                                    bool PageLoadedCorrectly = false;
+                                    try
+                                    {
+                                        Driver.GoToURL(url);
+                                        PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded();
+                                    }
+                                    catch (Exception)
+                                    {
+                                        PageLoadedCorrectly = false;
+                                    }
+
+                                    if (PageLoadedCorrectly)
+                                    {
+                                        string marketpricestr = TCGCardInfoPage.GetMarketPrice();
+                                        double marketprice = CovertPriceToDouble(marketpricestr);
+
+                                        //lowest price wins
+                                        if (marketprice < initialPrice)
+                                        {
+                                            winnerURL = url;
+                                        }
+                                    }
+                                }
+
+                                //Validate after
+                                if (winnerURL == "NONE")
+                                {
+                                    sb.Append("NONE of the valid URLS won.. review|");
+                                }
+                                else
+                                {
+                                    //save the winner
+                                    sb.Append("Winner URL found, CARD RESCUED!!|");
+                                    GlobalData.TCGUrlsRescued.Add(CardName + "|" + Code + "|" + winnerURL);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            sb.Append("No prices at all for this card, fix it manually...|");
+                        }
+                    }
+                    else
+                    {
+                        sb.Append("NO Prodeck URL failed, skip for now...");
+                    }                   
+                }
+                else
+                {
+                    sb.Append("NO Prodeck URL, skip for now...");                   
+                }
+             
+                GlobalData.RecordLog(sb.ToString());
+            }
+
+            //Write out the failed manual search cards
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\TCGUrlsRecued.txt", GlobalData.TCGUrlsRescued);
+            GlobalData.RecordLog("TCGUrlsRecued.txt file overwriten!!");
+        }
         private static void TEST_TEARDOWN(CardGroup CurrentTestGroup)
         {
             //TEST TEARDOWN
@@ -568,6 +736,41 @@ namespace YGODBExtractor
 
             //Log
             GlobalData.RecordLog("Load TCG Player URLs DB Successful!");
+        }
+        private static void LoadTCGRescueList()
+        {
+            //Stream that reads the actual file.
+            StreamReader SR_SaveFile = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\MasterURLFiles\\TCGCodesWithoutURL.txt");
+
+            //First line contains how many links are in this file
+            string Line = SR_SaveFile.ReadLine();
+            int LinksAmount = Convert.ToInt32(Line);
+
+            for (int i = 0; i < LinksAmount; i++)
+            {
+                //Extract the line split the name and URL
+                Line = SR_SaveFile.ReadLine();
+                string[] tokens = Line.Split("|");
+
+                string cardname = tokens[0];
+                string code = tokens[1];
+
+                if (CurrentDB.TCGRescueList.ContainsKey(code))
+                {
+                    Console.WriteLine("Duplicate code found: " + code);
+                }
+                else
+                {
+                    //Populate the Dictionary
+                    CurrentDB.TCGRescueList.Add(code, cardname);
+                }
+            }
+
+            SR_SaveFile.Close();
+
+            //Log
+            GlobalData.RecordLog("Load TCG Rescue List Successful!");
         }
         private static double CovertPriceToDouble(string price)
         {
