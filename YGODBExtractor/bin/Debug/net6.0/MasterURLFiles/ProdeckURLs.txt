@@ -1,4 +1,4 @@
-12314
+12315
 NEXT|https://ygoprodeck.com/card/next-9797
 Return|https://ygoprodeck.com/card/return-4030
 Synchro Material|https://ygoprodeck.com/card/synchro-material-1240
@@ -1537,7 +1537,7 @@ Beelze of the Diabolic Dragons|https://ygoprodeck.com/card/beelze-of-the-diaboli
 Beelzeus of the Diabolic Dragons|https://ygoprodeck.com/card/beelzeus-of-the-diabolic-dragons-742
 Black Brutdrago|https://ygoprodeck.com/card/black-brutdrago-7997
 Black Dragon Collapserpent|https://ygoprodeck.com/card/black-dragon-collapserpent-5240
-Black Dragons Chick|https://ygoprodeck.com/card/black-dragon-s-chick-3064
+Black Dragon's Chick|https://ygoprodeck.com/card/black-dragon-s-chick-3064
 Black Metal Dragon|https://ygoprodeck.com/card/black-metal-dragon-7820
 Black Rose Dragon|https://ygoprodeck.com/card/black-rose-dragon-6177
 Black Rose Moonlight Dragon|https://ygoprodeck.com/card/black-rose-moonlight-dragon-2858
@@ -12313,3 +12313,4 @@ T.G. Mighty Striker|https://ygoprodeck.com/card/t-g-mighty-striker-14063
 Legendary Fire King Ponix|https://ygoprodeck.com/card/legendary-fire-king-ponix-14136
 Mementoal Tecuhtlica - Combined Creation|https://ygoprodeck.com/card/mementoral-tecuhtlica-the-netherskull-dragon-14049
 Vanquish Soul Jiaolong|https://ygoprodeck.com/card/vanquish-soul-jiaolong-14008
+Queen of Fate - Eternia|https://ygoprodeck.com/card/queen-of-fate-eternia-10327
