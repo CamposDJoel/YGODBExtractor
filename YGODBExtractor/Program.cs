@@ -9,11 +9,15 @@ namespace YGODBExtractor
     {      
         static void Main(string[] args)
         {
+            //Master timer
+            var masterwatch = new Stopwatch();
+            masterwatch.Start();
+
             //STEP 1:Suite Set up
             SUITE_SETUP();
 
             //STEP 2: Set the TEST GROUP(s)          
-            /*List<CardGroup> CardGroups = new List<CardGroup>
+            List<CardGroup> CardGroups = new List<CardGroup>
             {
                 CardGroup.Aqua_Monsters,
                 CardGroup.Beast_Monsters,
@@ -48,12 +52,12 @@ namespace YGODBExtractor
                 CardGroup.Normal_Traps,
                 CardGroup.Continuous_Traps,
                 CardGroup.Counter_Traps
-            };*/
+            };
 
-            List<CardGroup> CardGroups = new List<CardGroup>
+            /*List<CardGroup> CardGroups = new List<CardGroup>
             {
                 CardGroup.Beast_Monsters
-            };
+            };*/
 
             //STEP 3: RUN ALL THE TEST CASES
             foreach (CardGroup CurrentTestGroup in CardGroups) 
@@ -77,7 +81,12 @@ namespace YGODBExtractor
                 //Test Teardown
                 TEST_TEARDOWN(CurrentTestGroup);
             }
-         
+
+            //TCGRecuerMasterCase();
+
+            masterwatch.Stop();
+            GlobalData.RecordLog($"Execution Time for the entire script was: {masterwatch.Elapsed} |");
+
             //FINAL: Suite Teardown
             SUITE_TEARDOWN();
         }
@@ -152,13 +161,10 @@ namespace YGODBExtractor
             //Now Access each individual Card
             foreach (KeyValuePair<string, string> card in KonamiURLs)
             {
-                //Use this string builder to save the execution log for this card
-                StringBuilder sb = new StringBuilder();
-
                 //set the card name for readibility and use
                 string CardName = card.Key;
                 string KomaniURL = "https://www.db.yugioh-card.com/" + card.Value;
-                sb.Append("Card:" + CardName + "|");
+                Console.Write("Card:" + CardName + "|");
 
                 //Go to the card info page
                 Driver.GoToURL(KomaniURL);
@@ -171,15 +177,22 @@ namespace YGODBExtractor
                 if (CurrentDB.CardExist(CardName))
                 {
                     //log
-                    sb.Append("Card In DB|");
+                    Console.Write("Card In DB|");
 
-                    //Check its sets
-                    int currentSetsAmountInDB = CurrentDB.GetCard(CardName).SetsCount;
+                    //EXTRA CHECK FOR THE PRODECK URL
+                    if (!CurrentDB.ProdeckURLExist(CardName))
+                    {
+                        //populate the missing prodeck url list
+                        GlobalData.CardsWithoutProdeckURL.Add(CardName);
+                    }
+
+                        //Check its sets
+                        int currentSetsAmountInDB = CurrentDB.GetCard(CardName).SetsCount;
 
                     if (setsCountNow > currentSetsAmountInDB)
                     {
                         //Log
-                        sb.Append("!!!MORE SETS FOUND!!!|");
+                        Console.Write("!!!MORE SETS FOUND!!!|");
 
                         //New Sets exists, extract the sets again and gets the new set(s) TCG links from Prodeck
                         CardInfo CardsNewInfo = CurrentDB.GetCard(CardName).GetCopyWithoutSets();
@@ -196,7 +209,7 @@ namespace YGODBExtractor
                         if (CurrentDB.ProdeckURLExist(CardName))
                         {
                             //log
-                            sb.Append("Prodeck URL Found!|");
+                            Console.Write("Prodeck URL Found!|");
 
                             //Go to the direct url
                             Driver.GoToURL(CurrentDB.GetProdeckURL(CardName));
@@ -205,7 +218,7 @@ namespace YGODBExtractor
                         else
                         {
                             //log
-                            sb.Append("NO Prodeck URL, doing manual search|");
+                            Console.Write("NO Prodeck URL, doing manual search|");
 
                             //Go to prodeck and do a manual search
                             Driver.GoToURL(GlobalData.Prodeck_URL);
@@ -216,17 +229,17 @@ namespace YGODBExtractor
 
                             if (SearchSucess)
                             {
-                                sb.Append("Prodeck Search Success!|");
+                                Console.Write("Prodeck Search Success!|");
 
                                 //save the url of this card so we dont have to search for it again
                                 string currentURL = GlobalData.Chrome.Url;
                                 CurrentDB.ProdeckURLs.Add(CardName, currentURL);
-                                sb.Append("Prodeck URL saved!|");
+                                Console.Write("Prodeck URL saved!|");
                             }
                             else
                             {
                                 //Log
-                                sb.Append("Prodeck search failed!|");
+                                Console.Write("Prodeck search failed!|");
 
                                 //Save this card name to manually get the url
                                 GlobalData.CardsThatFailedManualSearch.Add(CardName);
@@ -238,7 +251,7 @@ namespace YGODBExtractor
                         if (ProdeckCardInfoPage.PageContainsTCGPrices())
                         {
                             //Log
-                            sb.Append("TCG Prices available!|");
+                            Console.Write("TCG Prices available!|");
 
                             //Extract the available TCG Player links
                             List<string> availableUrls = new List<string>();
@@ -248,13 +261,13 @@ namespace YGODBExtractor
                                 ProdeckCardInfoPage.ClickViewMore();
 
                                 availableUrls = ProdeckCardInfoPage.GetPricesURLsViewMore();
-                                sb.Append(availableUrls.Count + " URLS extracted from view more window.|");
+                                Console.Write(availableUrls.Count + " URLS extracted from view more window.|");
                             }
                             else
                             {
                                 //extract the links directly from the page.
                                 availableUrls = ProdeckCardInfoPage.GetPricesURLsFromPage();
-                                sb.Append(availableUrls.Count + " URLS extracted from page.|");
+                                Console.Write(availableUrls.Count + " URLS extracted from page.|");
                             }
 
                             //Scan each set for its price
@@ -266,7 +279,7 @@ namespace YGODBExtractor
                                 if (CurrentDB.TCGPlayerURLExistg(Code))
                                 {
                                     //log
-                                    sb.Append("Code: " + Code + "'s TCG URL Found!|");
+                                    Console.Write("Code: " + Code + "'s TCG URL Found!|");
 
                                     string TCGURL = CurrentDB.GetTCGPlayerURL(Code);
                                     Driver.GoToURL(TCGURL);
@@ -283,13 +296,13 @@ namespace YGODBExtractor
                                     }
                                     else
                                     {
-                                        sb.Append("***TCG Link Page Failed to load... Review it***|");
+                                        Console.Write("***TCG Link Page Failed to load... Review it***|");
                                     }
                                 }
                                 else
                                 {
                                     //log
-                                    sb.Append("Code: " + Code + "'s TCG URL NOT Found!, searching the extracted urls.|");
+                                    Console.Write("Code: " + Code + "'s TCG URL NOT Found!, searching the extracted urls.|");
 
                                     //Find the code in the available links extracted from prodeck
                                     string finalURLUsed = "NONE";
@@ -352,7 +365,7 @@ namespace YGODBExtractor
                                     if (finalURLUsed != "NONE")
                                     {
                                         CurrentDB.TCGPlayerURLs.Add(Code, finalURLUsed);
-                                        sb.Append("URL found and saved!|");
+                                        Console.Write("URL found and saved!|");
                                     }
                                 }
                             }
@@ -360,7 +373,7 @@ namespace YGODBExtractor
                         else
                         {
                             //Do nothing, all prices were set to $0.00 by default.
-                            sb.Append("TCG Prices NOT available! all will be set to zero|");
+                            Console.Write("TCG Prices NOT available! all will be set to zero|");
                         }
 
                         //CardIfo Object is ready, Add it to the new DB
@@ -370,7 +383,7 @@ namespace YGODBExtractor
                     else
                     {
                         //log
-                        sb.Append("No new Sets!|");
+                        Console.Write("No new Sets!|");
 
                         //otherwise simply extract the prices from the saved TCG Player URL list
                         CardInfo CardsNewInfo = CurrentDB.GetCard(CardName).GetCopy();
@@ -380,7 +393,7 @@ namespace YGODBExtractor
                             if (CurrentDB.TCGPlayerURLExistg(Code))
                             {
                                 //log
-                                sb.Append("Code: " + Code + "'s TCG URL Found!|");
+                                Console.Write("Code: " + Code + "'s TCG URL Found!|");
 
                                 string TCGURL = CurrentDB.GetTCGPlayerURL(Code);
                                 Driver.GoToURL(TCGURL);
@@ -397,7 +410,7 @@ namespace YGODBExtractor
                                 }
                                 else
                                 {
-                                    sb.Append("***TCG Link Page Failed to load... Review it***|");
+                                    Console.Write("***TCG Link Page Failed to load... Review it***|");
                                     GlobalData.TCGUrlsThatFailedLoading.Add(thisSet.Code + "|" + TCGURL);
                                 }
 
@@ -406,7 +419,7 @@ namespace YGODBExtractor
                             {
                                 //Do nothing keep the old amount
                                 //log
-                                sb.Append("Code: " + Code + "'s TCG URL NOT available!|");
+                                Console.Write("Code: " + Code + "'s TCG URL NOT available!|");
                                 GlobalData.CodesWithoutTCGLink.Add(CardName + "|" + Code);
                             }
                         }
@@ -416,209 +429,253 @@ namespace YGODBExtractor
                         NewDB.CardNamesList.Add(CardName);
 
                         //log
-                        sb.Append("Prices Overrided!|");
+                        Console.Write("Prices Overrided!|");
                     }
                 }
                 else
                 {
                     //Log
-                    sb.Append("NEW CARD!|");
+                    Console.Write("NEW CARD!|");
 
                     //TODO: Otherwise, extract the whole card
                 }
 
-                //Save the execution log
-                GlobalData.RecordLog(sb.ToString());
+                //Breawkline
+                Console.WriteLine("");
+                Console.WriteLine("------------------------------------------------------------------");
             }
 
             //Stop Timer
             watch.Stop();
-            GlobalData.RecordLog($"Execution Time was: {watch.Elapsed} |");
+            GlobalData.RecordLog($"Execution Time for card group was: {watch.Elapsed} |");
         }
         private static void TCGRecuerMasterCase()
         {            
             LoadTCGRescueList();
 
-            
+            string PreviousName = "NONE";
+            List<string> availableUrls = new List<string>();
             //iterate thru all the cards in the rescue list
             foreach (KeyValuePair<string, string> RescueCard in CurrentDB.TCGRescueList)
             {               
                 string CardName = RescueCard.Value;
                 string Code = RescueCard.Key;
+                GlobalData.RecordLog("Card:" + CardName + "|CODE:" + Code + "|");
 
-                //Use this string builder to save the execution log for this card
-                StringBuilder sb = new StringBuilder();
-                sb.Append("Card:" + CardName + "|CODE:" + Code + "|");
-
-                //Go to this card's PRODECK page
-                if (CurrentDB.ProdeckURLExist(CardName))
+                if(CardName == PreviousName)
                 {
-                    sb.Append("Prodeck URL Found!|");
-                    //Go to the direct url
+                    //Simply use the already existing available urls
+                    GlobalData.RecordLog("Same card as previous, use the existing available urls");
+                }
+                else
+                {
+                    //Save this card as the "previous card"
+                    PreviousName = CardName;
 
-                    bool ProdeckPageLoadedCorrectly = false;
-                    try
+                    //Go search the card
+                    //Go to this card's PRODECK page
+                    if (CurrentDB.ProdeckURLExist(CardName))
                     {
-                        Driver.GoToURL(CurrentDB.GetProdeckURL(CardName));
-                        ProdeckCardInfoPage.WaitUntilPageIsLoaded();
-                        ProdeckPageLoadedCorrectly = true;
-                    }
-                    catch (Exception)
-                    {
-                        ProdeckPageLoadedCorrectly = false;
-                    }
-                    if(ProdeckPageLoadedCorrectly) 
-                    {
-                        //Extract all the Price URLS
-                        //Validate if this page contains TCG prices
-                        //This is going to work even if the search failed.
-                        if (ProdeckCardInfoPage.PageContainsTCGPrices())
+                        GlobalData.RecordLog("Prodeck URL Found!|");
+                        //Go to the direct url
+
+                        bool ProdeckPageIsValid = false;
+                        try
                         {
-                            sb.Append("TCG Prices available!|");
+                            Driver.GoToURL(CurrentDB.GetProdeckURL(CardName));
+                            //ProdeckCardInfoPage.WaitUntilPageIsLoaded();
+                            ProdeckPageIsValid = ProdeckCardInfoPage.IsPageValid();
+                        }
+                        catch (Exception)
+                        {
+                            ProdeckPageIsValid = false;
+                        }
+                        if (ProdeckPageIsValid)
+                        {
+                            //Wait
+                            ProdeckCardInfoPage.WaitUntilPageIsLoaded();
 
-                            //Extract the available TCG Player links
-                            List<string> availableUrls = new List<string>();
-                            if (ProdeckCardInfoPage.TCGPricesHasViewMore())
+                            //Extract all the Price URLS
+                            //Validate if this page contains TCG prices
+                            //This is going to work even if the search failed.
+                            if (ProdeckCardInfoPage.PageContainsTCGPrices())
                             {
-                                //Click the view more and extract the links there
-                                ProdeckCardInfoPage.ClickViewMore();
+                                GlobalData.RecordLog("TCG Prices available!|");
 
-                                availableUrls = ProdeckCardInfoPage.GetPricesURLsViewMore();
-                                sb.Append(availableUrls.Count + " URLS extracted from view more window.|");
-                            }
-                            else
-                            {
-                                //extract the links directly from the page.
-                                availableUrls = ProdeckCardInfoPage.GetPricesURLsFromPage();
-                                sb.Append(availableUrls.Count + " URLS extracted from page.|");
-                            }
-
-                            //Access each extracted URL and save all that contain the code in question.
-                            List<string> ValidURLS = new List<string>();
-                            foreach (string url in availableUrls)
-                            {
-                                bool PageLoadedCorrectly = false;
-
-                                try
+                                //Extract the available TCG Player links
+                                availableUrls = new List<string>();
+                                if (ProdeckCardInfoPage.TCGPricesHasViewMore())
                                 {
-                                    Driver.GoToURL(url);
-                                    PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded();
-                                }
-                                catch (Exception)
-                                {
-                                    PageLoadedCorrectly = false;
-                                }
+                                    //Click the view more and extract the links there
+                                    ProdeckCardInfoPage.ClickViewMore();
 
-
-                                if (PageLoadedCorrectly)
-                                {
-                                    string codeInPage = TCGCardInfoPage.GetCode();
-
-                                    if (codeInPage == Code)
-                                    {
-                                        //Save it
-                                        ValidURLS.Add(url);
-                                    }
+                                    availableUrls = ProdeckCardInfoPage.GetPricesURLsViewMore();
+                                    GlobalData.RecordLog(availableUrls.Count + " URLS extracted from view more window.|");
                                 }
                                 else
                                 {
-                                    sb.Append("***TCG Link Page Failed to load... Review it***|");
+                                    //extract the links directly from the page.
+                                    availableUrls = ProdeckCardInfoPage.GetPricesURLsFromPage();
+                                    GlobalData.RecordLog(availableUrls.Count + " URLS extracted from page.|");
                                 }
-                            }
 
-                            //Eliminate to there is only 1 urls
-                            if (ValidURLS.Count == 0)
-                            {
-                                sb.Append("No URLS Exist for this code, review it|");
-                            }
-                            else if (ValidURLS.Count == 1)
-                            {
-                                sb.Append("Single URL extracted, CARD RESCUED!!|");
-                                GlobalData.TCGUrlsRescued.Add(Code + "|" + ValidURLS[0]);
-                            }
-                            else
-                            {
-                                //Eliminate until there is one left.
-                                double initialPrice = 100000;
-                                string winnerURL = "NONE";
-                                foreach (string url in ValidURLS)
+                                //Clear the urls that are invalid
+                                List<string> removelist = new List<string>();
+                                foreach (string url in availableUrls)
                                 {
                                     bool PageLoadedCorrectly = false;
+
                                     try
                                     {
                                         Driver.GoToURL(url);
-                                        PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded();
+                                        PageLoadedCorrectly = TCGCardInfoPage.IsAValidPage();
                                     }
                                     catch (Exception)
                                     {
                                         PageLoadedCorrectly = false;
                                     }
 
-                                    if (PageLoadedCorrectly)
-                                    {
-                                        string marketpricestr = TCGCardInfoPage.GetMarketPrice();
-                                        double marketprice = CovertPriceToDouble(marketpricestr);
 
-                                        //lowest price wins
-                                        if (marketprice < initialPrice)
-                                        {
-                                            winnerURL = url;
-                                        }
+                                    if (!PageLoadedCorrectly)
+                                    {
+                                        removelist.Add(url);
                                     }
                                 }
 
-                                //Validate after
-                                if (winnerURL == "NONE")
+                                foreach(string url in removelist) 
                                 {
-                                    sb.Append("NONE of the valid URLS won.. review|");
+                                    availableUrls.Remove(url);
                                 }
-                                else
-                                {
-                                    //save the winner
-                                    sb.Append("Winner URL found, CARD RESCUED!!|");
-                                    GlobalData.TCGUrlsRescued.Add(CardName + "|" + Code + "|" + winnerURL);
-                                }
+                                GlobalData.RecordLog(removelist.Count + " bad urls found.");
+                            }
+                            else
+                            {
+                                availableUrls.Clear();
+                                GlobalData.RecordLog("No prices at all for this card, fix it manually...|");
                             }
                         }
                         else
                         {
-                            sb.Append("No prices at all for this card, fix it manually...|");
+                            availableUrls.Clear();
+                            GlobalData.RecordLog("Prodeck URL failed, skip for now...");
                         }
                     }
                     else
                     {
-                        sb.Append("NO Prodeck URL failed, skip for now...");
-                    }                   
+                        GlobalData.RecordLog("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<NO Prodeck URL ");
+                    }
+                }
+
+                //Access each extracted URL and save all that contain the code in question.
+                GlobalData.RecordLog("Validating available urls, url count: " + availableUrls.Count);
+                List<string> ValidURLS = new List<string>();
+                foreach (string url in availableUrls)
+                {
+                    bool PageLoadedCorrectly = false;
+
+                    try
+                    {
+                        Driver.GoToURL(url);
+                        PageLoadedCorrectly = TCGCardInfoPage.IsAValidPage();
+                    }
+                    catch (Exception)
+                    {
+                        PageLoadedCorrectly = false;
+                    }
+
+
+                    if (PageLoadedCorrectly)
+                    {
+                        TCGCardInfoPage.WaitUntilPageIsLoaded();
+                        string codeInPage = TCGCardInfoPage.GetCode();
+
+                        if (codeInPage == Code)
+                        {
+                            //Save it
+                            ValidURLS.Add(url);
+                        }
+                    }
+                    else
+                    {
+                        GlobalData.RecordLog("***TCG Link Page Failed to load... Review it***|");
+                    }
+                }
+
+                foreach(string url in ValidURLS)
+                {
+                    availableUrls.Remove(url);
+                }
+
+                //Eliminate to there is only 1 urls
+                if (ValidURLS.Count == 0)
+                {
+                    GlobalData.RecordLog("No URLS Exist for this code, review it|");
+                }
+                else if (ValidURLS.Count == 1)
+                {
+                    GlobalData.RecordLog("Single URL extracted, <---------------------------------CARD RESCUED!!|");
+                    GlobalData.TCGUrlsRescued.Add(CardName + "|" + Code + "|" + ValidURLS[0]);
+                    //Write out the failed manual search cards
+                    File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\TCGUrlsRecued.txt", GlobalData.TCGUrlsRescued);
+                    GlobalData.RecordLog("TCGUrlsRecued.txt file overwriten!!");
                 }
                 else
                 {
-                    sb.Append("NO Prodeck URL, skip for now...");                   
+                    //Eliminate until there is one left.
+                    double initialPrice = 100000;
+                    string winnerURL = "NONE";
+                    foreach (string url in ValidURLS)
+                    {
+                        bool PageLoadedCorrectly = false;
+                        try
+                        {
+                            Driver.GoToURL(url);
+                            PageLoadedCorrectly = TCGCardInfoPage.IsAValidPage();
+                        }
+                        catch (Exception)
+                        {
+                            PageLoadedCorrectly = false;
+                        }
+
+                        if (PageLoadedCorrectly)
+                        {
+                            TCGCardInfoPage.WaitUntilPageIsLoaded();
+                            string marketpricestr = TCGCardInfoPage.GetMarketPrice();
+                            double marketprice = CovertPriceToDouble(marketpricestr);
+
+                            //lowest price wins
+                            if (marketprice < initialPrice)
+                            {
+                                winnerURL = url;
+                            }
+                        }
+                    }
+
+                    //Validate after
+                    if (winnerURL == "NONE")
+                    {
+                        GlobalData.RecordLog("NONE of the valid URLS won.. review|");
+                    }
+                    else
+                    {
+                        //save the winner
+                        GlobalData.RecordLog("Winner URL found, <---------------------------------CARD RESCUED!!|");
+                        GlobalData.TCGUrlsRescued.Add(CardName + "|" + Code + "|" + winnerURL);
+                        //Write out the failed manual search cards
+                        File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\TCGUrlsRecued.txt", GlobalData.TCGUrlsRescued);
+                        GlobalData.RecordLog("TCGUrlsRecued.txt file overwriten!!");
+                    }
                 }
-             
-                GlobalData.RecordLog(sb.ToString());
+
+                GlobalData.RecordLog("------------------------------------------------------------------");
             }
 
-            //Write out the failed manual search cards
-            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\TCGUrlsRecued.txt", GlobalData.TCGUrlsRescued);
-            GlobalData.RecordLog("TCGUrlsRecued.txt file overwriten!!");
+            GlobalData.RecordLog(">>>>>>>>>>>>>>>> END OF SCRIPT <<<<<<<<<<<<<<<<<<<<<<<<<<<<");
         }
         private static void TEST_TEARDOWN(CardGroup CurrentTestGroup)
         {
             //TEST TEARDOWN
             SavePostRunFiles(CurrentTestGroup);
-
-            //Final Verification
-            /*(if (NewDB.CardNamesList.Count != expectedTotalCards)
-            {
-
-                GlobalData.RecordLog("TEST FAILED!!!!!!!!!!!!!!!!!!");
-                GlobalData.RecordLog("The total # of cards extracted doesnt match the expected #. Verify output file to determine error. Cards in NewDB: " +
-                    NewDB.CardNamesList.Count + " vs expected: " + expectedTotalCards);
-            }
-            else
-            {
-                GlobalData.RecordLog("TEST PASSED!!!!!!!!!!!!!!!!!!");
-            }*/
 
             //CLEAN UP
             CurrentDB.CardInfoList.Clear();
@@ -821,6 +878,13 @@ namespace YGODBExtractor
             //Write out the failed manual search cards
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\TCGUrlsThatFailedLoading.txt", GlobalData.TCGUrlsThatFailedLoading);
             GlobalData.RecordLog("TCGUrlsThatFailedLoading.txt file overwriten!!");
+
+            /////////////////////////////////////////////////////////
+            
+            //Write out the TCG URLS that failed to load
+            //Write out the failed manual search cards
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\CardsWithoutProdeckURLS.txt", GlobalData.CardsWithoutProdeckURL);
+            GlobalData.RecordLog("CardsWithoutProdeckURLS.txt file overwriten!!");
 
             /////////////////////////////////////////////////////////
 

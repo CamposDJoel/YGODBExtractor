@@ -17,6 +17,7 @@ namespace YGODBExtractor
         public static string Xpath_MediamPrice = "//section[@class=\"price-points price-guide__points\"]/table/tr[4]/td[2]/span";
 
         public static string Xpath_InvalidPage = "//span[.='Sorry but that page does not exist on our site!']";
+        public static string Xpath_404Page = "//h1[.=' Sorry, we couldn’t find that page. ']";
 
         public static bool WaitUntilPageIsLoaded()
         {
@@ -35,7 +36,8 @@ namespace YGODBExtractor
 
         public static bool IsAValidPage()
         {
-            return !Element.ElementExist(Xpath_InvalidPage);
+            bool badpage = Element.ElementExist(Xpath_InvalidPage) || Element.ElementExist(Xpath_404Page);
+            return !badpage;
         }
 
         public static string GetCode()

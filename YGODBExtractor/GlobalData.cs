@@ -21,6 +21,7 @@ namespace YGODBExtractor
         public static List<string> CodesWithoutTCGLink = new List<string>();
         public static List<string> TCGUrlsThatFailedLoading = new List<string>();
         public static List<string> TCGUrlsRescued = new List<string>();
+        public static List<string> CardsWithoutProdeckURL = new List<string>();
 
         //Loggin
         public static List<string> Log = new List<string>();

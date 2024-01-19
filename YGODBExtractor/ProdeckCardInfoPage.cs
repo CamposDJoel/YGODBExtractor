@@ -22,6 +22,10 @@ namespace YGODBExtractor
             Element.WaitUntilElementIsVisble(Xpath_Cardimage);
             Element.WaitUntilElementIsVisble(Xpath_CardInfo);
         }
+        public static bool IsPageValid()
+        {
+            return Element.ElementExist(Xpath_Cardimage);
+        }
         public static bool PageContainsTCGPrices()
         {
             return Element.ElementExist(Xpath_TCGPricesContainer);
