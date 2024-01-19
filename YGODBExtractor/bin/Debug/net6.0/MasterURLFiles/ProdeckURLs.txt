@@ -7983,7 +7983,7 @@ Magical Hats|https://ygoprodeck.com/card/magical-hats-6817
 Magical Musket - Dancing Needle|https://ygoprodeck.com/card/magical-musket-dancing-needle-8798
 Magical Musket - Desperado|https://ygoprodeck.com/card/magical-musket-desperado-8577
 Magician Navigation|https://ygoprodeck.com/card/magician-navigation-677
-Magicians Circle|https://ygoprodeck.com/card/magician-s-circle-5
+Magician's Circle|https://ygoprodeck.com/card/magician-s-circle-5
 Magikey Duo|https://ygoprodeck.com/card/magikey-duo-12078
 Magikey Locking|https://ygoprodeck.com/card/magikey-locking-12400
 Magistery Alchemist|https://ygoprodeck.com/card/magistery-alchemist-10688
@@ -8124,7 +8124,7 @@ Photon Current|https://ygoprodeck.com/card/photon-current-3742
 Photon Timestop|https://ygoprodeck.com/card/photon-timestop-13457
 Physical Double|https://ygoprodeck.com/card/physical-double-5357
 Pikerus Circle of Enchantment|https://ygoprodeck.com/card/pikeru-s-circle-of-enchantment-6242
-Pikerus Second Sight|https://ygoprodeck.com/card/pikeru-s-second-sight-4936
+Pikeru's Second Sight|https://ygoprodeck.com/card/pikeru-s-second-sight-4936
 Pineapple Blast|https://ygoprodeck.com/card/pineapple-blast-7574
 Pinpoint Dash|https://ygoprodeck.com/card/pinpoint-dash-10837
 Pinpoint Guard|https://ygoprodeck.com/card/pinpoint-guard-3795
@@ -8319,7 +8319,7 @@ Stars Align across the Milky Way|https://ygoprodeck.com/card/stars-align-across-
 Statue of the Wicked|https://ygoprodeck.com/card/statue-of-the-wicked-5539
 Staunch Defender|https://ygoprodeck.com/card/staunch-defender-7729
 Stonehenge Methods|https://ygoprodeck.com/card/stonehenge-methods-7250
-Storm Dragons Return|https://ygoprodeck.com/card/storm-dragon-s-return-10228
+Storm Dragon's Return|https://ygoprodeck.com/card/storm-dragon-s-return-10228
 Storming Mirror Force|https://ygoprodeck.com/card/storming-mirror-force-502
 Straight Flush|https://ygoprodeck.com/card/straight-flush-2165
 Strike Slash|https://ygoprodeck.com/card/strike-slash-2604
@@ -8494,7 +8494,7 @@ White Howling|https://ygoprodeck.com/card/white-howling-9145
 Widespread Ruin|https://ygoprodeck.com/card/widespread-ruin-6541
 Wild Tornado|https://ygoprodeck.com/card/wild-tornado-4081
 Windstorm of Etaqua|https://ygoprodeck.com/card/windstorm-of-etaqua-5074
-Witchs Strike|https://ygoprodeck.com/card/witch-s-strike-9786
+Witch's Strike|https://ygoprodeck.com/card/witch-s-strike-9786
 Witchcrafter Masterpiece|https://ygoprodeck.com/card/witchcrafter-masterpiece-10142
 Wolf in Sheeps Clothing|https://ygoprodeck.com/card/wolf-in-sheep-s-clothing-7012
 Wonder Garage|https://ygoprodeck.com/card/wonder-garage-4316
