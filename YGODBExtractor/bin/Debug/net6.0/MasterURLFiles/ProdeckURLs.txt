@@ -1,4 +1,4 @@
-12315
+12314
 NEXT|https://ygoprodeck.com/card/next-9797
 Return|https://ygoprodeck.com/card/return-4030
 Synchro Material|https://ygoprodeck.com/card/synchro-material-1240
@@ -2883,28 +2883,28 @@ Golden Dragon Summoner|https://ygoprodeck.com/card/golden-dragon-summoner-2430
 Golden-Eyes Idol|https://ygoprodeck.com/card/golden-eyes-idol-11731
 Grandpa Demetto|https://ygoprodeck.com/card/grandpa-demetto-11817
 Granguignol the Dusk Dragon|https://ygoprodeck.com/card/granguignol-the-dusk-dragon-13553
-Gravekeepers Ambusher|https://ygoprodeck.com/card/gravekeeper-s-ambusher-1909
-Gravekeepers Assailant|https://ygoprodeck.com/card/gravekeeper-s-assailant-2172
-Gravekeepers Cannonholder|https://ygoprodeck.com/card/gravekeeper-s-cannonholder-8290
-Gravekeepers Chief|https://ygoprodeck.com/card/gravekeeper-s-chief-5282
-Gravekeepers Commandant|https://ygoprodeck.com/card/gravekeeper-s-commandant-1507
-Gravekeepers Curse|https://ygoprodeck.com/card/gravekeeper-s-curse-4320
-Gravekeepers Descendant|https://ygoprodeck.com/card/gravekeeper-s-descendant-2560
-Gravekeepers Guard|https://ygoprodeck.com/card/gravekeeper-s-guard-3137
-Gravekeepers Headman|https://ygoprodeck.com/card/gravekeeper-s-headman-9662
-Gravekeepers Heretic|https://ygoprodeck.com/card/gravekeeper-s-heretic-4000
-Gravekeepers Nobleman|https://ygoprodeck.com/card/gravekeeper-s-nobleman-7177
-Gravekeepers Oracle|https://ygoprodeck.com/card/gravekeeper-s-oracle-2195
-Gravekeepers Priestess|https://ygoprodeck.com/card/gravekeeper-s-priestess-301
-Gravekeepers Recruiter|https://ygoprodeck.com/card/gravekeeper-s-recruiter-7742
-Gravekeepers Shaman|https://ygoprodeck.com/card/gravekeeper-s-shaman-4947
-Gravekeepers Spear Soldier|https://ygoprodeck.com/card/gravekeeper-s-spear-soldier-5379
-Gravekeepers Spiritualist|https://ygoprodeck.com/card/gravekeeper-s-spiritualist-9663
-Gravekeepers Spy|https://ygoprodeck.com/card/gravekeeper-s-spy-2101
-Gravekeepers Supernaturalist|https://ygoprodeck.com/card/gravekeeper-s-supernaturalist-9642
-Gravekeepers Vassal|https://ygoprodeck.com/card/gravekeeper-s-vassal-8278
-Gravekeepers Visionary|https://ygoprodeck.com/card/gravekeeper-s-visionary-344
-Gravekeepers Watcher|https://ygoprodeck.com/card/gravekeeper-s-watcher-2246
+Gravekeeper's Ambusher|https://ygoprodeck.com/card/gravekeeper-s-ambusher-1909
+Gravekeeper's Assailant|https://ygoprodeck.com/card/gravekeeper-s-assailant-2172
+Gravekeeper's Cannonholder|https://ygoprodeck.com/card/gravekeeper-s-cannonholder-8290
+Gravekeeper's Chief|https://ygoprodeck.com/card/gravekeeper-s-chief-5282
+Gravekeeper's Commandant|https://ygoprodeck.com/card/gravekeeper-s-commandant-1507
+Gravekeeper's Curse|https://ygoprodeck.com/card/gravekeeper-s-curse-4320
+Gravekeeper's Descendant|https://ygoprodeck.com/card/gravekeeper-s-descendant-2560
+Gravekeeper's Guard|https://ygoprodeck.com/card/gravekeeper-s-guard-3137
+Gravekeeper's Headman|https://ygoprodeck.com/card/gravekeeper-s-headman-9662
+Gravekeeper's Heretic|https://ygoprodeck.com/card/gravekeeper-s-heretic-4000
+Gravekeeper's Nobleman|https://ygoprodeck.com/card/gravekeeper-s-nobleman-7177
+Gravekeeper's Oracle|https://ygoprodeck.com/card/gravekeeper-s-oracle-2195
+Gravekeeper's Priestess|https://ygoprodeck.com/card/gravekeeper-s-priestess-301
+Gravekeeper's Recruiter|https://ygoprodeck.com/card/gravekeeper-s-recruiter-7742
+Gravekeeper's Shaman|https://ygoprodeck.com/card/gravekeeper-s-shaman-4947
+Gravekeeper's Spear Soldier|https://ygoprodeck.com/card/gravekeeper-s-spear-soldier-5379
+Gravekeeper's Spiritualist|https://ygoprodeck.com/card/gravekeeper-s-spiritualist-9663
+Gravekeeper's Spy|https://ygoprodeck.com/card/gravekeeper-s-spy-2101
+Gravekeeper's Supernaturalist|https://ygoprodeck.com/card/gravekeeper-s-supernaturalist-9642
+Gravekeeper's Vassal|https://ygoprodeck.com/card/gravekeeper-s-vassal-8278
+Gravekeeper's Visionary|https://ygoprodeck.com/card/gravekeeper-s-visionary-344
+Gravekeeper's Watcher|https://ygoprodeck.com/card/gravekeeper-s-watcher-2246
 Great Dezard|https://ygoprodeck.com/card/great-dezard-7435
 Great Phantom Thief|https://ygoprodeck.com/card/great-phantom-thief-933
 Great Sorcerer of the Nekroz|https://ygoprodeck.com/card/great-sorcerer-of-the-nekroz-2365
@@ -2982,11 +2982,11 @@ Magician of Chaos|https://ygoprodeck.com/card/magician-of-chaos-9918
 Magician of Dark Illusion|https://ygoprodeck.com/card/magician-of-dark-illusion-2983
 Magician of Faith|https://ygoprodeck.com/card/magician-of-faith-2683
 Magician of Hope|https://ygoprodeck.com/card/magician-of-hope-9501
-Magicians Robe|https://ygoprodeck.com/card/magician-s-robe-6024
-Magicians Rod|https://ygoprodeck.com/card/magician-s-rod-607
-Magicians Valkyria|https://ygoprodeck.com/card/magician-s-valkyria-6735
+Magician's Robe|https://ygoprodeck.com/card/magician-s-robe-6024
+Magician's Rod|https://ygoprodeck.com/card/magician-s-rod-607
+Magician's Valkyria|https://ygoprodeck.com/card/magician-s-valkyria-6735
 Magicians of Bonds and Unity|https://ygoprodeck.com/card/magicians-of-bonds-and-unity-13877
-Magicians Souls|https://ygoprodeck.com/card/magicians-souls-10601
+Magician's Souls|https://ygoprodeck.com/card/magicians-souls-10601
 Magidog|https://ygoprodeck.com/card/magidog-4094
 Magister of Endymion|https://ygoprodeck.com/card/magister-of-endymion-10163
 Maha Vailo|https://ygoprodeck.com/card/maha-vailo-7740
@@ -7735,8 +7735,8 @@ Eternal Galaxy|https://ygoprodeck.com/card/eternal-galaxy-9636
 Evenly Matched|https://ygoprodeck.com/card/evenly-matched-8591
 Evil Blast|https://ygoprodeck.com/card/evil-blast-1354
 Evil Eye Defeat|https://ygoprodeck.com/card/evil-eye-defeat-10104
-EvilTwin Challenge|https://ygoprodeck.com/card/evil-twin-challenge-11447
-EvilTwin Present|https://ygoprodeck.com/card/evil-twin-present-11450
+Evil★Twin Challenge|https://ygoprodeck.com/card/evil-twin-challenge-11447
+Evil★Twin Present|https://ygoprodeck.com/card/evil-twin-present-11450
 Evo-Branch|https://ygoprodeck.com/card/evo-branch-5470
 Evo-Instant|https://ygoprodeck.com/card/evo-instant-2105
 Evo-Singularity|https://ygoprodeck.com/card/evo-singularity-6230
@@ -8661,7 +8661,7 @@ Escalation of the Monarchs|https://ygoprodeck.com/card/escalation-of-the-monarch
 Escape from the Dark Dimension|https://ygoprodeck.com/card/escape-from-the-dark-dimension-2679
 Eternal Soul|https://ygoprodeck.com/card/eternal-soul-4157
 Evil Eye Mesmerism|https://ygoprodeck.com/card/evil-eye-mesmerism-10103
-EvilTwin GG EZ|https://ygoprodeck.com/card/evil-twin-gg-ez-11448
+Evil★Twin GG EZ|https://ygoprodeck.com/card/evil-twin-gg-ez-11448
 Exchange of Night and Day|https://ygoprodeck.com/card/exchange-of-night-and-day-288
 Execute Protocols|https://ygoprodeck.com/card/execute-protocols-10391
 Explosive Urchin|https://ygoprodeck.com/card/explosive-urchin-4443
@@ -9284,10 +9284,10 @@ Evil HERO Wild Cyclone|https://ygoprodeck.com/card/evil-hero-wild-cyclone-1142
 Evilswarm Exciton Knight|https://ygoprodeck.com/card/evilswarm-exciton-knight-3986
 Evilswarm Nightmare|https://ygoprodeck.com/card/evilswarm-nightmare-37
 Evilswarm Thanatos|https://ygoprodeck.com/card/evilswarm-thanatos-5547
-EvilTwin Ki-sikil|https://ygoprodeck.com/card/evil-twin-ki-sikil-11445
-EvilTwin Lil-la|https://ygoprodeck.com/card/evil-twin-lil-la-11449
-EvilTwins Trouble Sunny|https://ygoprodeck.com/card/evil-twin-s-trouble-sunny-12480
-EvilTwins Ki-sikil & Lil-la|https://ygoprodeck.com/card/evil-twins-ki-sikil-lil-la-11443
+Evil★Twin Ki-sikil|https://ygoprodeck.com/card/evil-twin-ki-sikil-11445
+Evil★Twin Lil-la|https://ygoprodeck.com/card/evil-twin-lil-la-11449
+Evil★Twin's Trouble Sunny|https://ygoprodeck.com/card/evil-twin-s-trouble-sunny-12480
+Evil★Twin's Ki-sikil & Lil-la|https://ygoprodeck.com/card/evil-twins-ki-sikil-lil-la-11443
 Fabled Andwraith|https://ygoprodeck.com/card/fabled-andwraith-11480
 Fabled Ashenveil|https://ygoprodeck.com/card/fabled-ashenveil-1055
 Fabled Dianaira|https://ygoprodeck.com/card/fabled-dianaira-4533
@@ -10015,7 +10015,7 @@ Karakuri Muso mdl 818 Haipa|https://ygoprodeck.com/card/karakuri-muso-mdl-818-ha
 Karakuri Ninja mdl 339 Sazank|https://ygoprodeck.com/card/karakuri-ninja-mdl-339-sazank-7799
 Karakuri Ninja mdl 7749 Nanashick|https://ygoprodeck.com/card/karakuri-ninja-mdl-7749-nanashick-4313
 Karakuri Ninja mdl 919 Kuick|https://ygoprodeck.com/card/karakuri-ninja-mdl-919-kuick-550
-Karakuri Shogun mdl 00 Burei|https://ygoprodeck.com/card/karakuri-shogun-mdl-00-burei-2058
+Karakuri Shogun mdl 00 "Burei"|https://ygoprodeck.com/card/karakuri-shogun-mdl-00-burei-2058
 Karakuri Soldier mdl 236 Nisamu|https://ygoprodeck.com/card/karakuri-soldier-mdl-236-nisamu-346
 Karakuri Spider|https://ygoprodeck.com/card/karakuri-spider-3893
 Karakuri Steel Shogun mdl 00X Bureido|https://ygoprodeck.com/card/karakuri-steel-shogun-mdl-00x-bureido-5627
@@ -11024,7 +11024,7 @@ Empress Mantis|https://ygoprodeck.com/card/empress-mantis-5000
 Fairyant the Circular Sorcerer|https://ygoprodeck.com/card/fairyant-the-circular-sorcerer-13530
 Fiend Scorpion|https://ygoprodeck.com/card/fiend-scorpion-2279
 Fire Ant Ascator|https://ygoprodeck.com/card/fire-ant-ascator-6578
-Flying C|https://ygoprodeck.com/card/flying-c-6794
+Flying "C"|https://ygoprodeck.com/card/flying-c-6794
 Flying Kamakiri #1|https://ygoprodeck.com/card/flying-kamakiri-1-7116
 Flying Kamakiri #2|https://ygoprodeck.com/card/flying-kamakiri-2-284
 Fusion Parasite|https://ygoprodeck.com/card/fusion-parasite-546
@@ -11073,7 +11073,7 @@ Inzektor Picofalena|https://ygoprodeck.com/card/inzektor-picofalena-9104
 Javelin Beetle|https://ygoprodeck.com/card/javelin-beetle-2306
 Jirai Gumo|https://ygoprodeck.com/card/jirai-gumo-7886
 Killer Needle|https://ygoprodeck.com/card/killer-needle-7434
-Koaki Meiru Beetle|https://ygoprodeck.com/card/koa-ki-meiru-beetle-3311
+Koa'ki Meiru Beetle|https://ygoprodeck.com/card/koa-ki-meiru-beetle-3311
 Krawler Axon|https://ygoprodeck.com/card/krawler-axon-8615
 Krawler Dendrite|https://ygoprodeck.com/card/krawler-dendrite-8614
 Krawler Glial|https://ygoprodeck.com/card/krawler-glial-8692
@@ -11083,7 +11083,7 @@ Krawler Soma|https://ygoprodeck.com/card/krawler-soma-13153
 Krawler Spine|https://ygoprodeck.com/card/krawler-spine-8616
 Kumongous, the Sticky String Kaiju|https://ygoprodeck.com/card/kumongous-the-sticky-string-kaiju-2517
 Kumootoko|https://ygoprodeck.com/card/kumootoko-4791
-Kuwagata |https://ygoprodeck.com/card/kuwagata-5161
+Kuwagata α|https://ygoprodeck.com/card/kuwagata-5161
 Kwagar Hercules|https://ygoprodeck.com/card/kwagar-hercules-7919
 Larvae Moth|https://ygoprodeck.com/card/larvae-moth-7341
 Leghul|https://ygoprodeck.com/card/leghul-1079
@@ -11092,7 +11092,7 @@ Magical Merchant|https://ygoprodeck.com/card/magical-merchant-2751
 Magnetic Mosquito|https://ygoprodeck.com/card/magnetic-mosquito-4264
 Man-Eater Bug|https://ygoprodeck.com/card/man-eater-bug-4659
 Marionette Mite|https://ygoprodeck.com/card/marionette-mite-7322
-Maxx C|https://ygoprodeck.com/card/maxx-c-2021
+Maxx "C"|https://ygoprodeck.com/card/maxx-c-2021
 Metal Armored Bug|https://ygoprodeck.com/card/metal-armored-bug-5548
 Metamorphosed Insect Queen|https://ygoprodeck.com/card/metamorphosed-insect-queen-8942
 Millennium Scorpion|https://ygoprodeck.com/card/millennium-scorpion-6934
@@ -11390,7 +11390,7 @@ Inmato|https://ygoprodeck.com/card/inmato-3364
 Interceptomato|https://ygoprodeck.com/card/interceptomato-1650
 Jerry Beans Man|https://ygoprodeck.com/card/jerry-beans-man-2038
 Kanzashi the Rikka Queen|https://ygoprodeck.com/card/kanzashi-the-rikka-queen-10968
-Koaki Meiru Gravirose|https://ygoprodeck.com/card/koa-ki-meiru-gravirose-3515
+Koa'ki Meiru Gravirose|https://ygoprodeck.com/card/koa-ki-meiru-gravirose-3515
 Lekunga|https://ygoprodeck.com/card/lekunga-5288
 Lonefire Blossom|https://ygoprodeck.com/card/lonefire-blossom-4158
 Lord Poison|https://ygoprodeck.com/card/lord-poison-3425
@@ -11679,7 +11679,7 @@ Unchained Twins - Rakea|https://ygoprodeck.com/card/unchained-twins-rakea-10402
 Unchained Twins - Sarama|https://ygoprodeck.com/card/unchained-twins-sarama-10809
 Underworld Goddess of the Closed World|https://ygoprodeck.com/card/underworld-goddess-of-the-closed-world-11617
 Ushi Oni|https://ygoprodeck.com/card/ushi-oni-4153
-Vanitys Fiend|https://ygoprodeck.com/card/vanity-s-fiend-4018
+Vanity's Fiend|https://ygoprodeck.com/card/vanity-s-fiend-4018
 Versago the Destroyer|https://ygoprodeck.com/card/versago-the-destroyer-4279
 Vice Berserker|https://ygoprodeck.com/card/vice-berserker-3670
 Vijam the Cubic Seed|https://ygoprodeck.com/card/vijam-the-cubic-seed-1348
@@ -11946,7 +11946,7 @@ Zefraath|https://ygoprodeck.com/card/zefraath-8862
 Falchion|https://ygoprodeck.com/card/falchion-beta-7217
 Fiendish Engine |https://ygoprodeck.com/card/fiendish-engine-omega-6938
 Iron Knight of Revolution|https://ygoprodeck.com/card/iron-knight-of-revolution-8824
-Karakuri Barrel mdl 96 Shinkuro|https://ygoprodeck.com/card/karakuri-barrel-mdl-96-shinkuro-7690
+Karakuri Barrel mdl 96 "Shinkuro"|https://ygoprodeck.com/card/karakuri-barrel-mdl-96-shinkuro-7690
 Machine Lord ur|https://ygoprodeck.com/card/machine-lord-ur-8063
 Sage of Benevolence - Ciela|https://ygoprodeck.com/card/sage-of-benevolence-ciela-13606
 Sage of Strength - Akash|https://ygoprodeck.com/card/sage-of-strength-akash-13614
@@ -11978,7 +11978,7 @@ Humongous Hive Hegemon - Zexstagger|https://ygoprodeck.com/card/humongous-hive-h
 Mother Spider Splitter|https://ygoprodeck.com/card/mother-spider-splitter-13634
 Shiny Black C|https://ygoprodeck.com/card/shiny-black-c-7827
 Baromet the Sacred Sheep Shrub|https://ygoprodeck.com/card/baromet-the-sacred-sheep-shrub-13607
-Marina, Princess of Sunflowers|https://ygoprodeck.com/card/marina-princess-of-sunflowers-6595
+Mariña, Princess of Sunflowers|https://ygoprodeck.com/card/marina-princess-of-sunflowers-6595
 Gamma The Magnet Warrior|https://ygoprodeck.com/card/gamma-the-magnet-warrior-1000
 Greed Jar|https://ygoprodeck.com/card/greed-jar-13888
 Rock of the Vanquisher|https://ygoprodeck.com/card/rock-of-the-vanquisher-13785
@@ -12208,7 +12208,6 @@ Odd-Eyes Arcray Dragon|https://ygoprodeck.com/card/odd-eyes-arcray-dragon-13976
 Mementotlan Mace|https://ygoprodeck.com/card/memento-mace-14047
 Mementotlan Goblin|https://ygoprodeck.com/card/memento-goblin-14045
 Rose Papillon|https://ygoprodeck.com/card/rose-papillon-13830
-Karakuri Barrel mdl 96 "Shinkuro"|https://ygoprodeck.com/card/karakuri-barrel-mdl-96-shinkuro-7690
 Xyz Armor Fortress|https://ygoprodeck.com/card/xyz-armor-fortress-14066
 Seed-Spitting Saplings|https://ygoprodeck.com/card/seed-spitting-saplings-14091
 Nephilabyss, the Ogdoadic Overlord|https://ygoprodeck.com/card/nephilabyss-the-ogdoadic-overlord-14010
