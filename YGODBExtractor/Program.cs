@@ -83,6 +83,7 @@ namespace YGODBExtractor
             }
 
             //TCGRecuerMasterCase();
+            //URLDBCheck();
 
             masterwatch.Stop();
             GlobalData.RecordLog($"Execution Time for the entire script was: {masterwatch.Elapsed} |");
@@ -102,6 +103,8 @@ namespace YGODBExtractor
             //Load the Current DB for Prodeck URLs and TCG Player
             LoadProdeckURLS();
             LoadTCGPlayerURLs();
+            LoadKnownMissingTCGURLs();
+            LoadKnownMissingProdeckURLs();
         }
         private static void TEST_SETUP(CardGroup CurrentTestGroup)
         {
@@ -450,7 +453,8 @@ namespace YGODBExtractor
             GlobalData.RecordLog($"Execution Time for card group was: {watch.Elapsed} |");
         }
         private static void TCGRecuerMasterCase()
-        {            
+        {
+            
             LoadTCGRescueList();
 
             string PreviousName = "NONE";
@@ -670,7 +674,151 @@ namespace YGODBExtractor
                 GlobalData.RecordLog("------------------------------------------------------------------");
             }
 
-            GlobalData.RecordLog(">>>>>>>>>>>>>>>> END OF SCRIPT <<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+            GlobalData.RecordLog(">>>>>>>>>>>>>>>> END OF SCRIPT <<<<<<<<<<<<<<<<<<<<<<<<<<<<");          
+        }
+        private static void URLDBCheck()
+        {
+            //CardGroup CurrentCardGroup = CardGroup.Equip_Spells;
+            //LoadCurrentDBFile(CurrentCardGroup);
+
+            List<CardGroup> CardGroups = new List<CardGroup>
+            {
+                CardGroup.Aqua_Monsters,
+                CardGroup.Beast_Monsters,
+                CardGroup.BeastWarrior_Monsters,
+                CardGroup.Cyberse_Monsters,
+                CardGroup.Dinosaur_Monsters,
+                CardGroup.DivineBeast_Monsters,
+                CardGroup.Dragon_Monsters,
+                CardGroup.Fairy_Monsters,
+                CardGroup.Fiend_Monsters,
+                CardGroup.Fish_Monsters,
+                CardGroup.Insect_Monsters,
+                CardGroup.Machine_Monsters,
+                CardGroup.Plant_Monsters,
+                CardGroup.Psychic_Monsters,
+                CardGroup.Pyro_Monsters,
+                CardGroup.Reptile_Monsters,
+                CardGroup.Rock_Monsters,
+                CardGroup.SeaSerpent_Monsters,
+                CardGroup.Spellcaster_Monsters,
+                CardGroup.Thunder_Monsters,
+                CardGroup.Warrior_Monsters,
+                CardGroup.WingedBeast_Monsters,
+                CardGroup.Wyrm_Monsters,
+                CardGroup.Zombie_Monsters,
+                CardGroup.Normal_Spells,
+                CardGroup.Continuous_Spells,
+                CardGroup.QuickPlay_Spells,
+                CardGroup.Field_Spells,
+                CardGroup.Equip_Spells,
+                CardGroup.Ritual_Spells,
+                CardGroup.Normal_Traps,
+                CardGroup.Continuous_Traps,
+                CardGroup.Counter_Traps
+            };
+
+            foreach (CardGroup group in CardGroups)
+            {
+                LoadCurrentDBFile(group);
+            }
+
+
+
+            List<string> prodeckURLfounds = new List<string>();
+            List<string> tcgURLfounds = new List<string>();
+
+            int totalcards = CurrentDB.CardInfoList.Count;
+            int totalcodes = 0;
+            int ProdeckknownMissingCount = 0;
+            int TCGknownMissingCount = 0;
+
+            foreach (CardInfo card in CurrentDB.CardInfoList)
+            {
+                Console.Write("Card:" + card.Name);
+
+                //check each card for PRODECK URL
+                if (CurrentDB.ProdeckURLIsKnownMissing(card.Name))
+                {
+                    ProdeckknownMissingCount++;
+                    Console.WriteLine("----------NO PRODECK URL, BUT IT IS KNOWN MISSING");
+                }
+                else
+                {
+                    if (CurrentDB.ProdeckURLExist(card.Name))
+                    {
+                        string url = CurrentDB.GetProdeckURL(card.Name);
+                        prodeckURLfounds.Add(card.Name + "|" + url);
+                        Console.WriteLine("----------PRODECK URL FOUND");
+                    }
+                    else
+                    {
+                        GlobalData.CardsWithoutProdeckURL.Add(card.Name);
+                        Console.WriteLine("----------NO PRODECK URL");
+                    }
+                }
+
+                List<string> codesChecked = new List<string>();
+                //check each setcode for tcgplayer url
+                foreach (Set thisSet in card.Sets)
+                {
+                    if (codesChecked.Contains(thisSet.Code))
+                    {
+                        //Skip it, done already
+                        Console.WriteLine("Code: " + thisSet.Code + " is a duplicated.");
+                    }
+                    else
+                    {
+                        //do it as normal
+                        Console.Write("Code:" + thisSet.Code);
+                        codesChecked.Add(thisSet.Code);
+                        totalcodes++;
+
+
+                        if (CurrentDB.TCGURLIsKnownMissing(thisSet.Code))
+                        {
+                            TCGknownMissingCount++;
+                            Console.WriteLine("----------NO TCG URL, BUT IT IS KNOWN MISSING");
+                        }
+                        else
+                        {
+                            if (CurrentDB.TCGPlayerURLExistg(thisSet.Code))
+                            {
+                                string url = CurrentDB.GetTCGPlayerURL(thisSet.Code);
+                                tcgURLfounds.Add(thisSet.Code + "|" + url);
+                                Console.WriteLine("----------TCG URL FOUND");
+                            }
+                            else
+                            {
+                                GlobalData.CodesWithoutTCGLink.Add(card.Name + "|" + thisSet.Code);
+                                Console.WriteLine("----------NO TCG URL");
+                            }
+                        }
+                    }
+                }
+                Console.WriteLine("___________________________________________");
+            }
+
+            Console.WriteLine("Prodeck URLs Results: " + prodeckURLfounds.Count + "/" + totalcards + " ULRS found | " +
+                GlobalData.CardsWithoutProdeckURL.Count + " ULRs Missing. | " + ProdeckknownMissingCount + " URLS known missing.");
+
+
+            Console.WriteLine("TCG URLs Results: " + tcgURLfounds.Count + "/" + totalcodes + " ULRS found | " +
+                GlobalData.CodesWithoutTCGLink.Count + " ULRS Missing. | " + TCGknownMissingCount + " ULRS known missing.");
+
+            Console.WriteLine("_____________________________________________________");
+
+            foreach (CardGroup group in CardGroups)
+            {
+                SavePostRunFiles(group);
+            }
+
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\tcgURLfounds.txt", tcgURLfounds);
+            GlobalData.RecordLog("tcgURLfounds.txt file overwriten!!");
+
+
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Results Data\\prodeckURLfounds.txt", prodeckURLfounds);
+            GlobalData.RecordLog("prodeckURLfounds.txt file overwriten!!");
         }
         private static void TEST_TEARDOWN(CardGroup CurrentTestGroup)
         {
@@ -828,6 +976,58 @@ namespace YGODBExtractor
 
             //Log
             GlobalData.RecordLog("Load TCG Rescue List Successful!");
+        }
+        private static void LoadKnownMissingTCGURLs()
+        {
+            //Stream that reads the actual file.
+            StreamReader SR_SaveFile = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\MasterURLFiles\\KnownMissingTCGURLS.txt");
+
+            //First line contains how many links are in this file
+            string Line = SR_SaveFile.ReadLine();
+            int itemsAmount = Convert.ToInt32(Line);
+
+            for (int i = 0; i < itemsAmount; i++)
+            {
+                //Extract the line split the name and URL
+                Line = SR_SaveFile.ReadLine();
+                string[] tokens = Line.Split("|");
+
+                string cardname = tokens[0];
+                string code = tokens[1];
+
+                //Populate the Dictionary
+                CurrentDB.KnownMissingTCGURLsList.Add(code, cardname);
+            }
+
+            SR_SaveFile.Close();
+
+            //Log
+            GlobalData.RecordLog("Known Missing TCG URLs DB Successful!");
+        }
+        private static void LoadKnownMissingProdeckURLs()
+        {
+            //Stream that reads the actual file.
+            StreamReader SR_SaveFile = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\MasterURLFiles\\KnownMissingProdeckURLS.txt");
+
+            //First line contains how many links are in this file
+            string Line = SR_SaveFile.ReadLine();
+            int itemsAmount = Convert.ToInt32(Line);
+
+            for (int i = 0; i < itemsAmount; i++)
+            {
+                //Extract the line split the name and URL
+                string cardname = SR_SaveFile.ReadLine();
+
+                //Populate the lsit
+                CurrentDB.KnownMissingProdeckURLsList.Add(cardname);
+            }
+
+            SR_SaveFile.Close();
+
+            //Log
+            GlobalData.RecordLog("Known Missing Prodeck URLs DB Successful!");
         }
         private static double CovertPriceToDouble(string price)
         {

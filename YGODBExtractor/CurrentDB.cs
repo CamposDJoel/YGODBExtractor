@@ -15,6 +15,10 @@ namespace YGODBExtractor
         public static Dictionary<string, string> TCGPlayerURLs = new Dictionary<string, string>();
         public static Dictionary<string, string> TCGRescueList = new Dictionary<string, string>();
 
+
+        public static Dictionary<string, string> KnownMissingTCGURLsList = new Dictionary<string, string>();
+        public static List<string> KnownMissingProdeckURLsList = new List<string>();
+
         public static CardInfo GetCard(string name)
         {
             int index = CardNamesList.IndexOf(name);
@@ -33,6 +37,10 @@ namespace YGODBExtractor
         {
             return ProdeckURLs[cardName];
         }
+        public static bool ProdeckURLIsKnownMissing(string cardName)
+        {
+            return KnownMissingProdeckURLsList.Contains(cardName);
+        }
 
         public static bool TCGPlayerURLExistg(string code)
         {
@@ -41,6 +49,10 @@ namespace YGODBExtractor
         public static string GetTCGPlayerURL(string code)
         {
             return TCGPlayerURLs[code];
+        }
+        public static bool TCGURLIsKnownMissing(string code) 
+        {
+            return KnownMissingTCGURLsList.ContainsKey(code);
         }
     }
 }
