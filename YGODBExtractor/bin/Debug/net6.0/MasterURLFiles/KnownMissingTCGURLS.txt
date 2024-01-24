@@ -1,0 +1,212 @@
+211
+Evilswarm Ketos|WGRT-EN050
+Skull Kraken|WGRT-EN041
+Yomi Ship|WGRT-EN006
+Berserk Gorilla|WGRT-EN009
+Big-Tusked Mammoth|WGRT-EN013
+Chimaera, the Master of Beasts|WCPS-AE803
+Firewing Pegasus|WCS-AE503
+Grizzly, the Red Star Beast|2010-EN002
+Hypnocorn|WGRT-EN034
+Madolche Baaple|WGRT-EN049
+Mogmole|WGRT-EN052
+Playful Possum|WGRT-EN033
+The Twin Kings, Founders of the Empire|2015-EN003
+The Twin Kings, Founders of the Empire|2014-EN001
+King Landia the Goldfang|2012-AE003
+King Landia the Goldfang|2011-EN001
+Meteo the Matchless|WCS-EN402
+Sengenjin|WCS-AE403
+Skuna, the Leonine Rakan|WCPS-EN902
+Evilswarm Salamandra|WGRT-EN058
+Gatebridgeo the Waterfront Warbeast|2023-EN002
+Jurrac Gallim|WGRT-EN038
+Sauropod Brachion|WGRT-EN027
+Alexandrite Dragon|YS15-ENY01
+Amatsu-Okami of the Divine Peaks|2018-EN002
+Ancient Dragon|YS15-ENY08
+Axe Dragonute|YS15-END05
+Blue-Eyes White Dragon|2020-EN001
+Bright Star Dragon|YS15-END09
+Dragunity Knight - Vajrayana|WGRT-EN101
+Exploder Dragon|YS15-END10
+Legendary Dragon of White|2013-AE003
+Legendary Dragon of White|2012-EN001
+Light and Darkness Dragon|STOR-ENSE1
+Mirage Dragon|YS15-ENY06
+Montage Dragon|WGRT-EN023
+Odd-Eyes Dragon|YS15-ENY03
+Odd-Eyes Saber Dragon|YS15-ENY00
+Red-Eyes Black Dragon|2022-EN001
+Sanctity of Dragon|2017-EN001
+Schwarzschild Limit Dragon|WGRT-EN064
+Seiyaryu|WCPS-AE603
+Vice Dragon|YS15-END03
+Victory Dragon|WCS-002
+Juno, the Celestial Goddess|2016-EN001
+Majestic Mech - Goryu|WGRT-EN018
+Queen of Fate - Eternia|WCS-EN502
+Skelengel|YS15-ENY10
+Stardust Divinity|2011-AE003
+Stardust Divinity|2010-EN001
+Tyr, the Vanquishing Warlord|WCPS-AE903
+Tyr, the Vanquishing Warlord|WCPS-EN801
+White Night Queen|WGRT-EN045
+Aggiba, the Malevolent Sh'nn S'yo|2010-AE003
+Aggiba, the Malevolent Sh'nn S'yo|WCPS-EN901
+Archfiend of Gilfer|WGRT-EN020
+Archfiend Soldier|YS15-END02
+Beast of Talwar|YS15-END01
+Big Eye|WGRT-EN003
+D/D/D Dragon King Pendragon|YS15-END00
+Fabled Ashenveil|YS15-END07
+Fabled Soulkius|WGRT-EN036
+Garbage Lord|WGRT-EN055
+Goblin Elite Attack Force|YS15-END04
+Grave Squirmer|YS15-END11
+Infernity Destroyer|WGRT-EN030
+Invader of Darkness|WGRT-EN010
+King of Destruction - Xexex|WCS-EN501
+Legendary Fiend|WGRT-EN021
+Mad Archfiend|YS15-END06
+Theban Nightmare|YS15-END08
+Wall of Illusion|WGRT-EN002
+Deep Sweeper|WGRT-EN053
+Adhesive Explosive|WGRT-EN015
+Cyber Dragon|YS15-ENY04
+Cyber Raider|WGRT-EN008
+DUCKER Mobile Cannon|YS15-ENY09
+Grandopolis, The Eternal Golden City|2014-AE003
+Grandopolis, The Eternal Golden City|2013-EN001
+Iron Knight of Revolution|2017-EN002
+Leonardo's Silver Skyship|2014-EN002
+Lorelei, the Symphonic Arsenal|WCPS-EN802
+Mecha Phantom Beast Blackfalcon|WGRT-EN061
+Mecha Phantom Beast Stealthray|WGRT-EN062
+Mecha Phantom Beast Tetherwolf|WGRT-EN060
+Meklord Army of Granel|WGRT-EN040
+Meklord Astro Mekanikle|WQ11-EN001
+Meklord Emperor Granel|WQ11-EN003
+Sergeant Electro|WGRT-EN043
+Cursed Fig|WGRT-EN024
+Evilswarm Mandragora|WGRT-EN051
+Queen Nereia the Silvercrown|2011-EN002
+Shelga, the Tri-Warlord|2016-EN002
+Evilswarm Obliviwisp|WGRT-EN057
+Gentlemander|WGRT-EN063
+Worm Apocalypse|WGRT-EN028
+Worm Jetelikpse|WGRT-EN029
+Evilswarm Heliotrope|WGRT-EN001
+Golem Sentry|WGRT-EN014
+Legendary Jujitsu Master|WGRT-EN011
+Skyfaring Castle of the Black Forest|2019-EN002
+Skystarray|WGRT-EN042
+Chow Len the Prophet|WGRT-EN044
+Dark Magician|2021-EN001
+Dark Magician|MVP1-ENSV3
+E☆HERO Pit Boss|2013-EN002
+Fog King|WGRT-EN099
+Herald of Creation|YS15-ENY05
+High Priestess of Prophecy|WGRT-EN100
+Kazejin|WGRT-EN004
+Kuzunoha, the Onmyojin|2015-EN001
+Legendary Magician of Dark|2012-EN002
+Lyla, Lightsworn Sorceress|WGRT-EN022
+Maha Vailo|YS15-ENY07
+Masterful Magician, Servant of the Sanctuary|2023-EN001
+Medium of the Ice Barrier|WGRT-EN031
+Mystical Elf|YS15-ENY02
+Noritoshi in Darkest Rainment|2019-EN004
+Noritoshi in Darkest Rainment|2018-EN001
+Number 11: Big Eye|WGRT-EN102
+Otohime|WGRT-EN005
+T.G. Hyper Librarian|WQ11-EN002
+Testament of the Arcane Lords|WCPS-AE703
+The Calculator|YS15-ENY11
+Wattlemur|WGRT-EN035
+A/D Changer|WGRT-EN032
+Armament of the Lethal Lords|WCPS-EN602
+Big Shield Gardna|DB1-EN097
+Black Luster Soldier|WCS-003
+Blade Knight|WGRT-EN012
+Cameraclops|WGRT-EN048
+Cyber Gymnast|WGRT-EN016
+Cyber Prima|WGRT-EN017
+D.D. Esper Star Sparrow|WGRT-EN056
+Destiny HERO - Defender|WGRT-EN019
+Dododo Warrior|WGRT-EN059
+General Raiho of the Ice Barrier|WGRT-EN039
+Heroic Challenger - Night Watchman|WGRT-EN054
+Junk Forward|WGRT-EN046
+Kanan the Swordmistress|WCS-001
+Power Breaker|WGRT-EN037
+Sakyo, Swordmaster of the Far East|2015-EN002
+Swallowtail Butterspy|WGRT-EN047
+Zubaba General|WGRT-EN104
+Blackwing - Elphin the Raven|WGRT-EN026
+Kaiser Eagle, the Heavens' Mandate|2019-EN001
+Ulevo|WCS-EN401
+Winged Sage Falcos|WGRT-EN007
+Red Ogre|WGRT-EN025
+After the Struggle|LOD-086
+Back to Square One|WGRT-EN072
+Dark Core|WGRT-EN070
+Dark Hole|YS15-ENY12
+Double Summon|WGRT-EN075
+Earthbound Immortal Revival|LC5D-EN156
+Earthbound Immortal Revival|SOVR-EN087
+Magicians Unite|TU08-EN009
+Mystic Box|WGRT-EN073
+Release Restraint Wave|WGRT-EN077
+Share the Pain|WGRT-EN066
+Smashing Ground|YS15-END12
+Synchro Blast Wave|OP22-EN021
+Tribute to The Doomed|WGRT-EN065
+Banner of Courage|YS15-END15
+Different Dimension Gate|WGRT-EN071
+Synchronized Realm|OP22-EN022
+Berserk Scales|WGRT-EN078
+Mystical Space Typhoon|YS15-END13
+Mystical Space Typhoon|YS15-ENY13
+Rush Recklessly|YS15-ENY14
+Black Magic Ritual|YGLD-ENC32
+Adhesion Trap Hole|WGRT-EN083
+Attention!|WGRT-EN090
+Butterflyoke|WGRT-EN093
+Butterspy Protection|WGRT-EN097
+Cemetary Bomb|SOD-EN059
+Chthonian Blast|WGRT-EN086
+Conscription|WGRT-EN085
+Counter Gem|DP07-EN024
+Covering Fire|WGRT-EN084
+Dimension Slice|WGRT-EN094
+Dust Tornado|YS15-END18
+Magic Cylinder|YS15-END17
+Mask of Weakness|YS15-END19
+Memory Loss|WGRT-EN096
+Mirror Force|YS15-END16
+Needle Ceiling|WGRT-EN081
+Nitwit Outwit|WGRT-EN092
+Nordic Relic Brisingamen|WGRT-EN088
+Nordic Relic Laevateinn|WGRT-EN089
+Pineapple Blast|WGRT-EN082
+Pinpoint Guard|YS15-ENY18
+Reverse Glasses|WGRT-EN098
+Shift|WGRT-EN079
+That Wacky Alchemy!|WGRT-EN095
+Trap Hole|YS15-ENY17
+Call of the Haunted|YS15-END20
+Call of the Haunted|YS15-ENY19
+Raigeki Bottle|WGRT-EN091
+Safe Zone|WGRT-EN103
+Dark Bribe|WGRT-EN087
+Negate Attack|YS15-ENY20
+Riryoku Field|WGRT-EN080
+Axe of Despair|YS15-END14
+Black Pendant|YS15-ENY15
+Black Pendant|WGRT-EN068
+Lucky Iron Axe|WGRT-EN074
+Malevolent Nuzzler|YS15-ENY16
+Megamorph|WGRT-EN069
+Ribbon of Rebirth|WGRT-EN076
+Stim-Pack|WGRT-EN067
