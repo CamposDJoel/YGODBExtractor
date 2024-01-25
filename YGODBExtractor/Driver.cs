@@ -18,8 +18,14 @@ namespace YGODBExtractor
             //this "option" will allow the browser to Maximize opun launching
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--start-maximized");
+            //options.EnableMobileEmulation(deviceName);
+            options.AddArgument("no-sandbox");
 
-            GlobalData.Chrome = new ChromeDriver(options);
+            ChromeDriver drv = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
+            drv.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
+
+            //GlobalData.Chrome = new ChromeDriver(options);
+            GlobalData.Chrome = drv;
         }
 
         /// <summary>
@@ -28,8 +34,23 @@ namespace YGODBExtractor
         /// <param name="url">Designated URL</param>
         public static void GoToURL(string url)
         {
-            GlobalData.Chrome.Navigate().GoToUrl(url);
-            ((IJavaScriptExecutor)GlobalData.Chrome).ExecuteScript("window.resizeTo(1024, 768);");
+            try 
+            {
+                GlobalData.Chrome.Navigate().GoToUrl(url);
+                ((IJavaScriptExecutor)GlobalData.Chrome).ExecuteScript("window.resizeTo(1024, 768);");
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("CHROME DRIVER FAILED - Closing and reopening again...");
+                Console.WriteLine("");
+                GlobalData.Chrome.Quit();
+                OpenBrowser();
+
+                GlobalData.Chrome.Navigate().GoToUrl(url);
+                ((IJavaScriptExecutor)GlobalData.Chrome).ExecuteScript("window.resizeTo(1024, 768);");
+            }
+            
         }
     }
 }

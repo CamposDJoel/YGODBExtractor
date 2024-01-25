@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vMQnL/sVRcnPx1F28F2et2i9gj6gnin+0+zZ3x3wKm0vjlU+9IsRUgwOnOQG9QyaCtGWb0QPFkBSmnZf5wEHAA==",
+  "dgSpecHash": "yzPXslVLS2ovtb1Jxtm9lln1XbD0Js4n4yi3/LTrySnlQMQY9c0tJGfroqk6HXMIQTnOlQmWC4znCX2nTU6FVg==",
   "success": true,
   "projectFilePath": "D:\\Documents\\GitHub\\YGODBExtractor\\YGODBExtractor\\YGODBExtractor.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\DizziDesktop\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\DizziDesktop\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\DizziDesktop\\.nuget\\packages\\selenium.webdriver\\4.16.2\\selenium.webdriver.4.16.2.nupkg.sha512",
     "C:\\Users\\DizziDesktop\\.nuget\\packages\\selenium.webdriver.chromedriver\\120.0.6099.10900\\selenium.webdriver.chromedriver.120.0.6099.10900.nupkg.sha512"
   ],

@@ -96,6 +96,7 @@ namespace YGODBExtractor
                     case CardGroup.Fairy_Monsters: return "Fairy";
                     case CardGroup.Fiend_Monsters: return "Fiend";
                     case CardGroup.Fish_Monsters: return "Fish";
+                    case CardGroup.IllusionType_Monsters: return "Illusion Type";
                     case CardGroup.Insect_Monsters: return "Insect";
                     case CardGroup.Machine_Monsters: return "Machine";
                     case CardGroup.Plant_Monsters: return "Plant";

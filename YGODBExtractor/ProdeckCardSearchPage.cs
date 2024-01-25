@@ -9,7 +9,8 @@ namespace YGODBExtractor
     public static class ProDeckCardSearchPage
     {
         public static string Xpath_SearchTextbox = "//input[@type=\"search\"]";
-        public static string Xpath_FuzzySearch = "//input[@id=\"fuzzySearch\"]";
+        //public static string Xpath_FuzzySearch = "//input[@id=\"fuzzySearch\"]";
+        public static string Xpath_FuzzySearch = "//label[@for=\"fuzzySearch\"]";
         public static string Xpath_ResultsArea = "//div[@id=\"api-area\"]";
 
         public static string Xpath_ResultsAmountDD = "//select[@id=\"filter-limit\"]";
@@ -30,11 +31,13 @@ namespace YGODBExtractor
             //Change the Results displayed to 100
             Element.ClickByXpath(Xpath_ResultsAmountDD);
             Element.ClickByXpath(Xpath_ResultsAmountDD + "/option[.='Limit 100']");
+            //Element.ClickByXpath("//i[@title=\"List View\"]");
 
             //Disable the "fuzzy" search
             string fuzzyStatus = Element.GetElementAttribute(Xpath_FuzzySearch, "checked");
             if (fuzzyStatus == "true") 
             {
+                //Thread.Sleep(3000);
                 Element.ClickByXpath(Xpath_FuzzySearch);
             }
 
@@ -70,8 +73,29 @@ namespace YGODBExtractor
                     {
                         Element.ScrollToView(resultXpath);
                         Element.ClickByXpath(resultXpath);
-                        ProdeckCardInfoPage.WaitUntilPageIsLoaded();
-                        return true;
+
+
+                        try
+                        {
+                            ProdeckCardInfoPage.WaitUntilPageIsLoaded();
+                            return true;
+                        }
+                        catch (Exception)
+                        {
+                            GlobalData.Chrome.Navigate().Refresh();
+                            Element.ScrollToView(resultXpath);
+                            Element.ClickByXpath(resultXpath);
+                           
+                            try 
+                            {
+                                ProdeckCardInfoPage.WaitUntilPageIsLoaded();
+                                return true;
+                            }
+                            catch (Exception)
+                            {
+                                return false;
+                            }
+                        }
                     }
                     else
                     {

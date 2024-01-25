@@ -26,6 +26,13 @@ namespace YGODBExtractor
         {
             return Element.ElementExist(Xpath_Cardimage);
         }
+        public static int GetCardID()
+        {
+            string cardImageURL = Element.GetElementAttribute("//img[@class=\"zoom\"]", "src");
+            string id = cardImageURL.Replace(".jpg", "");
+            id = id.Replace("https://images.ygoprodeck.com/images/cards/", "");
+            return Convert.ToInt32(id);
+        }
         public static bool PageContainsTCGPrices()
         {
             return Element.ElementExist(Xpath_TCGPricesContainer);

@@ -8,7 +8,5 @@ namespace YGODBExtractor
 {
     public static class NewDB
     {
-        public static List<CardInfo> CardInfoList = new List<CardInfo>();
-        public static List<string> CardNamesList = new List<string>();
     }
 }
