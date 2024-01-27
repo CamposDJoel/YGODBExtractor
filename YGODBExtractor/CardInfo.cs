@@ -172,8 +172,12 @@ namespace YGODBExtractor
         }
         public void AddSet(string date, string code, string name, string rarity)
         {
-            //_Sets.Insert(0, new Set(date, code, name, rarity));
             _Sets.Add(new Set(date, code, name, rarity));
+
+        }
+        public void InsertSet(string date, string code, string name, string rarity)
+        {
+            _Sets.Insert(0, new Set(date, code, name, rarity));
         }
         public void AddProdeckURL(string url)
         {

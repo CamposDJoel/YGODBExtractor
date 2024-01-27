@@ -77,5 +77,28 @@ namespace YGODBExtractor
 
             return urls;
         }
+        public static List<string> GetURLThatMatchesSetName(string setName)
+        {
+            List<string> matchurls = new List<string>();
+            int matchesCount = Element.GetElementCount("//div[@class=\"card-sets-tcgplayer\"]//a[.='" + setName + " ']");
+
+            if(matchesCount == 0)
+            {
+                return matchurls;
+            }
+            else
+            {
+                int rows = Element.GetElementCount("//div[@class=\"card-sets-tcgplayer\"]/li");
+                for(int x = 1; x <= rows; x++)
+                {
+                    bool elementExist = Element.ElementExist("//div[@class=\"card-sets-tcgplayer\"]/li[" + x + "]//a[.='" + setName + " ']/parent::div/following-sibling::span/a");
+                    string url = Element.GetElementAttribute("//div[@class=\"card-sets-tcgplayer\"]/li[" + x + "]//a[.='" + setName + " ']/parent::div/following-sibling::span/a", "href");
+                    matchurls.Add(url);
+                }
+                ////div[@class="card-sets-tcgplayer"]/li[7]//a[.='Battle Pack: Epic Dawn ']/parent::div/following-sibling::span/a
+                ///
+                return matchurls;
+            }
+        }
     }
 }

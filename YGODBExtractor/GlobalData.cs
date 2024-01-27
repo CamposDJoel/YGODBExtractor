@@ -25,6 +25,7 @@ namespace YGODBExtractor
 
         //Loggin
         public static List<string> Log = new List<string>();
+        public static List<string> SpecialLog = new List<string>();
      
         public static void RecordLog(string message)
         {

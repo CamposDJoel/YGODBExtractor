@@ -11,6 +11,8 @@ namespace YGODBExtractor
         public static Dictionary<string, CardInfo> MasterDB = new Dictionary<string, CardInfo>();
         public static List<CardInfo> CardInfoList = new List<CardInfo>();
 
+        public static List<string> CardInfoInTxt = new List<string>();
+
         public static Dictionary<string, string> ProdeckURLs = new Dictionary<string, string>();
         public static Dictionary<string, string> TCGPlayerURLs = new Dictionary<string, string>();
         public static Dictionary<string, string> TCGRescueList = new Dictionary<string, string>();
